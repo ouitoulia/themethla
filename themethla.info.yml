@@ -6,7 +6,6 @@ type: module
 core_version_requirement: ^10
 dependencies:
   - drupal:datetime
-  - drupal:entity_reference_revisions
   - drupal:field
   - drupal:file
   - drupal:image
@@ -14,7 +13,8 @@ dependencies:
   - drupal:media_library
   - drupal:node
   - drupal:options
-  - drupal:paragraphs
   - drupal:taxonomy
   - drupal:telephone
   - drupal:text
+  - entity_reference_revisions:entity_reference_revisions
+  - paragraphs:paragraphs
