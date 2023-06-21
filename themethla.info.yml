@@ -5,5 +5,16 @@ package: "Ouitoulía"
 type: module
 core_version_requirement: ^10
 dependencies:
+  - drupal:datetime
+  - drupal:entity_reference_revisions
+  - drupal:field
+  - drupal:file
+  - drupal:image
   - drupal:media
   - drupal:media_library
+  - drupal:node
+  - drupal:options
+  - drupal:paragraphs
+  - drupal:taxonomy
+  - drupal:telephone
+  - drupal:text
