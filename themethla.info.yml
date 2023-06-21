@@ -1,0 +1,9 @@
+name: "Thémethla"
+description: "Thémethla è un modulo drupal che gestisce i field storage dell'entity Node necessari all'implementazione dell'architettura dei contenuti delle scuole."
+package: "Ouitoulía"
+
+type: module
+core_version_requirement: ^10
+dependencies:
+  - drupal:media
+  - drupal:media_library

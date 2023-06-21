@@ -1,0 +1,23 @@
+{
+  "name": "ouitoulia/themethla",
+  "description": "Thémethla è un modulo drupal che gestisce i field storage dell'entity Node necessari all'implementazione dell'architettura dei contenuti delle scuole.",
+  "type": "drupal-module",
+  "license": "GPL-3.0-only",
+  "homepage": "https://github.com/ouitoulia/themethla",
+  "authors": [
+    {
+      "name": "Pietro Arturo Panetta",
+      "homepage":"https://www.drupal.org/u/arturopanetta",
+      "role": "Maintainer"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/ouitoulia/themethla/issues",
+    "source": "https://github.com/ouitoulia/themethla"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require": {
+    "drupal/core-recommended": "^10"
+  }
+}
