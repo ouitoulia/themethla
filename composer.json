@@ -18,7 +18,12 @@
   "minimum-stability": "dev",
   "prefer-stable": true,
   "require": {
-    "drupal/core-recommended": "^10",
-    "drupal/paragraphs": "^1.15"
+    "drupal/core-recommended": ">=10",
+    "drupal/bootstrap_italia": ">=2",
+    "drupal/address": ">=1",
+    "drupal/entity_reference_display": ">=2",
+    "drupal/geofield": ">=1",
+    "drupal/office_hours": ">=1",
+    "drupal/paragraphs": ">=1"
   }
 }
