@@ -23,6 +23,7 @@ dependencies:
   - office_hours:office_hours
   - paragraphs:paragraphs
   - office_hours:office_hours
+  - ouitoulia:lexica
   - bootstrap_italia:bootstrap_italia_image_style
   - bootstrap_italia:bootstrap_italia_paragraph
   - bootstrap_italia:bootstrap_italia_paragraph_accordion

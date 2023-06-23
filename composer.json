@@ -24,6 +24,7 @@
     "drupal/entity_reference_display": ">=2",
     "drupal/geofield": ">=1",
     "drupal/office_hours": ">=1",
-    "drupal/paragraphs": ">=1"
+    "drupal/paragraphs": ">=1",
+    "ouitoulia/lexika": "^1"
   }
 }
