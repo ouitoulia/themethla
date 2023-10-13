@@ -1,0 +1,9 @@
+langcode: it
+status: true
+dependencies:
+  module:
+    - node
+id: node.card_big
+label: 'Card big'
+targetEntityType: node
+cache: true
