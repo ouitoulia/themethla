@@ -49,7 +49,7 @@ dependencies:
   - bootstrap_italia:bootstrap_italia_paragraph_timeline
 
 # Information added by GitHub Action packaging script on 2023-10-19
-version: '2.0.0'
+version: '2.1.0'
 project: 'Themethla'
-datestamp: 1697703420
-message: ' refactoring'
+datestamp: 1697712845
+message: ' check deps'
