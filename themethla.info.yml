@@ -1,5 +1,5 @@
 name: "Thémethla"
-description: "Thémethla è un modulo drupal che gestisce i field storage dell'entity Node necessari all'implementazione dell'architettura dei contenuti delle scuole."
+description: "Thémethla è un modulo drupal che gestisce i tipi di contenuto dell'architettura dell'informazione delle scuole."
 package: "Ouitoulía"
 
 type: module
@@ -11,19 +11,29 @@ dependencies:
   - drupal:image
   - drupal:media
   - drupal:media_library
+  - drupal:menu_ui
   - drupal:node
   - drupal:options
+  - drupal:path
+  - drupal:responsive_image
   - drupal:taxonomy
   - drupal:telephone
   - drupal:text
   - drupal:views
   - address:address
+  - conditional_fields:conditional_fields
   - entity_reference_revisions:entity_reference_revisions
+  - field_group:field_group
+  - focal_point:focal_point
   - geofield:geofield
+  - imce:imce
+  - leaflet:leaflet
   - office_hours:office_hours
   - paragraphs:paragraphs
-  - office_hours:office_hours
+  - ouitoulia:bibliotheke
   - ouitoulia:lexika
+  - term_reference_tree:term_reference_tree
+  - toc_js:toc_js
   - bootstrap_italia:bootstrap_italia_image_style
   - bootstrap_italia:bootstrap_italia_paragraph
   - bootstrap_italia:bootstrap_italia_paragraph_accordion
