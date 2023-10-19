@@ -22,7 +22,6 @@ dependencies:
   - drupal:views
   - address:address
   - conditional_fields:conditional_fields
-  - entity_reference_revisions:entity_reference_revisions
   - field_group:field_group
   - focal_point:focal_point
   - geofield:geofield
@@ -32,6 +31,7 @@ dependencies:
   - paragraphs:paragraphs
   - ouitoulia:bibliotheke
   - ouitoulia:lexika
+  - ouitoulia:prosopon
   - term_reference_tree:term_reference_tree
   - toc_js:toc_js
   - bootstrap_italia:bootstrap_italia_image_style

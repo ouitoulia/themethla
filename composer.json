@@ -19,7 +19,19 @@
   "prefer-stable": true,
   "require": {
     "drupal/core-recommended": ">=10",
-    "ouitoulia/bibliotheke": ">=1.0",
+    "drupal/address": "^1.12",
+    "drupal/conditional_fields": "^4.0@alpha",
+    "drupal/field_group": "^3.4",
+    "drupal/focal_point": ">=2",
+    "drupal/geofield": "^1.55",
+    "drupal/imce": "^3.0",
+    "drupal/leaflet": "^10.2",
+    "drupal/office_hours": "^1.11",
+    "drupal/paragraphs": "^1.16",
+    "drupal/pathauto": "^1.11",
+    "drupal/term_reference_tree": "^2.0",
+    "drupal/toc_js": "^2.1",
+    "ouitoulia/bibliotheke": ">=1.0.12",
     "ouitoulia/lexika": ">=1.1",
     "ouitoulia/prosopon": ">=4.0"
   }
