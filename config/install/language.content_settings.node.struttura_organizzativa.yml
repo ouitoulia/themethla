@@ -1,0 +1,10 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - node.type.struttura_organizzativa
+id: node.struttura_organizzativa
+target_entity_type_id: node
+target_bundle: struttura_organizzativa
+default_langcode: site_default
+language_alterable: true

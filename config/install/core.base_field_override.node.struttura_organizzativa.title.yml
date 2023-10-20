@@ -1,0 +1,17 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - node.type.struttura_organizzativa
+id: node.struttura_organizzativa.title
+field_name: title
+entity_type: node
+bundle: struttura_organizzativa
+label: Nome
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
