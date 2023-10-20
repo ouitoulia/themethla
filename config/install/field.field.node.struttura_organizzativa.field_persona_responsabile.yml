@@ -1,0 +1,28 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_persona_responsabile
+    - node.type.persona
+    - node.type.struttura_organizzativa
+id: node.struttura_organizzativa.field_persona_responsabile
+field_name: field_persona_responsabile
+entity_type: node
+bundle: struttura_organizzativa
+label: Responsabile
+description: "Seleziona il responsabile o i responsabili della struttura che stai inserendo. Esempi:\r\n<ul>\r\n<li>stai inserendo la struttura organizzativa dei docenti della secondaria di secondo grado del plesso \"X\" relativo ad un Istituto Comprensivo, in questo caso, associa il Dirigente Scolastico e il Responsabile del plesso;</li>\r\n<li>stai inserendo l'unità organizzativa della segreteria, in questo caso, associa il Dirigente Scolastico e il DSGA</li>\r\n<li>stai inserendo l'unità organizzativa dei Collaboratori Scolastici del plesso \"X\", in questo caso, associa il DSGA.</li>\r\n</ul>"
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      persona: persona
+    sort:
+      field: title
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

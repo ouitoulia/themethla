@@ -1,0 +1,18 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_persone_esterne
+    - node.type.struttura_organizzativa
+id: node.struttura_organizzativa.field_persone_esterne
+field_name: field_persone_esterne
+entity_type: node
+bundle: struttura_organizzativa
+label: 'Altri componenti'
+description: 'Opzionalmente inserisci altri componenti per cui non esiste una scheda persona, ad es.: persone esterne, associazioni, rappresentanti dei genitori, rappresentanti alunni, ecc.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

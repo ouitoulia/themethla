@@ -1,0 +1,28 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_luoghi
+    - node.type.luogo
+    - node.type.struttura_organizzativa
+id: node.struttura_organizzativa.field_luoghi
+field_name: field_luoghi
+entity_type: node
+bundle: struttura_organizzativa
+label: Sede
+description: 'Seleziona la sede, o le sedi, della struttura dai luoghi che hai già inserito. Se la struttura ha più sedi, il primo luogo associato verrà impostato come "Sede principale". In automatico verranno visualizzate tutte le informazioni del luogo associato (telefono, email, posizione, indirizzo e gli orari di apertura).'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      luogo: luogo
+    sort:
+      field: title
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

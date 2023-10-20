@@ -1,0 +1,18 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_email
+    - node.type.struttura_organizzativa
+id: node.struttura_organizzativa.field_email
+field_name: field_email
+entity_type: node
+bundle: struttura_organizzativa
+label: 'Indirizzo email'
+description: "Se la struttura ha uno o più indirizzi email dedicati compila questo campo. Se l'indirizzo è identico a quello della sede fisica verrà visualizzato in automatico quello inserito nel luogo associato."
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

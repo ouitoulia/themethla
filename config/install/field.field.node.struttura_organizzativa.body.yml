@@ -1,0 +1,23 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.struttura_organizzativa
+  module:
+    - text
+id: node.struttura_organizzativa.body
+field_name: body
+entity_type: node
+bundle: struttura_organizzativa
+label: 'Cosa fa'
+description: 'Riempire questo campo con una descrizione estesa dei compiti assegnati alla struttura.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary
