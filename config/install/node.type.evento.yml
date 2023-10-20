@@ -10,9 +10,9 @@ third_party_settings:
       - main
     parent: 'main:'
   toc_js:
-    toc_js_active: 0
-    title: 'Table of contents'
-    selectors: 'h2, h3'
+    toc_js_active: 1
+    title: "Indice dell'evento"
+    selectors: h2
     selectors_minimum: '0'
     container: .node
     prefix: toc
@@ -24,13 +24,13 @@ third_party_settings:
     scroll_to_offset: '0'
     highlight_on_scroll: 1
     highlight_offset: '100'
-    sticky: 0
+    sticky: 1
     sticky_offset: '104'
-    sticky_stop: ''
+    sticky_stop: .footer
     sticky_stop_padding: '0'
-name: 'Landing page'
-type: page
-description: 'Tipo di contenuto generico. Utilizza questo tipo se devi costruire pagine generiche e che non hanno una struttura dati già definita.'
+name: Evento
+type: evento
+description: 'Usa questo tipo di contenuto per aggiungere un evento come: "Concerto di fine anno", "Convegno Χ", ecc.'
 help: ''
 new_revision: false
 preview_mode: 1

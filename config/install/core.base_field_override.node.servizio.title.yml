@@ -1,0 +1,17 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - node.type.servizio
+id: node.servizio.title
+field_name: title
+entity_type: node
+bundle: servizio
+label: 'Titolo del servizio'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
