@@ -3,7 +3,6 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_luoghi_gestiti
-    - node.type.luogo
     - node.type.struttura_organizzativa
 id: node.struttura_organizzativa.field_luoghi_gestiti
 field_name: field_luoghi_gestiti
@@ -16,13 +15,10 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  handler: 'default:node'
+  handler: views
   handler_settings:
-    target_bundles:
-      luogo: luogo
-    sort:
-      field: title
-      direction: ASC
-    auto_create: false
-    auto_create_bundle: ''
+    view:
+      view_name: contenuti_ricerca_avanzata_campi
+      display_name: entity_reference_3
+      arguments: {  }
 field_type: entity_reference

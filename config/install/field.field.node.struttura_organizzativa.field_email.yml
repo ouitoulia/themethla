@@ -9,7 +9,7 @@ field_name: field_email
 entity_type: node
 bundle: struttura_organizzativa
 label: 'Indirizzo email'
-description: "Se la struttura ha uno o più indirizzi email dedicati compila questo campo. Se l'indirizzo è identico a quello della sede fisica verrà visualizzato in automatico quello inserito nel luogo associato."
+description: "Se la struttura ha uno o più indirizzi email dedicati compila questo campo. Se l'indirizzo è identico a quello della sede principale non compilare questo campo."
 required: false
 translatable: false
 default_value: {  }

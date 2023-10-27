@@ -11,7 +11,7 @@ field_name: field_telefono
 entity_type: node
 bundle: struttura_organizzativa
 label: Telefono
-description: 'Se la struttura ha uno o più numeri di telefono dedicati compila questo campo. Se il numero di telefono è identico a quello della sede fisica verrà visualizzato in automatico quello inserito nel luogo associato.'
+description: 'Se la struttura ha uno o più numeri di telefono dedicati compila questo campo. Se il numero di telefono è identico a quello della sede associata non compilare questo campo.'
 required: false
 translatable: false
 default_value: {  }
