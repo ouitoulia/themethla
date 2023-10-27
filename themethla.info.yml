@@ -48,8 +48,8 @@ dependencies:
   - bootstrap_italia:bootstrap_italia_paragraph_section
   - bootstrap_italia:bootstrap_italia_paragraph_timeline
 
-# Information added by GitHub Action packaging script on 2023-10-20
-version: '2.3.0'
+# Information added by GitHub Action packaging script on 2023-10-27
+version: '2.3.1'
 project: 'Themethla'
-datestamp: 1697817703
-message: ' add struttura organizzativa field and edit display'
+datestamp: 1698423130
+message: ' review fields'
