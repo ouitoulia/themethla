@@ -49,8 +49,8 @@ dependencies:
   - bootstrap_italia:bootstrap_italia_paragraph_section
   - bootstrap_italia:bootstrap_italia_paragraph_timeline
 
-# Information added by GitHub Action packaging script on 2023-10-27
-version: '2.3.1'
+# Information added by GitHub Action packaging script on 2023-10-31
+version: '2.4.0'
 project: 'Themethla'
-datestamp: 1698423130
-message: ' review fields'
+datestamp: 1698759171
+message: ' add servizio fields'
