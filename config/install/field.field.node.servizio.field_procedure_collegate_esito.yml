@@ -1,0 +1,21 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_procedure_collegate_esito
+    - node.type.servizio
+  module:
+    - text
+id: node.servizio.field_procedure_collegate_esito
+field_name: field_procedure_collegate_esito
+entity_type: node
+bundle: servizio
+label: "Procedure collegate all'esito"
+description: "In caso sia necessario, o non sia ovvio, indica cosa bisogna fare per continuare ad usufruire del servizio. Ad esempio, se il servizio è l'iscrizione alla mensa, puoi precisare che ogni 3 mesi dovrà essere pagata la retta tramite il metodo di pagamento preposto."
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

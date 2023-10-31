@@ -1,0 +1,24 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_struttura_responsabile
+    - node.type.servizio
+id: node.servizio.field_struttura_responsabile
+field_name: field_struttura_responsabile
+entity_type: node
+bundle: servizio
+label: 'Struttura responsabile del servizio'
+description: 'Indica la struttura organizzativa che è responsabile del servizio.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: contenuti_ricerca_avanzata_campi
+      display_name: entity_reference_4
+      arguments: {  }
+field_type: entity_reference

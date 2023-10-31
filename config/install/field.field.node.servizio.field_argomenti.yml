@@ -3,12 +3,12 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_argomenti
-    - node.type.struttura_organizzativa
+    - node.type.servizio
     - taxonomy.vocabulary.argomenti
-id: node.struttura_organizzativa.field_argomenti
+id: node.servizio.field_argomenti
 field_name: field_argomenti
 entity_type: node
-bundle: struttura_organizzativa
+bundle: servizio
 label: Argomenti
 description: 'Seleziona uno o più argomenti. Viene usato il vocabolario <a href="/admin/structure/taxonomy/manage/argomenti/overview" title="Visualizza la lista dei termini" target="_blank">Le parole della scuola</a>. Nel caso in cui non riesci ad inserire nuovi termini e/o a visualizzarli chiedi al responsabile del sito la modifica dei relativi permessi.'
 required: true

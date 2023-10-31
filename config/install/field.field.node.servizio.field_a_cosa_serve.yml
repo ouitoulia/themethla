@@ -1,0 +1,21 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_a_cosa_serve
+    - node.type.servizio
+  module:
+    - text
+id: node.servizio.field_a_cosa_serve
+field_name: field_a_cosa_serve
+entity_type: node
+bundle: servizio
+label: 'A cosa serve'
+description: 'Utilizza questo campo per illustrare nel dettaglio a cosa serve il servizio, evita di elencare delle conclusioni ovvie tipo "<em>Il servizio mensa serve per usare la mensa.</em>", ma racconta, laddove possibile, cosa rende il servizio unico e importante come "<em>Il servizio mensa consente ai ragazzi l''accesso alla mensa scolastica in modo da beneficiare di un menù sempre diverso, equilibrato e preparato sul momento dalle cuoche della scuola.</em>".'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

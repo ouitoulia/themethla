@@ -1,0 +1,21 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_servizio_non_attivo
+    - node.type.servizio
+  module:
+    - text
+id: node.servizio.field_servizio_non_attivo
+field_name: field_servizio_non_attivo
+entity_type: node
+bundle: servizio
+label: "Motivo dell'inattività del servizio"
+description: 'Breve descrizione del motivo per cui il servizio non è attivo. Esempio: "<em>Servizio momentaneamente disattivato in quanto...</em>", oppure "<em>Servizio attivo dal...</em>".'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

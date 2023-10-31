@@ -1,0 +1,18 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_codice_identificativo
+    - node.type.servizio
+id: node.servizio.field_codice_identificativo
+field_name: field_codice_identificativo
+entity_type: node
+bundle: servizio
+label: Identificativo
+description: 'Codice identificativo del Servizio.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

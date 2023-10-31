@@ -1,0 +1,21 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cosa_e
+    - node.type.servizio
+  module:
+    - text
+id: node.servizio.field_cosa_e
+field_name: field_cosa_e
+entity_type: node
+bundle: servizio
+label: 'Cosa è'
+description: 'Illustra cos''è il servizio avendo cura di non concentrare tutte le informazioni in questo campo; limitati a dare una descrizione generale del servizio, nei campo successivi potrai fornire ulteriori dettagli. Ad esempio, il campo "Cos''è" del servizio "Sportello d''ascolto" potrebbe essere compilato così: "<em>Lo sportello d’ascolto è un servizio che il liceo offre ai suoi studenti, nell’intento di promuovere la salute e il benessere dei ragazzi e la prevenzione e/o contenimento degli eventuali disagi che fisiologicamente l’adolescenza porta con sé.</em>"'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

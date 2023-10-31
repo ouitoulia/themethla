@@ -31,7 +31,7 @@ third_party_settings:
 name: Servizio
 type: servizio
 description: 'Usa questo tipo di contenuto per inserire un contenuto che descrive un servizio offerto dalla scuola.'
-help: ''
+help: 'Indicare nel campo "Titolo del servizio" il nome del servizio, avendo cura di scegliere un nome semplice e coerente col servizio che si andrà a descrivere. Nel <a href="https://designers.italia.it/files/resources/modelli/scuole/adotta-il-modello-di-sito-scolastico/definisci-architettura-e-contenuti/Architettura-informazione-sito-scuole.ods" target="_blank" title="Clicca per scaricare il documento">Documento di Architettura dell’informazione - Scuole </a> nella scheda "Esempi di servizi scolastici" trovi una lista di alcuni dei più importanti servizi che tipicamente eroga una scuola.'
 new_revision: false
 preview_mode: 1
 display_submitted: false

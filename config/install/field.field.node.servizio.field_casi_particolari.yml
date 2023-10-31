@@ -1,0 +1,21 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_casi_particolari
+    - node.type.servizio
+  module:
+    - text
+id: node.servizio.field_casi_particolari
+field_name: field_casi_particolari
+entity_type: node
+bundle: servizio
+label: 'Casi particolari'
+description: 'Opzionalmente inserisci come testo libero eventuali casi particolari riferiti all''ottenimento del servizio. Esempio: "<em>Le persone con disabilità (legge 104) possono contattare direttamente l''ufficio e concordare una procedura di rinnovo a domicilio.</em>"'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

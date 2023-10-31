@@ -1,0 +1,21 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_come_si_accede
+    - node.type.servizio
+  module:
+    - text
+id: node.servizio.field_come_si_accede
+field_name: field_come_si_accede
+entity_type: node
+bundle: servizio
+label: 'Come si accede'
+description: 'Descrivi la procedura da seguire per usufruire del Servizio. Esempio: "<em>Per iscrivere lo studente al viaggio d''istruzione puoi utilizzare il servizio online, oppure puoi compilare e firmare il modulo che viene distribuito nelle classi.</em>".'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

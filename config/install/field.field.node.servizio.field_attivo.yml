@@ -1,0 +1,20 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_attivo
+    - node.type.servizio
+id: node.servizio.field_attivo
+field_name: field_attivo
+entity_type: node
+bundle: servizio
+label: 'Stato del servizio'
+description: 'Lo stato del servizio indica l’effettiva fruibilità del Servizio. Un servizio può essere "Attivo" o "Disattivo". Visibile solo se il servizio nella sua versione fisica o digitale non è attivo.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: Attivo
+  off_label: 'Non attivo'
+field_type: boolean

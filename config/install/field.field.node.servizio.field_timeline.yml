@@ -1,0 +1,85 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_timeline
+    - node.type.servizio
+    - paragraphs.paragraphs_type.accordion
+    - paragraphs.paragraphs_type.content
+    - paragraphs.paragraphs_type.timeline
+  module:
+    - entity_reference_revisions
+id: node.servizio.field_timeline
+field_name: field_timeline
+entity_type: node
+bundle: servizio
+label: 'Tempi e scadenze'
+description: 'Prevedi una data di scadenza del servizio. Se il Servizio è diviso in fasi, usa il componente "timeline" per ciascuna fase con la relativa indicazione dei tempi, come "<em>Registrazione sul sito MIUR entro la data</em>", "<em>1. Iscrizione su Istanze Online entro la data, 2. Pubblicazione graduatorie provvisorie in data, 3. Termine per i ricorsi entro giorni, 4. Pubblicazione graduatorie definitive </em>".'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      content: content
+      timeline: timeline
+      accordion: accordion
+    negate: 0
+    target_bundles_drag_drop:
+      accordion:
+        weight: -35
+        enabled: true
+      accordion_item:
+        weight: -34
+        enabled: false
+      attachments:
+        weight: -33
+        enabled: false
+      call_to_action:
+        weight: -31
+        enabled: false
+      callout:
+        weight: -32
+        enabled: false
+      carousel:
+        weight: -30
+        enabled: false
+      citation:
+        weight: -29
+        enabled: false
+      content:
+        weight: -37
+        enabled: true
+      gallery:
+        weight: -28
+        enabled: false
+      gallery_item:
+        weight: -27
+        enabled: false
+      hero:
+        weight: -26
+        enabled: false
+      map:
+        weight: -25
+        enabled: false
+      node_reference:
+        weight: -24
+        enabled: false
+      section:
+        weight: -23
+        enabled: false
+      settings:
+        weight: -22
+        enabled: false
+      slide:
+        weight: -21
+        enabled: false
+      timeline:
+        weight: -36
+        enabled: true
+      timeline_item:
+        weight: -20
+        enabled: false
+field_type: entity_reference_revisions

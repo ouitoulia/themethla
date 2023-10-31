@@ -1,0 +1,18 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ipa
+    - node.type.servizio
+id: node.servizio.field_ipa
+field_name: field_ipa
+entity_type: node
+bundle: servizio
+label: "Codice dell'ente erogatore"
+description: 'Eventualmente specifica il nome dell’organizzazione terza, come indicato nell’<a href="https://indicepa.gov.it/" target="_blank" title="Vai all''indice su una nuova scheda">Indice della Pubblica Amministrazione (IPA)</a>, che esercita uno specifico ruolo sul Servizio. Se lasci vuoto questo campo verrà usato quello definito nelle <a href="/admin/appearance/settings/skenografia#edit-skenografia-codici" target="_blank" title="Vai alle impostazioni del tema">impostazioni del tema</a>.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

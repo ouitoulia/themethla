@@ -1,0 +1,28 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tipologia_autenticazione
+    - node.type.servizio
+    - taxonomy.vocabulary.tipologia_autenticazioni
+id: node.servizio.field_tipologia_autenticazione
+field_name: field_tipologia_autenticazione
+entity_type: node
+bundle: servizio
+label: Autenticazione
+description: 'Nel caso in cui siano previste delle modalità di autenticazione, indica quali sono necessarie per accedere al Servizio. Viene usato il vocabolario <a href="/admin/structure/taxonomy/manage/tipologia_autenticazioni/overview" title="Visualizza la lista dei termini" target="_blank">Tipologia autenticazioni</a>. Nel caso in cui non riesci ad inserire nuovi termini e/o a visualizzarli chiedi al responsabile del sito la modifica dei relativi permessi.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tipologia_autenticazioni: tipologia_autenticazioni
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

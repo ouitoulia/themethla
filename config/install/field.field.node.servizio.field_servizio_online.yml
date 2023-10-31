@@ -1,0 +1,21 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_servizio_online
+    - node.type.servizio
+  module:
+    - text
+id: node.servizio.field_servizio_online
+field_name: field_servizio_online
+entity_type: node
+bundle: servizio
+label: 'Servizio online'
+description: 'Utilizza questo campo per dare indicazioni ai visitatori su come utilizzare il canale digitale di erogazione del servizio. Esempio: "<em>Tocca/Clicca sul pulsante <strong>Iscriviti</strong> per chiedere l''iscrizione al corso pomeridiano di latino.</em>".'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

@@ -1,0 +1,21 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sede_canale_fisico
+    - node.type.servizio
+  module:
+    - text
+id: node.servizio.field_sede_canale_fisico
+field_name: field_sede_canale_fisico
+entity_type: node
+bundle: servizio
+label: 'Sede canale fisico'
+description: 'Scrivi un breve testo che illustra cosa bisogna fare per poter fruire del servizio ed esplicita se serve prendere un appuntamento. Esempi: "<em>Il servizio può essere richiesto nelle sedi della segreteria scolastica presentandosi negli orari di apertura. Non è necessario prendere appuntamento.</em>"; oppure "<em>Utilizza il servizio di prenotazione appuntamento.</em>"; Oppure "<em>Contatta la sede per richiedere un appuntamento.</em>".'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

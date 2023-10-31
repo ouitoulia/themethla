@@ -1,0 +1,20 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_telefono
+    - node.type.servizio
+  module:
+    - telephone
+id: node.servizio.field_telefono
+field_name: field_telefono
+entity_type: node
+bundle: servizio
+label: 'Riferimento telefonico'
+description: 'Se il servizio ha un numero di telefono dedicato usa questo campo per inserire uno o più numeri di telefono.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone
