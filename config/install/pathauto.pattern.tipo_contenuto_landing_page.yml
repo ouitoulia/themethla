@@ -1,0 +1,21 @@
+langcode: it
+status: true
+dependencies:
+  module:
+    - node
+id: tipo_contenuto_landing_page
+label: 'Tipo contenuto Landing page'
+type: 'canonical_entities:node'
+pattern: 'pagine/[node:title]'
+selection_criteria:
+  eaf4336d-06af-4c22-b708-3a21ae91ace4:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: eaf4336d-06af-4c22-b708-3a21ae91ace4
+    context_mapping:
+      node: node
+    bundles:
+      page: page
+selection_logic: and
+weight: -5
+relationships: {  }
