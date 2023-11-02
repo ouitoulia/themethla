@@ -26,8 +26,14 @@ Le dipendenze verranno installate automaticamente.
 
 
 # Documentazione
-- [Persona](docs/persona/README.md)
+- [Evento](docs/evento/README.md)
+- [Landing page](docs/page/README.md)
 - [Luogo](docs/luogo/README.md)
+- [Notizia](docs/article/README.md)
+- [Partner](docs/partner/README.md)
+- [Persona](docs/persona/README.md)
+- [Servizio](docs/servizio/README.md)
+- [Struttura organizzativa](docs/struttura_organizzativa/README.md)
 
 
 ## License
