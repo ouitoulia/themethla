@@ -50,7 +50,7 @@ dependencies:
   - bootstrap_italia:bootstrap_italia_paragraph_timeline
 
 # Information added by GitHub Action packaging script on 2023-11-02
-version: '2.8.0'
+version: '2.8.1'
 project: 'Themethla'
-datestamp: 1698946177
-message: ' add evento fields'
+datestamp: 1698946562
+message: ' docs'
