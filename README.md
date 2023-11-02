@@ -14,13 +14,13 @@ dell'architettura dell'informazione dei siti web delle scuole.
 - Drupal: >= 10
 - Profilo Drupal: `minimal`
 - Moduli Drupal:
-- Moduli Ouitoulía: 
+- Moduli Ouitoulía: `bibliotheke`, `lexika`, `prosopon`
 
 ## Installazione
 Per aggiungere il modulo alla tua installazione esegui:
 ```bash
-$ composer require ouitoulia/prosopon
-$ drush -y pm:install prosopon
+$ composer require ouitoulia/themethla
+$ drush -y pm:install themethla
 ```
 Le dipendenze verranno installate automaticamente.
 

@@ -2,12 +2,12 @@ langcode: it
 status: true
 dependencies:
   config:
-    - node.type.evento
-id: node.evento.title
+    - node.type.partner
+id: node.partner.title
 field_name: title
 entity_type: node
-bundle: evento
-label: "Titolo dell'evento"
+bundle: partner
+label: Nome
 description: ''
 required: true
 translatable: true

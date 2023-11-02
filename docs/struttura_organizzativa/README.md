@@ -1,7 +1,17 @@
 ## Implementazione tipo Struttura organizzativa
 | Architettura | Implementazione | Note |
 |--------------|-----------------|------|
-| titolo       | titolo          |      |
+| Nome         | titolo          |      |
+|              |                 |      |
+|              |                 |      |
+|              |                 |      |
+|              |                 |      |
+|              |                 |      |
+|              |                 |      |
+|              |                 |      |
+|              |                 |      |
+|              |                 |      |
+|              |                 |      |
 |              |                 |      |
 
 

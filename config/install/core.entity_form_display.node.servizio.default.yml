@@ -30,7 +30,6 @@ dependencies:
     - field.field.node.servizio.field_tipologia_servizio
     - node.type.servizio
   module:
-    - conditional_fields
     - field_group
     - media_library
     - paragraphs
