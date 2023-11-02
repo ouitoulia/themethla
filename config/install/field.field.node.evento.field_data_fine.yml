@@ -1,0 +1,20 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_data_fine
+    - node.type.evento
+  module:
+    - datetime
+id: node.evento.field_data_fine
+field_name: field_data_fine
+entity_type: node
+bundle: evento
+label: 'Data di fine'
+description: "Inserisci la data e l'ora in cui l'evento finisce."
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

@@ -1,0 +1,24 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_struttura_responsabile
+    - node.type.evento
+id: node.evento.field_struttura_responsabile
+field_name: field_struttura_responsabile
+entity_type: node
+bundle: evento
+label: "Struttura responsabile dell'evento"
+description: "Seleziona la struttura organizzativa che ha organizzato l'evento o che ha collaborato all'organizzazione dello stesso (es. Segreteria , oppure Presidenza)."
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: contenuti_ricerca_avanzata_campi
+      display_name: entity_reference_4
+      arguments: {  }
+field_type: entity_reference

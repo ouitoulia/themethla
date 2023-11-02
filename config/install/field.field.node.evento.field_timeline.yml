@@ -1,0 +1,85 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_timeline
+    - node.type.evento
+    - paragraphs.paragraphs_type.accordion
+    - paragraphs.paragraphs_type.content
+    - paragraphs.paragraphs_type.timeline
+  module:
+    - entity_reference_revisions
+id: node.evento.field_timeline
+field_name: field_timeline
+entity_type: node
+bundle: evento
+label: "Programma dell'evento"
+description: "Inserisci il programma dell'evento suddividendolo in fasi. Se l'evento si svolge in più giornate, le fasi saranno rappresentante dalle varie giornate. Se l'evento è rappresentato da una sola giornata, le fasi potrebbero essere rappresentate della suddivisione del tempo degli interventi (es: ore 18:00 saluti del Dirigente Scolastico (fase 1), ore 18:15 Coro della scuola (fase 2) etc.)."
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      content: content
+      timeline: timeline
+      accordion: accordion
+    negate: 0
+    target_bundles_drag_drop:
+      accordion:
+        weight: -35
+        enabled: true
+      accordion_item:
+        weight: -34
+        enabled: false
+      attachments:
+        weight: -33
+        enabled: false
+      call_to_action:
+        weight: -31
+        enabled: false
+      callout:
+        weight: -32
+        enabled: false
+      carousel:
+        weight: -30
+        enabled: false
+      citation:
+        weight: -29
+        enabled: false
+      content:
+        weight: -37
+        enabled: true
+      gallery:
+        weight: -28
+        enabled: false
+      gallery_item:
+        weight: -27
+        enabled: false
+      hero:
+        weight: -26
+        enabled: false
+      map:
+        weight: -25
+        enabled: false
+      node_reference:
+        weight: -24
+        enabled: false
+      section:
+        weight: -23
+        enabled: false
+      settings:
+        weight: -22
+        enabled: false
+      slide:
+        weight: -21
+        enabled: false
+      timeline:
+        weight: -36
+        enabled: true
+      timeline_item:
+        weight: -20
+        enabled: false
+field_type: entity_reference_revisions

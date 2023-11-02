@@ -1,0 +1,24 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_luoghi
+    - node.type.evento
+id: node.evento.field_luoghi
+field_name: field_luoghi
+entity_type: node
+bundle: evento
+label: Luoghi
+description: 'Con questo campo è possibile stabilire una relazione tra l''evento che si sta creando e il luogo citato. Se il luogo dell''evento non è presente sul sito, puoi inserire il riferimento come testo libero nel campo "Descrizione estesa" oppure puoi usare il componente "Mappa" presente nel campo "Multimedia".'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: contenuti_ricerca_avanzata_campi
+      display_name: entity_reference_3
+      arguments: {  }
+field_type: entity_reference

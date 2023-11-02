@@ -1,0 +1,22 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_gratuito
+    - node.type.evento
+id: node.evento.field_gratuito
+field_name: field_gratuito
+entity_type: node
+bundle: evento
+label: 'Evento gratuito'
+description: "Se selezionato indica che l'evento è gratuito."
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Gratuito
+  off_label: 'A pagamento'
+field_type: boolean

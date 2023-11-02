@@ -1,0 +1,28 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tipologia_evento
+    - node.type.evento
+    - taxonomy.vocabulary.tipologia_eventi
+id: node.evento.field_tipologia_evento
+field_name: field_tipologia_evento
+entity_type: node
+bundle: evento
+label: "Tipologia dell'evento"
+description: 'Seleziona una voce. Viene usato il vocabolario <a href="/admin/structure/taxonomy/manage/tipologia_eventi/overview" title="Visualizza la lista dei termini" target="_blank">Tipologia eventi</a>. Nel caso in cui non riesci ad inserire nuovi termini e/o a visualizzarli chiedi al responsabile del sito la modifica dei relativi permessi.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tipologia_eventi: tipologia_eventi
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,21 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_descrizione_destinatari
+    - node.type.evento
+  module:
+    - text
+id: node.evento.field_descrizione_destinatari
+field_name: field_descrizione_destinatari
+entity_type: node
+bundle: evento
+label: Destinatari
+description: "Descrizione dei principali interlocutori dell'evento."
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

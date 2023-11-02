@@ -1,0 +1,103 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_extra_info
+    - node.type.evento
+    - paragraphs.paragraphs_type.accordion
+    - paragraphs.paragraphs_type.attachments
+    - paragraphs.paragraphs_type.call_to_action
+    - paragraphs.paragraphs_type.callout
+    - paragraphs.paragraphs_type.carousel
+    - paragraphs.paragraphs_type.citation
+    - paragraphs.paragraphs_type.content
+    - paragraphs.paragraphs_type.gallery
+    - paragraphs.paragraphs_type.hero
+    - paragraphs.paragraphs_type.map
+    - paragraphs.paragraphs_type.node_reference
+    - paragraphs.paragraphs_type.section
+  module:
+    - entity_reference_revisions
+id: node.evento.field_extra_info
+field_name: field_extra_info
+entity_type: node
+bundle: evento
+label: Multimedia
+description: "Opzionalmente puoi includere nel corpo dell'evento una galleria di immagini e/o una serie di video e/o audio ecc."
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      content: content
+      attachments: attachments
+      accordion: accordion
+      call_to_action: call_to_action
+      callout: callout
+      carousel: carousel
+      citation: citation
+      gallery: gallery
+      hero: hero
+      map: map
+      section: section
+      node_reference: node_reference
+    negate: 0
+    target_bundles_drag_drop:
+      accordion:
+        weight: -35
+        enabled: true
+      accordion_item:
+        weight: -23
+        enabled: false
+      attachments:
+        weight: -36
+        enabled: true
+      call_to_action:
+        weight: -34
+        enabled: true
+      callout:
+        weight: -33
+        enabled: true
+      carousel:
+        weight: -32
+        enabled: true
+      citation:
+        weight: -31
+        enabled: true
+      content:
+        weight: -37
+        enabled: true
+      gallery:
+        weight: -30
+        enabled: true
+      gallery_item:
+        weight: -22
+        enabled: false
+      hero:
+        weight: -29
+        enabled: true
+      map:
+        weight: -28
+        enabled: true
+      node_reference:
+        weight: -25
+        enabled: true
+      section:
+        weight: -27
+        enabled: true
+      settings:
+        weight: -24
+        enabled: false
+      slide:
+        weight: -21
+        enabled: false
+      timeline:
+        weight: -26
+        enabled: false
+      timeline_item:
+        weight: -20
+        enabled: false
+field_type: entity_reference_revisions
