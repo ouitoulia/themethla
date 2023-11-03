@@ -6,12 +6,12 @@ dependencies:
 id: tipo_contenuto_luogo
 label: 'Tipo contenuto Luogo'
 type: 'canonical_entities:node'
-pattern: 'luoghi/[node:title]'
+pattern: 'scuola/i-luoghi/[node:field_tipologia_luogo]/[node:title]'
 selection_criteria:
-  152d248e-82f6-4c7d-bba8-5279d4f5ab35:
+  29f1d0ac-b50e-466a-98d0-44c9cca7e798:
     id: 'entity_bundle:node'
     negate: false
-    uuid: 152d248e-82f6-4c7d-bba8-5279d4f5ab35
+    uuid: 29f1d0ac-b50e-466a-98d0-44c9cca7e798
     context_mapping:
       node: node
     bundles:

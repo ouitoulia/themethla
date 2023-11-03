@@ -1,0 +1,21 @@
+langcode: it
+status: true
+dependencies:
+  module:
+    - node
+id: tipo_contenuto_notizia
+label: 'Tipo contenuto notizia'
+type: 'canonical_entities:node'
+pattern: 'novita/le-notizie/[node:title]'
+selection_criteria:
+  4c9a0d39-81c7-4346-af0c-ca9025bf63cb:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 4c9a0d39-81c7-4346-af0c-ca9025bf63cb
+    context_mapping:
+      node: node
+    bundles:
+      article: article
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -32,7 +32,7 @@
     "drupal/term_reference_tree": "^2.0",
     "drupal/toc_js": "^2.1",
     "ouitoulia/bibliotheke": ">=1.0.12",
-    "ouitoulia/lexika": ">=1.1",
+    "ouitoulia/lexika": ">=1.2",
     "ouitoulia/prosopon": ">=4.0"
   }
 }

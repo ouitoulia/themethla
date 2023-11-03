@@ -8,8 +8,8 @@ id: node.article.field_persone
 field_name: field_persone
 entity_type: node
 bundle: article
-label: Persone
-description: 'Opzionalmente seleziona le persone citate che hanno un legame con la notizia.'
+label: "Le persone"
+description: "Opzionalmente seleziona le persone citate che hanno un legame con la notizia. Se esiste una scheda Persona per il tuo utente in automatico verrà visualizzata la scheda utente, altrimenti la prima persona citata verrà impostata come autore del contenuto, infine se nessuno dei due casi si verifica usato il campo author."
 required: false
 translatable: false
 default_value: {  }

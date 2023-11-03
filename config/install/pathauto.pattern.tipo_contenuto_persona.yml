@@ -6,12 +6,12 @@ dependencies:
 id: tipo_contenuto_persona
 label: 'Tipo contenuto Persona'
 type: 'canonical_entities:node'
-pattern: 'scuola/le-persone/tipologia-persone/[node:title]'
+pattern: 'scuola/le-persone/[node:field_ruolo_persona]/[node:title]'
 selection_criteria:
-  966558dd-f07d-4084-9cf1-2e63008381e0:
+  0dd626a9-4995-4502-b9c6-5b7c4266be5b:
     id: 'entity_bundle:node'
     negate: false
-    uuid: 966558dd-f07d-4084-9cf1-2e63008381e0
+    uuid: 0dd626a9-4995-4502-b9c6-5b7c4266be5b
     context_mapping:
       node: node
     bundles:
