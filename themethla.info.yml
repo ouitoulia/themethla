@@ -49,8 +49,8 @@ dependencies:
   - bootstrap_italia:bootstrap_italia_paragraph_section
   - bootstrap_italia:bootstrap_italia_paragraph_timeline
 
-# Information added by GitHub Action packaging script on 2023-11-02
-version: '2.8.2'
+# Information added by GitHub Action packaging script on 2023-11-03
+version: '2.9.0'
 project: 'Themethla'
-datestamp: 1698947407
-message: ' fix views di ricerca '
+datestamp: 1699032008
+message: ' add notizia display'
