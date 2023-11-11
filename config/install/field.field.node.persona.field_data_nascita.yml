@@ -14,10 +14,7 @@ label: 'Data di nascita'
 description: 'Inserisci la data di nascita. Questa informazione sarà visibile <strong>solo agli amministratori</strong>.'
 required: false
 translatable: false
-default_value:
-  -
-    default_date_type: relative
-    default_date: '-18 years'
+default_value: {  }
 default_value_callback: ''
 settings: {  }
 field_type: datetime
