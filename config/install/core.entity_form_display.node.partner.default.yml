@@ -110,7 +110,7 @@ content:
       geometry_validation: 0
       feature_properties:
         values: ''
-    third_party_settings: { }
+    third_party_settings: {  }
   field_copertina:
     type: media_library_widget
     weight: 1
@@ -125,20 +125,21 @@ content:
     settings:
       placeholder: ''
       size: 60
-    third_party_settings: { }
+    third_party_settings: {  }
   field_indirizzo:
     type: address_default
     weight: 6
     region: content
-    settings: {  }
-    third_party_settings: { }
+    settings:
+      wrapper_type: fieldset
+    third_party_settings: {  }
   field_telefono:
     type: telephone_default
     weight: 5
     region: content
     settings:
       placeholder: ''
-    third_party_settings: { }
+    third_party_settings: {  }
   langcode:
     type: language_select
     weight: 8

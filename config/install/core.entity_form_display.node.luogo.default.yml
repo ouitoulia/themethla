@@ -424,7 +424,8 @@ content:
     type: address_default
     weight: 27
     region: content
-    settings: {  }
+    settings:
+      wrapper_type: fieldset
     third_party_settings:
       conditional_fields:
         d291d0af-fcf7-44d3-94c9-d577ac13d8e9:
