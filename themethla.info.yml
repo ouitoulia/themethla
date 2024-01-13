@@ -49,8 +49,8 @@ dependencies:
   - bootstrap_italia:bootstrap_italia_paragraph_section
   - bootstrap_italia:bootstrap_italia_paragraph_timeline
 
-# Information added by GitHub Action packaging script on 2023-11-11
-version: '2.9.2'
+# Information added by GitHub Action packaging script on 2024-01-13
+version: '2.10.0'
 project: 'Themethla'
-datestamp: 1699695765
-message: ' fix default value data di nascita'
+datestamp: 1705152422
+message: ' up to address 2.0'
