@@ -50,7 +50,7 @@ dependencies:
   - bootstrap_italia:bootstrap_italia_paragraph_timeline
 
 # Information added by GitHub Action packaging script on 2024-01-18
-version: '2.12.2'
+version: '2.12.3'
 project: 'Themethla'
-datestamp: 1705612987
-message: ' fix tocjs sticky stop'
+datestamp: 1705614614
+message: ' fix docs luogo'
