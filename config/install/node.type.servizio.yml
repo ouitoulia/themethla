@@ -26,7 +26,7 @@ third_party_settings:
     highlight_offset: '100'
     sticky: 1
     sticky_offset: '104'
-    sticky_stop: .footer
+    sticky_stop: .sticky-toc-stop
     sticky_stop_padding: '0'
 name: Servizio
 type: servizio
