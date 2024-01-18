@@ -1,0 +1,10 @@
+langcode: it
+status: true
+dependencies:
+  module:
+    - node
+id: node.persone
+label: Persone
+description: 'Serve per visualizzare un elenco di persone associate al contenuto'
+targetEntityType: node
+cache: true

@@ -1,0 +1,10 @@
+langcode: it
+status: true
+dependencies:
+  module:
+    - node
+id: node.persona_responsabile
+label: 'Persona responsabile'
+description: 'Serve per visualizzare la persona responsabile associata ad un determinato contenuto'
+targetEntityType: node
+cache: true

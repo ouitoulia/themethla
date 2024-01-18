@@ -1,0 +1,53 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.persona_responsabile
+    - field.field.node.struttura_organizzativa.body
+    - field.field.node.struttura_organizzativa.field_abstract
+    - field.field.node.struttura_organizzativa.field_argomenti
+    - field.field.node.struttura_organizzativa.field_copertina
+    - field.field.node.struttura_organizzativa.field_email
+    - field.field.node.struttura_organizzativa.field_extra_info
+    - field.field.node.struttura_organizzativa.field_luoghi
+    - field.field.node.struttura_organizzativa.field_luoghi_gestiti
+    - field.field.node.struttura_organizzativa.field_persona_responsabile
+    - field.field.node.struttura_organizzativa.field_persone
+    - field.field.node.struttura_organizzativa.field_persone_esterne
+    - field.field.node.struttura_organizzativa.field_struttura_organizzativa
+    - field.field.node.struttura_organizzativa.field_telefono
+    - field.field.node.struttura_organizzativa.field_tipologia_struttura
+    - node.type.struttura_organizzativa
+  module:
+    - user
+id: node.struttura_organizzativa.persona_responsabile
+targetEntityType: node
+bundle: struttura_organizzativa
+mode: persona_responsabile
+content:
+  field_persona_responsabile:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  body: true
+  field_abstract: true
+  field_argomenti: true
+  field_copertina: true
+  field_email: true
+  field_extra_info: true
+  field_luoghi: true
+  field_luoghi_gestiti: true
+  field_persone: true
+  field_persone_esterne: true
+  field_struttura_organizzativa: true
+  field_telefono: true
+  field_tipologia_struttura: true
+  langcode: true
+  links: true
+  toc_js: true

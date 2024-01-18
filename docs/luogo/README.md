@@ -21,7 +21,7 @@
 | Servizi presenti nel luogo        | **View relazione con CT `servizio`**                      |                                                  |
 | Il luogo è sede di                | **View relazione con CT `struttura_organizzativa`**       |                                                  |
 | Strutture che gestiscono il luogo | **View relazione con CT `struttura_organizzativa`**       |                                                  |
-| Persone che gestiscono il luogo   | **View relazione con CT `persona`**                       |                                                  |
+| Persone che gestiscono il luogo   | **View relazione con CT `struttura_organizzativa`**       |                                                  |
 | Riferimento telefonico            | **View relazione con CT `struttura_organizzativa`**       |                                                  |
 | Riferimento email                 | **View relazione con CT `struttura_organizzativa`**       |                                                  |
 | Ulteriori informazioni            | field_extra_info                                          | Riferimento Paragraphs `drupal/bootstrap_italia` |
@@ -40,3 +40,7 @@
 | Superficie area totale            | field_superficie_area_totale                              |                                                  |
 | Superficie area libera            | field_superficie_area_libera                              |                                                  |
 | Volume                            | field_volume                                              |                                                  |
+
+## Screenshot
+
+![Screenshot Frontend](frontend.png "Screenshot risultato frontend")
