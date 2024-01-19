@@ -2,6 +2,7 @@ langcode: it
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.card
     - field.field.node.article.body
     - field.field.node.article.field_abstract
     - field.field.node.article.field_argomenti
@@ -10,40 +11,49 @@ dependencies:
     - field.field.node.article.field_extra_info
     - field.field.node.article.field_luoghi
     - field.field.node.article.field_persone
+    - image.style.bootstrap_italia_card_image_panoramic
     - node.type.article
   module:
+    - media
     - user
-id: node.article.default
+id: node.article.card
 targetEntityType: node
 bundle: article
-mode: default
+mode: card
 content:
   field_abstract:
     type: basic_string
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 0
-    region: content
-  field_argomenti:
-    type: entity_reference_label
-    label: inline
-    settings:
-      link: true
-    third_party_settings: {  }
     weight: 1
     region: content
-  links:
-    settings: {  }
+  field_copertina:
+    type: media_thumbnail
+    label: hidden
+    settings:
+      image_link: content
+      image_style: bootstrap_italia_card_image_panoramic
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_persone:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: teaser
+      link: false
     third_party_settings: {  }
     weight: 2
     region: content
 hidden:
   body: true
-  field_copertina: true
+  field_argomenti: true
   field_eventi: true
   field_extra_info: true
   field_luoghi: true
-  field_persone: true
   langcode: true
+  links: true
   toc_js: true

@@ -1,0 +1,124 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.evento.body
+    - field.field.node.evento.field_abstract
+    - field.field.node.evento.field_argomenti
+    - field.field.node.evento.field_collaborazioni
+    - field.field.node.evento.field_copertina
+    - field.field.node.evento.field_data_fine
+    - field.field.node.evento.field_data_inizio
+    - field.field.node.evento.field_descrizione_destinatari
+    - field.field.node.evento.field_destinatari
+    - field.field.node.evento.field_email
+    - field.field.node.evento.field_extra_info
+    - field.field.node.evento.field_gratuito
+    - field.field.node.evento.field_link
+    - field.field.node.evento.field_luoghi
+    - field.field.node.evento.field_patrocini
+    - field.field.node.evento.field_persone
+    - field.field.node.evento.field_prezzo
+    - field.field.node.evento.field_sponsor
+    - field.field.node.evento.field_struttura_responsabile
+    - field.field.node.evento.field_telefono
+    - field.field.node.evento.field_timeline
+    - field.field.node.evento.field_tipologia_evento
+    - node.type.evento
+  module:
+    - entity_reference_revisions
+    - telephone
+    - text
+    - user
+id: node.evento.full
+targetEntityType: node
+bundle: evento
+mode: full
+content:
+  body:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_abstract:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_argomenti:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_copertina:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_email:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  field_extra_info:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 14
+    region: content
+  field_luoghi:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: card_big
+      link: false
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_telefono:
+    type: telephone_link
+    label: above
+    settings:
+      title: ''
+    third_party_settings: {  }
+    weight: 11
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_collaborazioni: true
+  field_data_fine: true
+  field_data_inizio: true
+  field_descrizione_destinatari: true
+  field_destinatari: true
+  field_gratuito: true
+  field_link: true
+  field_patrocini: true
+  field_persone: true
+  field_prezzo: true
+  field_sponsor: true
+  field_struttura_responsabile: true
+  field_timeline: true
+  field_tipologia_evento: true
+  langcode: true
+  toc_js: true

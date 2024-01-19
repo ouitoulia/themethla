@@ -76,3 +76,4 @@ hidden:
   field_tipologia_posto: true
   field_tipologia_supplenza: true
   langcode: true
+  toc_js: true

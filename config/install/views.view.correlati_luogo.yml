@@ -2,6 +2,7 @@ langcode: it
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.card
     - core.entity_view_mode.node.list
     - core.entity_view_mode.node.persona_responsabile
     - core.entity_view_mode.node.teaser
@@ -208,7 +209,7 @@ display:
         type: some
         options:
           offset: 0
-          items_per_page: 12
+          items_per_page: 24
       arguments:
         field_luoghi_target_id:
           id: field_luoghi_target_id
@@ -314,7 +315,7 @@ display:
         type: 'entity:node'
         options:
           relationship: none
-          view_mode: teaser
+          view_mode: card
       defaults:
         title: false
         css_class: false
