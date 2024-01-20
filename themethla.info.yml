@@ -49,8 +49,8 @@ dependencies:
   - bootstrap_italia:bootstrap_italia_paragraph_section
   - bootstrap_italia:bootstrap_italia_paragraph_timeline
 
-# Information added by GitHub Action packaging script on 2024-01-19
-version: '2.13.0'
+# Information added by GitHub Action packaging script on 2024-01-20
+version: '2.14.0'
 project: 'Themethla'
-datestamp: 1705683928
-message: ' add evento e notizia teaser; add views related'
+datestamp: 1705740612
+message: ' aggiunto campo autori al ct notizia'
