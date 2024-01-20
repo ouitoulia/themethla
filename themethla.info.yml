@@ -48,6 +48,7 @@ dependencies:
   - bootstrap_italia:bootstrap_italia_paragraph_node_reference
   - bootstrap_italia:bootstrap_italia_paragraph_section
   - bootstrap_italia:bootstrap_italia_paragraph_timeline
+  - bootstrap_italia:bootstrap_italia_views_carousel
 
 # Information added by GitHub Action packaging script on 2024-01-20
 version: '2.14.0'
