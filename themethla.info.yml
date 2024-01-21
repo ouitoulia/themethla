@@ -51,7 +51,7 @@ dependencies:
   - bootstrap_italia:bootstrap_italia_views_carousel
 
 # Information added by GitHub Action packaging script on 2024-01-21
-version: '2.15.0'
+version: '2.15.1'
 project: 'Themethla'
-datestamp: 1705851082
-message: ' move frontend views to prosis module'
+datestamp: 1705852139
+message: ' switch to AGPL-3.0'
