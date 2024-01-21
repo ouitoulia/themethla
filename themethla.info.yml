@@ -50,8 +50,8 @@ dependencies:
   - bootstrap_italia:bootstrap_italia_paragraph_timeline
   - bootstrap_italia:bootstrap_italia_views_carousel
 
-# Information added by GitHub Action packaging script on 2024-01-20
-version: '2.14.2'
+# Information added by GitHub Action packaging script on 2024-01-21
+version: '2.15.0'
 project: 'Themethla'
-datestamp: 1705743132
-message: ' fix address v2 config'
+datestamp: 1705851082
+message: ' move frontend views to prosis module'
