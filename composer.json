@@ -2,7 +2,7 @@
   "name": "ouitoulia/themethla",
   "description": "Thémethla è un modulo drupal che gestisce i tipi di contenuto dell'architettura dell'informazione delle scuole.",
   "type": "drupal-module",
-  "license": "GPL-3.0-only",
+  "license": "AGPL-3.0-only",
   "homepage": "https://github.com/ouitoulia/themethla",
   "authors": [
     {
