@@ -50,8 +50,8 @@ dependencies:
   - bootstrap_italia:bootstrap_italia_paragraph_timeline
   - bootstrap_italia:bootstrap_italia_views_carousel
 
-# Information added by GitHub Action packaging script on 2024-01-21
-version: '2.15.1'
+# Information added by GitHub Action packaging script on 2024-01-22
+version: '2.16.0'
 project: 'Themethla'
-datestamp: 1705852139
-message: ' switch to AGPL-3.0'
+datestamp: 1705958513
+message: ' add struttura organizzativa display and path'
