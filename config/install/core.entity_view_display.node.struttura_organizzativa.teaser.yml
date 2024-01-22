@@ -34,11 +34,6 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
-  links:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 1
-    region: content
 hidden:
   body: true
   field_abstract: true
@@ -54,4 +49,5 @@ hidden:
   field_struttura_organizzativa: true
   field_telefono: true
   langcode: true
+  links: true
   toc_js: true

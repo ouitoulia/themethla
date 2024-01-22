@@ -1,0 +1,21 @@
+langcode: it
+status: true
+dependencies:
+  module:
+    - node
+id: tipo_contenuto_struttura_organizzativa
+label: 'Tipo contenuto Struttura organizzativa'
+type: 'canonical_entities:node'
+pattern: 'scuola/organizzazione/[node:field_tipologia_struttura]/[node:title]'
+selection_criteria:
+  06dc6bed-f347-44a4-adee-a9c5cd279ae2:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 06dc6bed-f347-44a4-adee-a9c5cd279ae2
+    context_mapping:
+      node: node
+    bundles:
+      struttura_organizzativa: struttura_organizzativa
+selection_logic: and
+weight: -5
+relationships: {  }
