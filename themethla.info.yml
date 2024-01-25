@@ -30,6 +30,7 @@ dependencies:
   - leaflet:leaflet
   - office_hours:office_hours
   - paragraphs:paragraphs
+  - spamspan:spamspan
   - ouitoulia:bibliotheke
   - ouitoulia:lexika
   - ouitoulia:prosopon

@@ -1,0 +1,49 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.partner.body
+    - field.field.node.partner.field_abstract
+    - field.field.node.partner.field_coordinate_geografiche
+    - field.field.node.partner.field_copertina
+    - field.field.node.partner.field_email
+    - field.field.node.partner.field_indirizzo
+    - field.field.node.partner.field_link
+    - field.field.node.partner.field_telefono
+    - image.style.focal_point_thumbnail_1x_1_1_40x40_
+    - node.type.partner
+  module:
+    - media
+    - user
+id: node.partner.teaser
+targetEntityType: node
+bundle: partner
+mode: teaser
+content:
+  field_copertina:
+    type: media_thumbnail
+    label: hidden
+    settings:
+      image_link: content
+      image_style: focal_point_thumbnail_1x_1_1_40x40_
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  body: true
+  field_abstract: true
+  field_coordinate_geografiche: true
+  field_email: true
+  field_indirizzo: true
+  field_link: true
+  field_telefono: true
+  langcode: true
+  toc_js: true

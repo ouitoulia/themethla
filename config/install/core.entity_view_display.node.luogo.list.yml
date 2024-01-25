@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.luogo.field_attributi_luogo
     - field.field.node.luogo.field_codice_catastale_comune
     - field.field.node.luogo.field_codice_identificativo
+    - field.field.node.luogo.field_collaborazioni
     - field.field.node.luogo.field_coordinate_geografiche
     - field.field.node.luogo.field_copertina
     - field.field.node.luogo.field_destinazione_uso
@@ -62,6 +63,7 @@ hidden:
   field_attributi_luogo: true
   field_codice_catastale_comune: true
   field_codice_identificativo: true
+  field_collaborazioni: true
   field_coordinate_geografiche: true
   field_copertina: true
   field_destinazione_uso: true

@@ -1,0 +1,21 @@
+langcode: it
+status: true
+dependencies:
+  module:
+    - node
+id: tipo_contenuto_partner
+label: 'Tipo contenuto Partner'
+type: 'canonical_entities:node'
+pattern: 'scuola/partner/[node:title]'
+selection_criteria:
+  0fb442a1-12a8-42f5-879e-5949f4f792b8:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 0fb442a1-12a8-42f5-879e-5949f4f792b8
+    context_mapping:
+      node: node
+    bundles:
+      partner: partner
+selection_logic: and
+weight: -5
+relationships: {  }

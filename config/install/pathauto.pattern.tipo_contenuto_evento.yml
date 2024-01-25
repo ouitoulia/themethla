@@ -1,0 +1,21 @@
+langcode: it
+status: true
+dependencies:
+  module:
+    - node
+id: tipo_contenuto_evento
+label: 'Tipo contenuto evento'
+type: 'canonical_entities:node'
+pattern: 'novita/calendario-eventi/[node:field_tipologia_evento]/[node:title]'
+selection_criteria:
+  f44e27ff-531f-4df4-b1b6-d5e426b4adf7:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: f44e27ff-531f-4df4-b1b6-d5e426b4adf7
+    context_mapping:
+      node: node
+    bundles:
+      evento: evento
+selection_logic: and
+weight: -5
+relationships: {  }

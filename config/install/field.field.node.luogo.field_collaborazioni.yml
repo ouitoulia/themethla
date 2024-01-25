@@ -2,14 +2,14 @@ langcode: it
 status: true
 dependencies:
   config:
-    - field.storage.node.field_patrocini
-    - node.type.evento
-id: node.evento.field_patrocini
-field_name: field_patrocini
+    - field.storage.node.field_collaborazioni
+    - node.type.luogo
+id: node.luogo.field_collaborazioni
+field_name: field_collaborazioni
 entity_type: node
-bundle: evento
-label: 'Patrocinato da'
-description: "Soggetto o soggetti che patrocinano l'evento."
+bundle: luogo
+label: 'Gestori esterni alla scuola'
+description: 'Soggetti terzi che collaborano alla gestione del luogo.'
 required: false
 translatable: false
 default_value: {  }

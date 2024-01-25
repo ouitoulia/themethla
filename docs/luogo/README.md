@@ -24,6 +24,7 @@
 | Persone che gestiscono il luogo   | **View relazione con CT `struttura_organizzativa`**       |                                                  |
 | Riferimento telefonico            | **View relazione con CT `struttura_organizzativa`**       |                                                  |
 | Riferimento email                 | **View relazione con CT `struttura_organizzativa`**       |                                                  |
+| Gestore esterno                   | field_collaborazioni                                      |                                                  |
 | Ulteriori informazioni            | field_extra_info                                          | Riferimento Paragraphs `drupal/bootstrap_italia` |
 | Spazio prenotabile                | field_prenotabile                                         |                                                  |
 | Anno di costruzione               | field_anno_costruzione                                    |                                                  |
