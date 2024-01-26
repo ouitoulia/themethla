@@ -20,6 +20,7 @@ dependencies:
     - field.field.node.evento.field_persone
     - field.field.node.evento.field_prezzo
     - field.field.node.evento.field_sponsor
+    - field.field.node.evento.field_struttura_esterna
     - field.field.node.evento.field_struttura_responsabile
     - field.field.node.evento.field_telefono
     - field.field.node.evento.field_timeline
@@ -111,6 +112,7 @@ third_party_settings:
     group_contatti:
       children:
         - field_struttura_responsabile
+        - field_struttura_esterna
         - field_collaborazioni
         - field_link
         - field_email
@@ -203,7 +205,7 @@ content:
     third_party_settings: {  }
   field_collaborazioni:
     type: entity_reference_autocomplete
-    weight: 17
+    weight: 18
     region: content
     settings:
       match_operator: CONTAINS
@@ -251,7 +253,7 @@ content:
     third_party_settings: {  }
   field_email:
     type: email_default
-    weight: 19
+    weight: 20
     region: content
     settings:
       placeholder: ''
@@ -285,7 +287,7 @@ content:
     third_party_settings: {  }
   field_link:
     type: link_default
-    weight: 18
+    weight: 19
     region: content
     settings:
       placeholder_url: ''
@@ -339,6 +341,16 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  field_struttura_esterna:
+    type: entity_reference_autocomplete
+    weight: 17
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
   field_struttura_responsabile:
     type: entity_reference_autocomplete
     weight: 16
@@ -351,7 +363,7 @@ content:
     third_party_settings: {  }
   field_telefono:
     type: telephone_default
-    weight: 20
+    weight: 21
     region: content
     settings:
       placeholder: ''

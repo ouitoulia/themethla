@@ -21,6 +21,7 @@ dependencies:
     - field.field.node.evento.field_persone
     - field.field.node.evento.field_prezzo
     - field.field.node.evento.field_sponsor
+    - field.field.node.evento.field_struttura_esterna
     - field.field.node.evento.field_struttura_responsabile
     - field.field.node.evento.field_telefono
     - field.field.node.evento.field_timeline
@@ -68,7 +69,7 @@ content:
       view_mode: teaser
       link: false
     third_party_settings: {  }
-    weight: 20
+    weight: 21
     region: content
   field_copertina:
     type: entity_reference_entity_view
@@ -125,7 +126,7 @@ content:
       spamspan_form_default_displaytext: 'contact form'
       spamspan_use_form: 0
     third_party_settings: {  }
-    weight: 15
+    weight: 16
     region: content
   field_extra_info:
     type: entity_reference_revisions_entity_view
@@ -156,7 +157,7 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    weight: 17
+    weight: 18
     region: content
   field_luoghi:
     type: entity_reference_entity_view
@@ -174,7 +175,7 @@ content:
       view_mode: teaser
       link: false
     third_party_settings: {  }
-    weight: 18
+    weight: 19
     region: content
   field_persone:
     type: entity_reference_entity_view
@@ -200,7 +201,16 @@ content:
       view_mode: teaser
       link: false
     third_party_settings: {  }
-    weight: 19
+    weight: 20
+    region: content
+  field_struttura_esterna:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings: {  }
+    weight: 15
     region: content
   field_struttura_responsabile:
     type: entity_reference_entity_view
@@ -217,7 +227,7 @@ content:
     settings:
       title: ''
     third_party_settings: {  }
-    weight: 16
+    weight: 17
     region: content
   field_timeline:
     type: entity_reference_revisions_entity_view
@@ -231,12 +241,12 @@ content:
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 22
+    weight: 23
     region: content
   toc_js:
     settings: {  }
     third_party_settings: {  }
-    weight: 21
+    weight: 22
     region: content
 hidden:
   field_tipologia_evento: true
