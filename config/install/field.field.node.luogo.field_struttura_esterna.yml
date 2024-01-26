@@ -2,14 +2,14 @@ langcode: it
 status: true
 dependencies:
   config:
-    - field.storage.node.field_collaborazioni
+    - field.storage.node.field_struttura_esterna
     - node.type.luogo
-id: node.luogo.field_collaborazioni
-field_name: field_collaborazioni
+id: node.luogo.field_struttura_esterna
+field_name: field_struttura_esterna
 entity_type: node
 bundle: luogo
 label: 'Gestori esterni alla scuola'
-description: 'Soggetti terzi che collaborano alla gestione del luogo.'
+description: ''
 required: false
 translatable: false
 default_value: {  }

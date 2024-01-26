@@ -10,7 +10,6 @@ dependencies:
     - field.field.node.luogo.field_attributi_luogo
     - field.field.node.luogo.field_codice_catastale_comune
     - field.field.node.luogo.field_codice_identificativo
-    - field.field.node.luogo.field_collaborazioni
     - field.field.node.luogo.field_coordinate_geografiche
     - field.field.node.luogo.field_copertina
     - field.field.node.luogo.field_destinazione_uso
@@ -24,6 +23,7 @@ dependencies:
     - field.field.node.luogo.field_orario_pubblico
     - field.field.node.luogo.field_posti
     - field.field.node.luogo.field_prenotabile
+    - field.field.node.luogo.field_struttura_esterna
     - field.field.node.luogo.field_superficie_area_libera
     - field.field.node.luogo.field_superficie_area_totale
     - field.field.node.luogo.field_telefono
@@ -106,7 +106,7 @@ third_party_settings:
         required_fields: true
     group_ulteriori_informazioni:
       children:
-        - field_collaborazioni
+        - field_struttura_esterna
         - field_extra_info
         - field_prenotabile
         - field_posti
@@ -163,14 +163,14 @@ content:
     third_party_settings: {  }
   field_anno_adattamento:
     type: number
-    weight: 27
+    weight: 44
     region: content
     settings:
       placeholder: ''
     third_party_settings: {  }
   field_anno_costruzione:
     type: number
-    weight: 21
+    weight: 38
     region: content
     settings:
       placeholder: ''
@@ -197,7 +197,7 @@ content:
     third_party_settings: {  }
   field_codice_catastale_comune:
     type: string_textfield
-    weight: 24
+    weight: 41
     region: content
     settings:
       size: 60
@@ -205,19 +205,9 @@ content:
     third_party_settings: {  }
   field_codice_identificativo:
     type: string_textfield
-    weight: 23
+    weight: 40
     region: content
     settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-  field_collaborazioni:
-    type: entity_reference_autocomplete
-    weight: 17
-    region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
       size: 60
       placeholder: ''
     third_party_settings: {  }
@@ -333,7 +323,7 @@ content:
     third_party_settings: {  }
   field_destinazione_uso:
     type: entity_reference_autocomplete
-    weight: 26
+    weight: 43
     region: content
     settings:
       match_operator: CONTAINS
@@ -408,7 +398,7 @@ content:
             selector: ''
   field_extra_info:
     type: paragraphs
-    weight: 18
+    weight: 35
     region: content
     settings:
       title: Paragraph
@@ -489,7 +479,7 @@ content:
     third_party_settings: {  }
   field_numero_piani:
     type: number
-    weight: 22
+    weight: 39
     region: content
     settings:
       placeholder: ''
@@ -544,28 +534,38 @@ content:
             selector: ''
   field_posti:
     type: number
-    weight: 20
+    weight: 37
     region: content
     settings:
       placeholder: ''
     third_party_settings: {  }
   field_prenotabile:
     type: boolean_checkbox
-    weight: 19
+    weight: 36
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
+  field_struttura_esterna:
+    type: entity_reference_autocomplete
+    weight: 33
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
   field_superficie_area_libera:
     type: number
-    weight: 29
+    weight: 46
     region: content
     settings:
       placeholder: ''
     third_party_settings: {  }
   field_superficie_area_totale:
     type: number
-    weight: 28
+    weight: 45
     region: content
     settings:
       placeholder: ''
@@ -627,7 +627,7 @@ content:
     third_party_settings: {  }
   field_uso_scolastico:
     type: boolean_checkbox
-    weight: 25
+    weight: 42
     region: content
     settings:
       display_label: true
@@ -641,7 +641,7 @@ content:
     third_party_settings: {  }
   field_volume:
     type: number
-    weight: 30
+    weight: 47
     region: content
     settings:
       placeholder: ''

@@ -10,7 +10,6 @@ dependencies:
     - field.field.node.luogo.field_attributi_luogo
     - field.field.node.luogo.field_codice_catastale_comune
     - field.field.node.luogo.field_codice_identificativo
-    - field.field.node.luogo.field_collaborazioni
     - field.field.node.luogo.field_coordinate_geografiche
     - field.field.node.luogo.field_copertina
     - field.field.node.luogo.field_destinazione_uso
@@ -24,6 +23,7 @@ dependencies:
     - field.field.node.luogo.field_orario_pubblico
     - field.field.node.luogo.field_posti
     - field.field.node.luogo.field_prenotabile
+    - field.field.node.luogo.field_struttura_esterna
     - field.field.node.luogo.field_superficie_area_libera
     - field.field.node.luogo.field_superficie_area_totale
     - field.field.node.luogo.field_telefono
@@ -59,7 +59,6 @@ hidden:
   field_attributi_luogo: true
   field_codice_catastale_comune: true
   field_codice_identificativo: true
-  field_collaborazioni: true
   field_coordinate_geografiche: true
   field_copertina: true
   field_destinazione_uso: true
@@ -73,6 +72,7 @@ hidden:
   field_orario_pubblico: true
   field_posti: true
   field_prenotabile: true
+  field_struttura_esterna: true
   field_superficie_area_libera: true
   field_superficie_area_totale: true
   field_telefono: true
