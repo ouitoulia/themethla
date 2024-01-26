@@ -51,8 +51,8 @@ dependencies:
   - bootstrap_italia:bootstrap_italia_paragraph_timeline
   - bootstrap_italia:bootstrap_italia_views_carousel
 
-# Information added by GitHub Action packaging script on 2024-01-25
-version: '2.17.0'
+# Information added by GitHub Action packaging script on 2024-01-26
+version: '2.18.0'
 project: 'Themethla'
-datestamp: 1706219220
-message: ' add evento display and path'
+datestamp: 1706278996
+message: ' rename field collaborazioni to struttura esterna'
