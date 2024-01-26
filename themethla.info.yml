@@ -52,7 +52,7 @@ dependencies:
   - bootstrap_italia:bootstrap_italia_views_carousel
 
 # Information added by GitHub Action packaging script on 2024-01-26
-version: '2.18.0'
+version: '2.19.0'
 project: 'Themethla'
-datestamp: 1706278996
-message: ' rename field collaborazioni to struttura esterna'
+datestamp: 1706281299
+message: ' add field struttura esterna to ct evento'
