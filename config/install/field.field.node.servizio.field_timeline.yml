@@ -6,6 +6,7 @@ dependencies:
     - node.type.servizio
     - paragraphs.paragraphs_type.accordion
     - paragraphs.paragraphs_type.content
+    - paragraphs.paragraphs_type.point_list
     - paragraphs.paragraphs_type.timeline
   module:
     - entity_reference_revisions
@@ -23,63 +24,73 @@ settings:
   handler: 'default:paragraph'
   handler_settings:
     target_bundles:
-      content: content
+      point_list: point_list
       timeline: timeline
       accordion: accordion
+      content: content
     negate: 0
     target_bundles_drag_drop:
       accordion:
-        weight: -35
+        weight: -41
         enabled: true
       accordion_item:
-        weight: -34
+        weight: -39
         enabled: false
       attachments:
-        weight: -33
+        weight: -38
         enabled: false
       call_to_action:
-        weight: -31
+        weight: -36
         enabled: false
       callout:
-        weight: -32
+        weight: -37
         enabled: false
       carousel:
-        weight: -30
+        weight: -35
         enabled: false
       citation:
-        weight: -29
+        weight: -34
         enabled: false
       content:
-        weight: -37
+        weight: -40
         enabled: true
       gallery:
-        weight: -28
+        weight: -33
         enabled: false
       gallery_item:
-        weight: -27
+        weight: -32
         enabled: false
       hero:
-        weight: -26
+        weight: -31
         enabled: false
       map:
-        weight: -25
+        weight: -30
         enabled: false
-      node_reference:
+      multimedia:
         weight: -24
         enabled: false
-      section:
+      node_reference:
+        weight: -29
+        enabled: false
+      point_list:
+        weight: -43
+        enabled: true
+      point_list_item:
         weight: -23
         enabled: false
+      section:
+        weight: -28
+        enabled: false
       settings:
-        weight: -22
+        weight: -27
         enabled: false
       slide:
-        weight: -21
+        weight: -26
         enabled: false
       timeline:
-        weight: -36
+        weight: -42
         enabled: true
       timeline_item:
-        weight: -20
+        weight: -25
         enabled: false
 field_type: entity_reference_revisions

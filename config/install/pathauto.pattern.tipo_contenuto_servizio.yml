@@ -1,0 +1,21 @@
+langcode: it
+status: true
+dependencies:
+  module:
+    - node
+id: tipo_contenuto_servizio
+label: 'Tipo contenuto Servizio'
+type: 'canonical_entities:node'
+pattern: 'servizi/[node:field_tipologia_servizio]/[node:title]'
+selection_criteria:
+  2e126853-4be8-483e-aece-3e76d6217a36:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 2e126853-4be8-483e-aece-3e76d6217a36
+    context_mapping:
+      node: node
+    bundles:
+      servizio: servizio
+selection_logic: and
+weight: -5
+relationships: {  }

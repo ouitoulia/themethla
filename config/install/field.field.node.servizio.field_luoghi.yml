@@ -8,7 +8,7 @@ id: node.servizio.field_luoghi
 field_name: field_luoghi
 entity_type: node
 bundle: servizio
-label: 'Luogo di erogazione'
+label: 'Luoghi in cui viene erogato il servizio'
 description: 'Indica una o più sedi dove viene erogato il servizio.'
 required: true
 translatable: false

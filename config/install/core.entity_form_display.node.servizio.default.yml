@@ -238,7 +238,7 @@ content:
     weight: 20
     region: content
     settings:
-      display_label: true
+      display_label: false
     third_party_settings: {  }
   field_azione:
     type: paragraphs
@@ -315,7 +315,7 @@ content:
     settings:
       placeholder: ''
       size: 60
-    third_party_settings: { }
+    third_party_settings: {  }
   field_extra_info:
     type: paragraphs
     weight: 4
@@ -411,7 +411,7 @@ content:
     region: content
     settings:
       placeholder: ''
-    third_party_settings: { }
+    third_party_settings: {  }
   field_timeline:
     type: paragraphs
     weight: 3
