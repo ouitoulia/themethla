@@ -51,8 +51,8 @@ dependencies:
   - bootstrap_italia:bootstrap_italia_paragraph_timeline
   - bootstrap_italia:bootstrap_italia_views_carousel
 
-# Information added by GitHub Action packaging script on 2024-01-26
-version: '2.19.0'
+# Information added by GitHub Action packaging script on 2024-01-28
+version: '2.20.0'
 project: 'Themethla'
-datestamp: 1706281299
-message: ' add field struttura esterna to ct evento'
+datestamp: 1706450128
+message: ' add servizio display'
