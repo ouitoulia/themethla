@@ -52,8 +52,8 @@ dependencies:
   - bootstrap_italia:bootstrap_italia_paragraph_timeline
   - bootstrap_italia:bootstrap_italia_views_carousel
 
-# Information added by GitHub Action packaging script on 2024-01-28
-version: '2.20.0'
+# Information added by GitHub Action packaging script on 2024-01-29
+version: '2.20.1'
 project: 'Themethla'
-datestamp: 1706450128
-message: ' add servizio display'
+datestamp: 1706529611
+message: ' fix paragraph edit mode'
