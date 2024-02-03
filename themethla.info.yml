@@ -21,6 +21,7 @@ dependencies:
   - drupal:telephone
   - drupal:text
   - drupal:views
+  - auto_entitylabel:auto_entitylabel
   - address:address
   - conditional_fields:conditional_fields
   - field_group:field_group

@@ -1,0 +1,40 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.piano_di_studi_item.field_materia
+    - field.field.paragraph.piano_di_studi_item.field_monte_ore
+    - field.field.paragraph.piano_di_studi_item.field_ore_settimanali
+    - paragraphs.paragraphs_type.piano_di_studi_item
+id: paragraph.piano_di_studi_item.default
+targetEntityType: paragraph
+bundle: piano_di_studi_item
+mode: default
+content:
+  field_materia:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_monte_ore:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_ore_settimanali:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

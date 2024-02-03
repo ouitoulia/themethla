@@ -1,0 +1,21 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cosa_e
+    - node.type.percorso_di_studio
+  module:
+    - text
+id: node.percorso_di_studio.field_cosa_e
+field_name: field_cosa_e
+entity_type: node
+bundle: percorso_di_studio
+label: "Cos'è"
+description: 'Indica il "Cos''è" rispetto all''indirizzo di studio che stai descrivendo. Manteni un linguaggio semplice e astratto (le informazioni più specifiche troveranno spazio in altri campi della pagina). Esempio di "Cos''è" rispetto all''indirizzo classico di un liceo: "La centralità dello studio delle lingue e delle culture classiche, coniugata oggi a una solida preparazione di stampo scientifico, rende il liceo classico una scuola unica nel vasto campo degli studi superiori. La solidità e la versatilità di questo corso di studi lo rendono una potentissima scuola di formazione che da decenni diploma alunni capaci di proseguire la loro carriera scolastica in tutte le più impegnative facoltà universitarie".'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

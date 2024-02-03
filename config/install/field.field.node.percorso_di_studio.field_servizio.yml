@@ -1,0 +1,24 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_servizio
+    - node.type.percorso_di_studio
+id: node.percorso_di_studio.field_servizio
+field_name: field_servizio
+entity_type: node
+bundle: percorso_di_studio
+label: 'Servizi correlati'
+description: 'Seleziona i servizi correlati e utili all''indirizzo di studio descritto. Ad esempio: se si sta descrivendo l''indirizzo di studio "Scientifico opzione scienze applicate", potrebbe essere utile inserire, come servizio correlato, il servizio "Iscrizione al liceo".'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: contenuti_ricerca_avanzata_campi
+      display_name: servizio
+      arguments: {  }
+field_type: entity_reference

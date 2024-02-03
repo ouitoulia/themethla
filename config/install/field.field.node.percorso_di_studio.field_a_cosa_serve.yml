@@ -1,0 +1,21 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_a_cosa_serve
+    - node.type.percorso_di_studio
+  module:
+    - text
+id: node.percorso_di_studio.field_a_cosa_serve
+field_name: field_a_cosa_serve
+entity_type: node
+bundle: percorso_di_studio
+label: 'A cosa serve'
+description: 'Questo campo deve illustrare "a cosa serve" frequentare l''indirizzo di studio descritto. Adottare uno stile semplice e astratto (esempio: "L''indirizzo agrario ti permette di acquisire delle competenze in ambito agrario che ti permetteranno di..."). Non confondere questo campo con il campo "Cosa serve" il quale  permette di costruire una lista di cose pratiche che servono per fruire del servizio.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

@@ -1,0 +1,96 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_piano_di_studio
+    - node.type.percorso_di_studio
+    - paragraphs.paragraphs_type.piano_di_studi
+  module:
+    - entity_reference_revisions
+id: node.percorso_di_studio.field_piano_di_studio
+field_name: field_piano_di_studio
+entity_type: node
+bundle: percorso_di_studio
+label: 'Programma di studio'
+description: "Inserisci il programma/piano di studio dell'indirizzo di studio descritto."
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      piano_di_studi: piano_di_studi
+    negate: 0
+    target_bundles_drag_drop:
+      accordion:
+        weight: 24
+        enabled: false
+      accordion_item:
+        weight: 25
+        enabled: false
+      attachments:
+        weight: 26
+        enabled: false
+      call_to_action:
+        weight: 28
+        enabled: false
+      callout:
+        weight: 27
+        enabled: false
+      carousel:
+        weight: 29
+        enabled: false
+      citation:
+        weight: 30
+        enabled: false
+      content:
+        weight: 31
+        enabled: false
+      gallery:
+        weight: 32
+        enabled: false
+      gallery_item:
+        weight: 33
+        enabled: false
+      hero:
+        weight: 34
+        enabled: false
+      map:
+        weight: 35
+        enabled: false
+      multimedia:
+        weight: 36
+        enabled: false
+      node_reference:
+        weight: 37
+        enabled: false
+      piano_di_studi:
+        weight: 38
+        enabled: true
+      piano_di_studi_item:
+        weight: 39
+        enabled: false
+      point_list:
+        weight: 40
+        enabled: false
+      point_list_item:
+        weight: 41
+        enabled: false
+      section:
+        weight: 42
+        enabled: false
+      settings:
+        weight: 43
+        enabled: false
+      slide:
+        weight: 44
+        enabled: false
+      timeline:
+        weight: 45
+        enabled: false
+      timeline_item:
+        weight: 46
+        enabled: false
+field_type: entity_reference_revisions

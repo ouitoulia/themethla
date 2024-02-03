@@ -1,0 +1,21 @@
+langcode: it
+status: true
+dependencies:
+  module:
+    - node
+id: tipo_contenuto_percorso_di_studio
+label: 'Tipo contenuto Percorso di studio'
+type: 'canonical_entities:node'
+pattern: 'servizi/indirizzi-di-studio/[node:field_grado_di_istruzione]/[node:field_percorso_di_studio:entity:parent]/[node:title]'
+selection_criteria:
+  e52ca3b1-c78b-469f-a718-675b68466eb9:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: e52ca3b1-c78b-469f-a718-675b68466eb9
+    context_mapping:
+      node: node
+    bundles:
+      percorso_di_studio: percorso_di_studio
+selection_logic: and
+weight: -5
+relationships: {  }

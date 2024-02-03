@@ -1,0 +1,41 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.piano_di_studi.field_kicker
+    - field.field.paragraph.piano_di_studi.field_piano_di_studi_item
+    - field.field.paragraph.piano_di_studi.field_text
+    - paragraphs.paragraphs_type.piano_di_studi
+  module:
+    - entity_reference_revisions
+    - text
+id: paragraph.piano_di_studi.default
+targetEntityType: paragraph
+bundle: piano_di_studi
+mode: default
+content:
+  field_kicker:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_piano_di_studi_item:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_text:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }

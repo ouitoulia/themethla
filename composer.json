@@ -19,6 +19,7 @@
   "prefer-stable": true,
   "require": {
     "drupal/core-recommended": ">=10",
+    "drupal/auto_entitylabel": "^3.0",
     "drupal/address": "^2",
     "drupal/conditional_fields": "^4.0@alpha",
     "drupal/field_group": "^3.4",

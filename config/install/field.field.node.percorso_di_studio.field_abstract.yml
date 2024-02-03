@@ -1,0 +1,18 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_abstract
+    - node.type.percorso_di_studio
+id: node.percorso_di_studio.field_abstract
+field_name: field_abstract
+entity_type: node
+bundle: percorso_di_studio
+label: 'Descrizione breve'
+description: "Sintetica descrizione dell'indirizzo di studio utilizzando un linguaggio semplice che possa aiutare qualsiasi utente a identificare con chiarezza l'indirizzo di studio. Non utilizzare un linguaggio ricco di riferimenti normativi. Questa breve descrizione potrebbe essere anche uno slogan. <strong>Si raccomanda di non superare i 160 caratteri spazi inclusi.</strong>"
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

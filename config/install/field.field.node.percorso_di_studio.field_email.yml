@@ -1,0 +1,18 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_email
+    - node.type.percorso_di_studio
+id: node.percorso_di_studio.field_email
+field_name: field_email
+entity_type: node
+bundle: percorso_di_studio
+label: 'Indirizzo email'
+description: "Inserisci uno o più email se l'indirizzo di studio ha una casella email dedicata."
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

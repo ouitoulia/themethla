@@ -1,0 +1,22 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_ore_settimanali
+    - paragraphs.paragraphs_type.piano_di_studi_item
+id: paragraph.piano_di_studi_item.field_ore_settimanali
+field_name: field_ore_settimanali
+entity_type: paragraph
+bundle: piano_di_studi_item
+label: 'Ore settimanali'
+description: 'Inserisci il numero di ore settimanali.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 1
+  max: null
+  prefix: ''
+  suffix: ' ore'
+field_type: integer

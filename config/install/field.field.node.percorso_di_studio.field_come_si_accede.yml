@@ -1,0 +1,21 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_come_si_accede
+    - node.type.percorso_di_studio
+  module:
+    - text
+id: node.percorso_di_studio.field_come_si_accede
+field_name: field_come_si_accede
+entity_type: node
+bundle: percorso_di_studio
+label: 'Come si fa'
+description: 'In questo campo vanno descritte le modalità per usufruire del servizio "indirizzo di studio". Il lettore deve essere informato su tutte le procedure necessarie per poter beneficiare del servizio descritto. SI ricorda che comunque, la scelta dell''indirizzo di studio andrà fatta al momento dell''iscrizione.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

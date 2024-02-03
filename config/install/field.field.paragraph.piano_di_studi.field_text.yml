@@ -1,0 +1,21 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text
+    - paragraphs.paragraphs_type.piano_di_studi
+  module:
+    - text
+id: paragraph.piano_di_studi.field_text
+field_name: field_text
+entity_type: paragraph
+bundle: piano_di_studi
+label: Note
+description: 'Usa questo campo per eventuali note.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

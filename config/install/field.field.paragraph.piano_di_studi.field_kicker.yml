@@ -1,0 +1,18 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_kicker
+    - paragraphs.paragraphs_type.piano_di_studi
+id: paragraph.piano_di_studi.field_kicker
+field_name: field_kicker
+entity_type: paragraph
+bundle: piano_di_studi
+label: Intestazione
+description: 'Inserisci eventualmente l''intestazione per questo periodo "1° semestre", "2° semestre", ecc. Se non inserisci nulla verrà usato un testo simile a "1° anno", "2° anno", ecc.  Nota che l''ordine dei periodi dipende dall''ordine dei paragrafi e non da ciò che viene scritto in questo campo.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
