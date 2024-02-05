@@ -3,11 +3,14 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.piano_di_studi.field_kicker
+    - field.field.paragraph.piano_di_studi.field_periodo
     - field.field.paragraph.piano_di_studi.field_piano_di_studi_item
     - field.field.paragraph.piano_di_studi.field_text
+    - field.field.paragraph.piano_di_studi.field_tipo_periodo
     - paragraphs.paragraphs_type.piano_di_studi
   module:
     - entity_reference_revisions
+    - options
     - text
 id: paragraph.piano_di_studi.default
 targetEntityType: paragraph
@@ -20,6 +23,15 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 2
+    region: content
+  field_periodo:
+    type: number_integer
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
     weight: 0
     region: content
   field_piano_di_studi_item:
@@ -29,13 +41,20 @@ content:
       view_mode: default
       link: ''
     third_party_settings: {  }
-    weight: 0
+    weight: 3
     region: content
   field_text:
     type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 2
+    weight: 4
+    region: content
+  field_tipo_periodo:
+    type: list_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
     region: content
 hidden: {  }

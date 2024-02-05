@@ -1,0 +1,22 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_tipo_periodo
+    - paragraphs.paragraphs_type.piano_di_studi
+  module:
+    - options
+id: paragraph.piano_di_studi.field_tipo_periodo
+field_name: field_tipo_periodo
+entity_type: paragraph
+bundle: piano_di_studi
+label: 'Tipo periodo'
+description: 'Seleziona il periodo.'
+required: true
+translatable: false
+default_value:
+  -
+    value: anno
+default_value_callback: ''
+settings: {  }
+field_type: list_string

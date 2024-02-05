@@ -3,8 +3,10 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.piano_di_studi.field_kicker
+    - field.field.paragraph.piano_di_studi.field_periodo
     - field.field.paragraph.piano_di_studi.field_piano_di_studi_item
     - field.field.paragraph.piano_di_studi.field_text
+    - field.field.paragraph.piano_di_studi.field_tipo_periodo
     - paragraphs.paragraphs_type.piano_di_studi
   module:
     - paragraphs
@@ -22,9 +24,16 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  field_periodo:
+    type: number
+    weight: 2
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
   field_piano_di_studi_item:
     type: paragraphs
-    weight: 1
+    weight: 3
     region: content
     settings:
       title: Paragraph
@@ -44,11 +53,17 @@ content:
     third_party_settings: {  }
   field_text:
     type: text_textarea
-    weight: 2
+    weight: 4
     region: content
     settings:
       rows: 5
       placeholder: ''
+    third_party_settings: {  }
+  field_tipo_periodo:
+    type: options_select
+    weight: 1
+    region: content
+    settings: {  }
     third_party_settings: {  }
 hidden:
   created: true

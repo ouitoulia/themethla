@@ -1,0 +1,191 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.percorso_di_studio.field_a_cosa_serve
+    - field.field.node.percorso_di_studio.field_abstract
+    - field.field.node.percorso_di_studio.field_casi_particolari
+    - field.field.node.percorso_di_studio.field_come_si_accede
+    - field.field.node.percorso_di_studio.field_copertina
+    - field.field.node.percorso_di_studio.field_cosa_e
+    - field.field.node.percorso_di_studio.field_cosa_serve
+    - field.field.node.percorso_di_studio.field_email
+    - field.field.node.percorso_di_studio.field_extra_info
+    - field.field.node.percorso_di_studio.field_grado_di_istruzione
+    - field.field.node.percorso_di_studio.field_percorso_di_studio
+    - field.field.node.percorso_di_studio.field_persona_responsabile
+    - field.field.node.percorso_di_studio.field_piano_di_studio
+    - field.field.node.percorso_di_studio.field_servizio
+    - field.field.node.percorso_di_studio.field_struttura_didattica
+    - field.field.node.percorso_di_studio.field_struttura_responsabile
+    - field.field.node.percorso_di_studio.field_telefono
+    - node.type.percorso_di_studio
+  module:
+    - entity_reference_revisions
+    - spamspan
+    - taxonomy
+    - telephone
+    - text
+    - user
+id: node.percorso_di_studio.full
+targetEntityType: node
+bundle: percorso_di_studio
+mode: full
+content:
+  field_a_cosa_serve:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_abstract:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_casi_particolari:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 14
+    region: content
+  field_come_si_accede:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_copertina:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_cosa_e:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_cosa_serve:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_email:
+    type: email_spamspan
+    label: inline
+    settings:
+      spamspan_at: ' (poi scrivi la chiocciola) '
+      spamspan_use_graphic: '1'
+      spamspan_dot_enable: '1'
+      spamspan_dot: ' (qua ci va un punto) '
+      spamspan_form_pattern: '<a href="%url?goto=%email">%displaytext</a>'
+      spamspan_form_default_url: contact
+      spamspan_form_default_displaytext: 'contact form'
+      spamspan_use_form: 0
+    third_party_settings: {  }
+    weight: 12
+    region: content
+  field_extra_info:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 15
+    region: content
+  field_grado_di_istruzione:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_percorso_di_studio:
+    type: entity_reference_rss_category
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 18
+    region: content
+  field_persona_responsabile:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: card
+      link: false
+    third_party_settings: {  }
+    weight: 11
+    region: content
+  field_piano_di_studio:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_servizio:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  field_struttura_didattica:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_struttura_responsabile:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  field_telefono:
+    type: telephone_link
+    label: inline
+    settings:
+      title: ''
+    third_party_settings: {  }
+    weight: 13
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 16
+    region: content
+  toc_js:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 17
+    region: content
+hidden:
+  langcode: true

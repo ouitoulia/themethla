@@ -1,0 +1,22 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_periodo
+    - paragraphs.paragraphs_type.piano_di_studi
+id: paragraph.piano_di_studi.field_periodo
+field_name: field_periodo
+entity_type: paragraph
+bundle: piano_di_studi
+label: Periodo
+description: 'Inserisci il periodo. Se il tipo di periodo selezionato è "<em>Anno</em>" e valorizzi questo campo con "<em>1</em>" stai inserendo il "<em>1° anno</em>" Nota: questo campo non viene usato per ordinare i periodi, l''ordine di visualizzazione dipende da come posizioni i paragrafi.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 1
+  max: 99
+  prefix: ''
+  suffix: °
+field_type: integer

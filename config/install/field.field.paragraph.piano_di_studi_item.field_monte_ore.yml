@@ -1,0 +1,22 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_monte_ore
+    - paragraphs.paragraphs_type.piano_di_studi_item
+id: paragraph.piano_di_studi_item.field_monte_ore
+field_name: field_monte_ore
+entity_type: paragraph
+bundle: piano_di_studi_item
+label: 'Monte ore'
+description: 'Inserisci il monte ore annuale.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ' ore'
+field_type: integer

@@ -13,7 +13,7 @@ mode: default
 content:
   field_materia:
     type: entity_reference_label
-    label: above
+    label: hidden
     settings:
       link: true
     third_party_settings: {  }
@@ -21,7 +21,7 @@ content:
     region: content
   field_monte_ore:
     type: number_integer
-    label: above
+    label: hidden
     settings:
       thousand_separator: ''
       prefix_suffix: true
@@ -30,7 +30,7 @@ content:
     region: content
   field_ore_settimanali:
     type: number_integer
-    label: above
+    label: hidden
     settings:
       thousand_separator: ''
       prefix_suffix: true
