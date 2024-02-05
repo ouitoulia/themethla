@@ -66,7 +66,6 @@ third_party_settings:
         required_fields: true
     group_frequentare:
       children:
-        - field_struttura_didattica
         - field_piano_di_studio
       label: Frequentare
       region: content
@@ -135,6 +134,7 @@ third_party_settings:
       children:
         - field_copertina
         - field_abstract
+        - field_struttura_didattica
       label: Apertura
       region: content
       parent_name: group_contenuto
@@ -304,7 +304,7 @@ content:
     third_party_settings: {  }
   field_struttura_didattica:
     type: entity_reference_autocomplete
-    weight: 28
+    weight: 9
     region: content
     settings:
       match_operator: CONTAINS
