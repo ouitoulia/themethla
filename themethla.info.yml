@@ -53,7 +53,7 @@ dependencies:
   - bootstrap_italia:bootstrap_italia_views_carousel
 
 # Information added by GitHub Action packaging script on 2024-02-05
-version: '2.21.2'
+version: '2.21.3'
 project: 'Themethla'
-datestamp: 1707130122
-message: ' fix piano di studio paragraph '
+datestamp: 1707130192
+message: ' fix piano di studio paragraph'
