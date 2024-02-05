@@ -1,0 +1,31 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.field.node.page.field_abstract
+    - field.field.node.page.field_copertina
+    - field.field.node.page.field_extra_info
+    - node.type.page
+  module:
+    - user
+id: node.page.default
+targetEntityType: node
+bundle: page
+mode: default
+content:
+  field_abstract:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_copertina: true
+  field_extra_info: true
+  langcode: true

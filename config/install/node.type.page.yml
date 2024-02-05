@@ -28,7 +28,7 @@ third_party_settings:
     sticky_offset: '104'
     sticky_stop: ''
     sticky_stop_padding: '0'
-name: 'Landing page'
+name: 'Pagina singola'
 type: page
 description: 'Tipo di contenuto generico. Utilizza questo tipo se devi costruire pagine generiche e che non hanno una struttura dati già definita.'
 help: ''
