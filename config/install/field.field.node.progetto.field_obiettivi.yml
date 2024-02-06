@@ -1,0 +1,21 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_obiettivi
+    - node.type.progetto
+  module:
+    - text
+id: node.progetto.field_obiettivi
+field_name: field_obiettivi
+entity_type: node
+bundle: progetto
+label: Obiettivi
+description: 'Utilizza questo campo per raccontare gli obbiettivi del progetto.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

@@ -1,0 +1,24 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_persona_responsabile
+    - node.type.progetto
+id: node.progetto.field_persona_responsabile
+field_name: field_persona_responsabile
+entity_type: node
+bundle: progetto
+label: 'Organizzato da'
+description: 'Seleziona gli autori e/o organizzatori del progetto.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: contenuti_ricerca_avanzata_campi
+      display_name: entity_reference_2
+      arguments: {  }
+field_type: entity_reference

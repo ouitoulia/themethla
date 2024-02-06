@@ -1,0 +1,24 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_servizio
+    - node.type.progetto
+id: node.progetto.field_servizio
+field_name: field_servizio
+entity_type: node
+bundle: progetto
+label: 'Servizi associati al progetto'
+description: 'Seleziona i servizi correlati e utili al progetto.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: contenuti_ricerca_avanzata_campi
+      display_name: servizio
+      arguments: {  }
+field_type: entity_reference

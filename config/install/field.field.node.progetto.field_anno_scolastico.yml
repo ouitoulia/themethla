@@ -1,0 +1,28 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_anno_scolastico
+    - node.type.progetto
+    - taxonomy.vocabulary.anni_scolastici
+id: node.progetto.field_anno_scolastico
+field_name: field_anno_scolastico
+entity_type: node
+bundle: progetto
+label: 'Anno scolastico'
+description: 'Indica l''anno scolastico di riferimento del progetto. Viene usato il vocabolario <a href="/admin/structure/taxonomy/manage/anni_scolastici/overview" title="Visualizza la lista dei termini" target="_blank">Anni scolastici</a>. Nel caso in cui non riesci ad inserire nuovi termini e/o a visualizzarli chiedi al responsabile del sito la modifica dei relativi permessi.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      anni_scolastici: anni_scolastici
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

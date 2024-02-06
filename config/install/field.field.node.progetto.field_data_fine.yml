@@ -1,0 +1,20 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_data_fine
+    - node.type.progetto
+  module:
+    - datetime
+id: node.progetto.field_data_fine
+field_name: field_data_fine
+entity_type: node
+bundle: progetto
+label: 'Data di fine'
+description: "Inserisci la data di fine del progetto. Se il progetto si svolge in un solo giorno (es: un'uscita didattica), inserisci l'ora di fine; altrimenti valorizza il campo dell'orario con <em>00:00:00</em>."
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

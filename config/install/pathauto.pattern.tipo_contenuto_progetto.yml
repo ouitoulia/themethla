@@ -1,0 +1,21 @@
+langcode: it
+status: true
+dependencies:
+  module:
+    - node
+id: tipo_contenuto_progetto
+label: 'Tipo contenuto Progetto'
+type: 'canonical_entities:node'
+pattern: 'didattica/i-progetti-delle-classi/[node:field_tipologia_progetto]/[node:title]'
+selection_criteria:
+  54a353fc-c4ba-4cda-ba93-ec37ee7e5a68:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 54a353fc-c4ba-4cda-ba93-ec37ee7e5a68
+    context_mapping:
+      node: node
+    bundles:
+      progetto: progetto
+selection_logic: and
+weight: -5
+relationships: {  }

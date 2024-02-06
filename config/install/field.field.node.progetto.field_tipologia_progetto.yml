@@ -1,0 +1,28 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tipologia_progetto
+    - node.type.progetto
+    - taxonomy.vocabulary.tipologia_progetti
+id: node.progetto.field_tipologia_progetto
+field_name: field_tipologia_progetto
+entity_type: node
+bundle: progetto
+label: 'Tipologia del progetto'
+description: 'Indica il tipo di progetto che si sta descrivendo. Viene usato il vocabolario <a href="/admin/structure/taxonomy/manage/tipologia_progetti/overview" title="Visualizza la lista dei termini" target="_blank">Tipologia progetti</a>. Nel caso in cui non riesci ad inserire nuovi termini e/o a visualizzarli chiedi al responsabile del sito la modifica dei relativi permessi.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tipologia_progetti: tipologia_progetti
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

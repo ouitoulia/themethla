@@ -1,0 +1,28 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_stato_progetto
+    - node.type.progetto
+    - taxonomy.vocabulary.stato_progetti
+id: node.progetto.field_stato_progetto
+field_name: field_stato_progetto
+entity_type: node
+bundle: progetto
+label: 'Stato del progetto'
+description: 'Seleziona lo stato del progetto.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      stato_progetti: stato_progetti
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

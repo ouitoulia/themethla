@@ -1,0 +1,100 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_extra_info
+    - node.type.progetto
+    - paragraphs.paragraphs_type.carousel
+    - paragraphs.paragraphs_type.gallery
+    - paragraphs.paragraphs_type.hero
+  module:
+    - entity_reference_revisions
+id: node.progetto.field_extra_info
+field_name: field_extra_info
+entity_type: node
+bundle: progetto
+label: 'Galleria multimediale'
+description: 'Opzionalmente puoi includere nel corpo del progetto una galleria di immagini e/o una serie di video e/o audio.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      carousel: carousel
+      gallery: gallery
+      hero: hero
+    negate: 0
+    target_bundles_drag_drop:
+      accordion:
+        weight: -42
+        enabled: false
+      accordion_item:
+        weight: -31
+        enabled: false
+      attachments:
+        weight: -43
+        enabled: false
+      call_to_action:
+        weight: -41
+        enabled: false
+      callout:
+        weight: -40
+        enabled: false
+      carousel:
+        weight: -47
+        enabled: true
+      citation:
+        weight: -39
+        enabled: false
+      content:
+        weight: -44
+        enabled: false
+      gallery:
+        weight: -46
+        enabled: true
+      gallery_item:
+        weight: -30
+        enabled: false
+      hero:
+        weight: -45
+        enabled: true
+      map:
+        weight: -37
+        enabled: false
+      multimedia:
+        weight: -38
+        enabled: false
+      node_reference:
+        weight: -33
+        enabled: false
+      piano_di_studi:
+        weight: -27
+        enabled: false
+      piano_di_studi_item:
+        weight: -26
+        enabled: false
+      point_list:
+        weight: -35
+        enabled: false
+      point_list_item:
+        weight: -25
+        enabled: false
+      section:
+        weight: -36
+        enabled: false
+      settings:
+        weight: -32
+        enabled: false
+      slide:
+        weight: -29
+        enabled: false
+      timeline:
+        weight: -34
+        enabled: false
+      timeline_item:
+        weight: -28
+        enabled: false
+field_type: entity_reference_revisions

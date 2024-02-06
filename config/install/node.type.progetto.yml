@@ -1,0 +1,37 @@
+langcode: it
+status: true
+dependencies:
+  module:
+    - menu_ui
+    - toc_js
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+  toc_js:
+    toc_js_active: 1
+    title: 'Indice del progetto'
+    selectors: h2
+    selectors_minimum: '0'
+    container: .node
+    prefix: toc
+    list_type: ul
+    classes: ''
+    back_to_top: 0
+    back_to_top_label: 'Back to top'
+    smooth_scrolling: 1
+    scroll_to_offset: '0'
+    highlight_on_scroll: 1
+    highlight_offset: '100'
+    sticky: 1
+    sticky_offset: '104'
+    sticky_stop: .sticky-toc-stop
+    sticky_stop_padding: '0'
+name: Progetto
+type: progetto
+description: "La scheda serve a raccontare i risultati di un'attività svolta insieme agli studenti all'interno della scuola o nell'ambito di una uscita didattica, nell'ambito della didattica tradizionale o di attività ad essa complementari."
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false
