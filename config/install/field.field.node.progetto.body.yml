@@ -10,7 +10,7 @@ id: node.progetto.body
 field_name: body
 entity_type: node
 bundle: progetto
-label: 'Descrizione estesa'
+label: 'Descrizione del progetto'
 description: 'Descrivi in maniera esaustiva il progetto.'
 required: false
 translatable: true
