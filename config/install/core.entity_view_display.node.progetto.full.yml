@@ -1,0 +1,187 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.progetto.body
+    - field.field.node.progetto.field_abstract
+    - field.field.node.progetto.field_anno_scolastico
+    - field.field.node.progetto.field_argomenti
+    - field.field.node.progetto.field_collaborazioni
+    - field.field.node.progetto.field_competenze
+    - field.field.node.progetto.field_copertina
+    - field.field.node.progetto.field_data_fine
+    - field.field.node.progetto.field_data_inizio
+    - field.field.node.progetto.field_extra_info
+    - field.field.node.progetto.field_luoghi
+    - field.field.node.progetto.field_obiettivi
+    - field.field.node.progetto.field_persona_responsabile
+    - field.field.node.progetto.field_risultati
+    - field.field.node.progetto.field_servizio
+    - field.field.node.progetto.field_stato_progetto
+    - field.field.node.progetto.field_tipologia_progetto
+    - node.type.progetto
+  module:
+    - datetime
+    - entity_reference_revisions
+    - text
+    - user
+id: node.progetto.full
+targetEntityType: node
+bundle: progetto
+mode: full
+content:
+  body:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_abstract:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_anno_scolastico:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_argomenti:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_collaborazioni:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings: {  }
+    weight: 14
+    region: content
+  field_competenze:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 11
+    region: content
+  field_copertina:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_data_fine:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: bootstrap_italia_medium
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_data_inizio:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: bootstrap_italia_medium
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_extra_info:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  field_luoghi:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: card_big
+      link: false
+    third_party_settings: {  }
+    weight: 12
+    region: content
+  field_obiettivi:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  field_persona_responsabile:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: card
+      link: false
+    third_party_settings: {  }
+    weight: 13
+    region: content
+  field_risultati:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 15
+    region: content
+  field_servizio:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings: {  }
+    weight: 16
+    region: content
+  field_stato_progetto:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_tipologia_progetto:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 17
+    region: content
+  toc_js:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 18
+    region: content
+hidden:
+  langcode: true
