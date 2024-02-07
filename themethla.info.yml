@@ -53,7 +53,7 @@ dependencies:
   - bootstrap_italia:bootstrap_italia_views_carousel
 
 # Information added by GitHub Action packaging script on 2024-02-07
-version: '2.23.4'
+version: '2.24.4'
 project: 'Themethla'
-datestamp: 1707300440
-message: ' fix version'
+datestamp: 1707322429
+message: ' add scheda didattica CT'
