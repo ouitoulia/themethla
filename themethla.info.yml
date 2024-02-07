@@ -53,7 +53,7 @@ dependencies:
   - bootstrap_italia:bootstrap_italia_views_carousel
 
 # Information added by GitHub Action packaging script on 2024-02-07
-version: '2.23.1'
+version: '2.23.2'
 project: 'Themethla'
-datestamp: 1707289933
-message: ' fix progetto entity form'
+datestamp: 1707298784
+message: ' fix field label'
