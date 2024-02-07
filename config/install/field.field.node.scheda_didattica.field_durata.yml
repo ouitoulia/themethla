@@ -1,0 +1,21 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_durata
+    - node.type.scheda_didattica
+  module:
+    - duration_field
+id: node.scheda_didattica.field_durata
+field_name: field_durata
+entity_type: node
+bundle: scheda_didattica
+label: 'Tempo di apprendimento'
+description: "Opzionalmente definisci il tempo necessario a studiare l'argomento e/o a svolgere le attività previste."
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  granularity: 'm:d:h:i'
+field_type: duration

@@ -1,0 +1,21 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_obiettivi
+    - node.type.scheda_didattica
+  module:
+    - text
+id: node.scheda_didattica.field_obiettivi
+field_name: field_obiettivi
+entity_type: node
+bundle: scheda_didattica
+label: Obiettivi
+description: 'Utilizza questo campo per raccontare gli obbiettivi della scheda didattica.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long
