@@ -52,8 +52,8 @@ dependencies:
   - bootstrap_italia:bootstrap_italia_paragraph_timeline
   - bootstrap_italia:bootstrap_italia_views_carousel
 
-# Information added by GitHub Action packaging script on 2024-02-07
-version: '2.24.4'
+# Information added by GitHub Action packaging script on 2024-02-09
+version: '2.24.5'
 project: 'Themethla'
-datestamp: 1707322429
-message: ' add scheda didattica CT'
+datestamp: 1707485765
+message: ' fix scheda didattica'
