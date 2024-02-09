@@ -41,7 +41,7 @@ third_party_settings:
       label: Persona
       region: content
       parent_name: ''
-      weight: 1
+      weight: 3
       format_type: tabs
       format_settings:
         classes: ''
@@ -52,8 +52,6 @@ third_party_settings:
     group_biografia:
       children:
         - field_ritratto
-        - field_nome
-        - field_cognome
         - field_abstract
         - field_extra_info
       label: Biografia
@@ -128,7 +126,7 @@ mode: default
 content:
   created:
     type: datetime_timestamp
-    weight: 18
+    weight: 8
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -150,7 +148,7 @@ content:
     third_party_settings: {  }
   field_cognome:
     type: string_textfield
-    weight: 11
+    weight: 2
     region: content
     settings:
       size: 60
@@ -209,11 +207,11 @@ content:
       match_operator: CONTAINS
       match_limit: 10
       size: 60
-      placeholder: ''
+      placeholder: 'Scrivi il nome della materia o il codice per cercare'
     third_party_settings: {  }
   field_nome:
     type: string_textfield
-    weight: 10
+    weight: 1
     region: content
     settings:
       size: 60
@@ -269,34 +267,34 @@ content:
     third_party_settings: {  }
   langcode:
     type: language_select
-    weight: 19
+    weight: 9
     region: content
     settings:
       include_locked: true
     third_party_settings: {  }
   path:
     type: path
-    weight: 16
+    weight: 6
     region: content
     settings: {  }
     third_party_settings: {  }
   promote:
     type: boolean_checkbox
-    weight: 14
+    weight: 5
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 20
+    weight: 10
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
-    weight: 13
+    weight: 4
     region: content
     settings:
       display_label: true
@@ -311,7 +309,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 17
+    weight: 7
     region: content
     settings:
       match_operator: CONTAINS

@@ -1,0 +1,21 @@
+langcode: it
+status: true
+dependencies:
+  module:
+    - node
+id: tipo_di_contenuto_scheda_didattica
+label: 'Tipo di contenuto Scheda didattica'
+type: 'canonical_entities:node'
+pattern: 'didattica/le-schede-didattiche/[node:field_grado_di_istruzione]/[node:title]'
+selection_criteria:
+  27a5e686-d9c6-47b6-b517-9258543de33d:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 27a5e686-d9c6-47b6-b517-9258543de33d
+    context_mapping:
+      node: node
+    bundles:
+      scheda_didattica: scheda_didattica
+selection_logic: and
+weight: -5
+relationships: {  }

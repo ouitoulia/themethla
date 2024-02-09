@@ -11,7 +11,7 @@ field_name: field_durata
 entity_type: node
 bundle: scheda_didattica
 label: 'Tempo di apprendimento'
-description: "Opzionalmente definisci il tempo necessario a studiare l'argomento e/o a svolgere le attività previste."
+description: "Opzionalmente definisci il tempo necessario per studiare l'argomento e/o a svolgere le attività. Esempi:\r\n<ul>\r\n<li>se hai la necessità di inserire un'ora e mezza, puoi valorizzare <em>1 ore</em> e <em>30 minuti</em>, oppure <em>90 minuti</em>; </li>\r\n<li>se hai la necessità di inserire 1 mese e mezzo puoi valorizzare <em>1 mesi</em> e <em>15 giorni</em> oppure <em>45 giorni</em>;</li>\r\n</ul>\r\n<strong>Nota che</strong> i campi che lasci con <em>0</em> non verranno visualizzati; inoltre, <strong>nota</strong> che di consuetudine si tende a convertire tutto in ore, in rari casi si usano giorni o mesi."
 required: false
 translatable: false
 default_value: {  }
