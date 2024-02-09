@@ -1,0 +1,49 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.scheda_didattica.body
+    - field.field.node.scheda_didattica.field_abstract
+    - field.field.node.scheda_didattica.field_argomenti
+    - field.field.node.scheda_didattica.field_competenze
+    - field.field.node.scheda_didattica.field_copertina
+    - field.field.node.scheda_didattica.field_durata
+    - field.field.node.scheda_didattica.field_extra_info
+    - field.field.node.scheda_didattica.field_grado_di_istruzione
+    - field.field.node.scheda_didattica.field_materie
+    - field.field.node.scheda_didattica.field_obiettivi
+    - field.field.node.scheda_didattica.field_persona_responsabile
+    - node.type.scheda_didattica
+  module:
+    - user
+id: node.scheda_didattica.teaser
+targetEntityType: node
+bundle: scheda_didattica
+mode: teaser
+content:
+  field_abstract:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  body: true
+  field_argomenti: true
+  field_competenze: true
+  field_copertina: true
+  field_durata: true
+  field_extra_info: true
+  field_grado_di_istruzione: true
+  field_materie: true
+  field_obiettivi: true
+  field_persona_responsabile: true
+  langcode: true
+  toc_js: true

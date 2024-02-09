@@ -1,0 +1,128 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.scheda_didattica.body
+    - field.field.node.scheda_didattica.field_abstract
+    - field.field.node.scheda_didattica.field_argomenti
+    - field.field.node.scheda_didattica.field_competenze
+    - field.field.node.scheda_didattica.field_copertina
+    - field.field.node.scheda_didattica.field_durata
+    - field.field.node.scheda_didattica.field_extra_info
+    - field.field.node.scheda_didattica.field_grado_di_istruzione
+    - field.field.node.scheda_didattica.field_materie
+    - field.field.node.scheda_didattica.field_obiettivi
+    - field.field.node.scheda_didattica.field_persona_responsabile
+    - node.type.scheda_didattica
+  module:
+    - duration_field
+    - entity_reference_revisions
+    - text
+    - user
+id: node.scheda_didattica.full
+targetEntityType: node
+bundle: scheda_didattica
+mode: full
+content:
+  body:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  field_abstract:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_argomenti:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_competenze:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_copertina:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_durata:
+    type: duration_human_display
+    label: above
+    settings:
+      text_length: full
+      separator: space
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_extra_info:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  field_grado_di_istruzione:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_materie:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_obiettivi:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_persona_responsabile:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 11
+    region: content
+  toc_js:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 12
+    region: content
+hidden:
+  langcode: true
