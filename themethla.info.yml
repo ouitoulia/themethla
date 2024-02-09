@@ -55,6 +55,6 @@ dependencies:
 
 # Information added by GitHub Action packaging script on 2024-02-09
 version: '2.24.6'
-project: 'Themethla'
+project: 'Themethla '
 datestamp: 1707486253
 message: ' fix deps'
