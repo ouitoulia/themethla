@@ -9,7 +9,7 @@ field_name: field_struttura_didattica
 entity_type: node
 bundle: percorso_di_studio
 label: 'Struttura didattica'
-description: 'Indica la/le struttura/e organizzativa/e che eroga/erogano l''indirizzo di studio. Sarà possibile selezionare esclusivamente strutture organizzative di tipo "Scuola/Istituto", se ancora non hai inserito nessuna o non trovi quella che ti interessa <a href="/node/add/struttura_organizzativa" title="Aggiungi struttura organizzativa" target="_blank">aggiungila</a>'
+description: 'Indica la struttura organizzativa che eroga l''indirizzo di studio. Sarà possibile selezionare esclusivamente strutture organizzative di tipo "Scuola/Istituto", se ancora non hai inserito nessuna o non trovi quella che ti interessa <a href="/node/add/struttura_organizzativa" title="Aggiungi struttura organizzativa" target="_blank">aggiungila</a>'
 required: true
 translatable: false
 default_value: {  }
