@@ -8,10 +8,10 @@ label: 'Tipo contenuto Percorso di studio'
 type: 'canonical_entities:node'
 pattern: 'servizi/indirizzi-di-studio/[node:field_grado_di_istruzione]/[node:field_struttura_didattica]/[node:title]'
 selection_criteria:
-  8111eb1c-a5e8-4493-8451-5f9a5c8bcad8:
+  b8c16c76-6dfb-4bf2-9bdd-4bd5f0b99fb1:
     id: 'entity_bundle:node'
     negate: false
-    uuid: 8111eb1c-a5e8-4493-8451-5f9a5c8bcad8
+    uuid: b8c16c76-6dfb-4bf2-9bdd-4bd5f0b99fb1
     context_mapping:
       node: node
     bundles:
