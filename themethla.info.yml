@@ -54,7 +54,7 @@ dependencies:
   - bootstrap_italia:bootstrap_italia_views_carousel
 
 # Information added by GitHub Action packaging script on 2024-02-10
-version: '2.25.1'
+version: '2.25.2'
 project: 'Themethla'
-datestamp: 1707547556
+datestamp: 1707573340
 message: ' fix bug percorsi di studio'
