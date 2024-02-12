@@ -23,6 +23,7 @@
     "drupal/address": "^2",
     "drupal/conditional_fields": "^4.0@alpha",
     "drupal/duration_field": "^2.1",
+    "drupal/easy_breadcrumb": "^2.0",
     "drupal/field_group": "^3.4",
     "drupal/focal_point": ">=2",
     "drupal/geofield": "^1.57",
