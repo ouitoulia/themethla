@@ -4,8 +4,8 @@ dependencies:
   module:
     - node
     - taxonomy
-id: node.field_percorso_di_studio
-field_name: field_percorso_di_studio
+id: node.field_indirizzo_di_studio
+field_name: field_indirizzo_di_studio
 entity_type: node
 type: entity_reference
 settings:

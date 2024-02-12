@@ -12,7 +12,7 @@ dependencies:
     - field.field.node.percorso_di_studio.field_email
     - field.field.node.percorso_di_studio.field_extra_info
     - field.field.node.percorso_di_studio.field_grado_di_istruzione
-    - field.field.node.percorso_di_studio.field_percorso_di_studio
+    - field.field.node.percorso_di_studio.field_indirizzo_di_studio
     - field.field.node.percorso_di_studio.field_persona_responsabile
     - field.field.node.percorso_di_studio.field_piano_di_studio
     - field.field.node.percorso_di_studio.field_servizio
@@ -252,7 +252,7 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  field_percorso_di_studio:
+  field_indirizzo_di_studio:
     type: entity_reference_autocomplete
     weight: 1
     region: content

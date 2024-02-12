@@ -4,7 +4,7 @@ dependencies:
   config:
     - field.storage.taxonomy_term.field_miur_class_id
     - taxonomy.vocabulary.materie
-    - taxonomy.vocabulary.percorsi_di_studio
+    - taxonomy.vocabulary.indirizzi_di_studio
   module:
     - taxonomy
     - user
@@ -384,7 +384,7 @@ display:
           plugin_id: bundle
           operator: in
           value:
-            percorsi_di_studio: percorsi_di_studio
+            indirizzi_di_studio: indirizzi_di_studio
           group: 1
           exposed: false
           expose:
@@ -480,7 +480,7 @@ display:
         fields: false
         filters: false
         filter_groups: false
-      display_description: 'Campo di ricerca dei percorsi di studio (solo il grado di istruzione) da utilizzare per associare questi termini di tassonomia.'
+      display_description: 'Campo di ricerca degli indirizzi di studio (solo il grado di istruzione) da utilizzare per associare questi termini di tassonomia.'
       display_extenders: {  }
     cache_metadata:
       max-age: -1
@@ -760,9 +760,9 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.taxonomy_term.field_miur_class_id'
-  percorso_di_studio:
-    id: percorso_di_studio
-    display_title: 'Percorso di studio'
+  indirizzo_di_studio:
+    id: indirizzo_di_studio
+    display_title: 'Indirizzo di studio'
     display_plugin: entity_reference
     position: 2
     display_options:
@@ -922,7 +922,7 @@ display:
           plugin_id: bundle
           operator: in
           value:
-            percorsi_di_studio: percorsi_di_studio
+            indirizzi_di_studio: indirizzi_di_studio
           group: 1
           exposed: false
           expose:
@@ -1018,7 +1018,7 @@ display:
         fields: false
         filters: false
         filter_groups: false
-      display_description: 'Campo di ricerca dei percorsi di studio (senza il grado di istruzione) da utilizzare per associare questi termini di tassonomia.'
+      display_description: 'Campo di ricerca degli indirizzi di studio (senza il grado di istruzione) da utilizzare per associare questi termini di tassonomia.'
       display_extenders: {  }
     cache_metadata:
       max-age: -1

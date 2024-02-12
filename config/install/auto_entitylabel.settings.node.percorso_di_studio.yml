@@ -1,5 +1,5 @@
 status: 1
-pattern: '[node:field_percorso_di_studio]'
+pattern: '[node:field_indirizzo_di_studio]'
 escape: false
 preserve_titles: false
 save: false

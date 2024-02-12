@@ -1,0 +1,24 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_indirizzo_di_studio
+    - node.type.percorso_di_studio
+id: node.percorso_di_studio.field_indirizzo_di_studio
+field_name: field_indirizzo_di_studio
+entity_type: node
+bundle: percorso_di_studio
+label: "Titolo dell'indirizzo di studio"
+description: 'Seleziona il tipo di indirizzo di studio da associare a questo percorso. Viene usato il vocabolario <a href="/admin/structure/taxonomy/manage/indirizzi_di_studio/overview" title="Visualizza la lista dei termini" target="_blank">Indirizzi di studio</a>. Nel caso in cui non riesci ad inserire nuovi termini e/o a visualizzarli chiedi al responsabile del sito la modifica dei relativi permessi.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: tassonomia_ricerca_avanzata_campi
+      display_name: indirizzo_di_studio
+      arguments: {  }
+field_type: entity_reference
