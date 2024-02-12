@@ -56,7 +56,7 @@ dependencies:
   - bootstrap_italia:bootstrap_italia_views_carousel
 
 # Information added by GitHub Action packaging script on 2024-02-12
-version: '2.25.4'
+version: '2.25.4 '
 project: 'Themethla'
 datestamp: 1707728783
 message: ' fix deps'
