@@ -56,7 +56,7 @@ dependencies:
   - bootstrap_italia_text_editor2:bootstrap_italia_text_editor2
 
 # Information added by GitHub Action packaging script on 2024-02-12
-version: '3.0.0'
+version: '3.0.1'
 project: 'Themethla'
-datestamp: 1707772844
-message: ' fix vocabulary indirizzi_di_studio name'
+datestamp: 1707773495
+message: ' fix deps'
