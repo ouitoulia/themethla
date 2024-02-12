@@ -25,7 +25,6 @@ dependencies:
   - address:address
   - conditional_fields:conditional_fields
   - duration_field:duration_field
-  - easy_breadcrumb:easy_breadcrumb
   - field_group:field_group
   - focal_point:focal_point
   - geofield:geofield
@@ -54,6 +53,7 @@ dependencies:
   - bootstrap_italia:bootstrap_italia_paragraph_section
   - bootstrap_italia:bootstrap_italia_paragraph_timeline
   - bootstrap_italia:bootstrap_italia_views_carousel
+  - bootstrap_italia_text_editor2:bootstrap_italia_text_editor2
 
 # Information added by GitHub Action packaging script on 2024-02-12
 version: '2.25.6'
