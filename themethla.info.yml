@@ -53,8 +53,8 @@ dependencies:
   - bootstrap_italia:bootstrap_italia_paragraph_timeline
   - bootstrap_italia:bootstrap_italia_views_carousel
 
-# Information added by GitHub Action packaging script on 2024-02-10
-version: '2.25.2'
+# Information added by GitHub Action packaging script on 2024-02-12
+version: '2.25.3'
 project: 'Themethla'
-datestamp: 1707573340
+datestamp: 1707719891
 message: ' fix bug percorsi di studio'
