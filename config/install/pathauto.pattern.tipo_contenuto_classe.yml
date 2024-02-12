@@ -1,0 +1,21 @@
+langcode: it
+status: true
+dependencies:
+  module:
+    - node
+id: tipo_contenuto_classe
+label: 'Tipo di contenuto: Classe'
+type: 'canonical_entities:node'
+pattern: 'strutture/scuola/[node:field_struttura_didattica]/percorso-di-studi/[node:field_anno_scolastico]/[node:title]'
+selection_criteria:
+  9c630d47-3a1b-4e9d-9958-927d1412d7d2:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 9c630d47-3a1b-4e9d-9958-927d1412d7d2
+    context_mapping:
+      node: node
+    bundles:
+      classe: classe
+selection_logic: and
+weight: -5
+relationships: {  }

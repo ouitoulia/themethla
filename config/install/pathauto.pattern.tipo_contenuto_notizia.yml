@@ -4,7 +4,7 @@ dependencies:
   module:
     - node
 id: tipo_contenuto_notizia
-label: 'Tipo contenuto notizia'
+label: 'Tipo contenuto: Notizia'
 type: 'canonical_entities:node'
 pattern: 'novita/le-notizie/[node:title]'
 selection_criteria:

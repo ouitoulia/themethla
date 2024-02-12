@@ -1,0 +1,37 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.field.node.classe.field_anno_scolastico
+    - field.field.node.classe.field_annualita_classe
+    - field.field.node.classe.field_extra_info
+    - field.field.node.classe.field_persona_responsabile
+    - field.field.node.classe.field_persone
+    - field.field.node.classe.field_rappresentanti_genitori
+    - field.field.node.classe.field_rappresentati_alunni
+    - field.field.node.classe.field_sezione
+    - field.field.node.classe.field_struttura_didattica
+    - node.type.classe
+  module:
+    - user
+id: node.classe.default
+targetEntityType: node
+bundle: classe
+mode: default
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_anno_scolastico: true
+  field_annualita_classe: true
+  field_extra_info: true
+  field_persona_responsabile: true
+  field_persone: true
+  field_rappresentanti_genitori: true
+  field_rappresentati_alunni: true
+  field_sezione: true
+  field_struttura_didattica: true
+  langcode: true

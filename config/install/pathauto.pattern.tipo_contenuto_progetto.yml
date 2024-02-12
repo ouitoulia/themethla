@@ -4,7 +4,7 @@ dependencies:
   module:
     - node
 id: tipo_contenuto_progetto
-label: 'Tipo contenuto Progetto'
+label: 'Tipo contenuto: Progetto'
 type: 'canonical_entities:node'
 pattern: 'didattica/i-progetti-delle-classi/[node:field_tipologia_progetto]/[node:title]'
 selection_criteria:

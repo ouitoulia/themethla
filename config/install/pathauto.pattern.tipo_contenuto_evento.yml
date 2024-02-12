@@ -4,7 +4,7 @@ dependencies:
   module:
     - node
 id: tipo_contenuto_evento
-label: 'Tipo contenuto evento'
+label: 'Tipo di contenuto: Evento'
 type: 'canonical_entities:node'
 pattern: 'novita/calendario-eventi/[node:field_tipologia_evento]/[node:title]'
 selection_criteria:

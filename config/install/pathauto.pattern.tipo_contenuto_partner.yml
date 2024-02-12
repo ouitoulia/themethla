@@ -4,7 +4,7 @@ dependencies:
   module:
     - node
 id: tipo_contenuto_partner
-label: 'Tipo contenuto Partner'
+label: 'Tipo contenuto: Partner'
 type: 'canonical_entities:node'
 pattern: 'scuola/partner/[node:title]'
 selection_criteria:

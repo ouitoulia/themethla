@@ -4,7 +4,7 @@ dependencies:
   module:
     - node
 id: tipo_contenuto_struttura_organizzativa
-label: 'Tipo contenuto Struttura organizzativa'
+label: 'Tipo contenuto: Struttura organizzativa'
 type: 'canonical_entities:node'
 pattern: 'scuola/organizzazione/[node:field_tipologia_struttura]/[node:title]'
 selection_criteria:

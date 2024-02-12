@@ -4,7 +4,7 @@ dependencies:
   module:
     - node
 id: tipo_contenuto_servizio
-label: 'Tipo contenuto Servizio'
+label: 'Tipo contenuto: Servizio'
 type: 'canonical_entities:node'
 pattern: 'servizi/[node:field_tipologia_servizio]/[node:title]'
 selection_criteria:

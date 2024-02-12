@@ -4,7 +4,7 @@ dependencies:
   module:
     - node
 id: tipo_contenuto_persona
-label: 'Tipo contenuto Persona'
+label: 'Tipo contenuto: Persona'
 type: 'canonical_entities:node'
 pattern: 'scuola/le-persone/[node:field_ruolo_persona]/[node:title]'
 selection_criteria:

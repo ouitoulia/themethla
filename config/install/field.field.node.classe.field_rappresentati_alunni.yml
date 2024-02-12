@@ -1,0 +1,18 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_rappresentati_alunni
+    - node.type.classe
+id: node.classe.field_rappresentati_alunni
+field_name: field_rappresentati_alunni
+entity_type: node
+bundle: classe
+label: 'Rappresentati degli alunni'
+description: 'Opzionalmente inserisci i rappresentati degli alunni.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

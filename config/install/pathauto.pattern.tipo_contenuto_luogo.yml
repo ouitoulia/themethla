@@ -4,7 +4,7 @@ dependencies:
   module:
     - node
 id: tipo_contenuto_luogo
-label: 'Tipo contenuto Luogo'
+label: 'Tipo contenuto: Luogo'
 type: 'canonical_entities:node'
 pattern: 'scuola/i-luoghi/[node:field_tipologia_luogo]/[node:title]'
 selection_criteria:

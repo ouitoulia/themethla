@@ -1,0 +1,22 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_annualita_classe
+    - node.type.classe
+id: node.classe.field_annualita_classe
+field_name: field_annualita_classe
+entity_type: node
+bundle: classe
+label: Anno
+description: "Inserisci l'anno della classe, questa informazione andrà a comporre il nome della classe."
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 1
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

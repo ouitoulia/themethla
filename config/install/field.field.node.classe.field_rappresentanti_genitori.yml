@@ -1,0 +1,18 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_rappresentanti_genitori
+    - node.type.classe
+id: node.classe.field_rappresentanti_genitori
+field_name: field_rappresentanti_genitori
+entity_type: node
+bundle: classe
+label: 'Rappresentanti dei genitori'
+description: 'Opzionalmente inserisci i rappresentati dei genitori, uno per linea.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

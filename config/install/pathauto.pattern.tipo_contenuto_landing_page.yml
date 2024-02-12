@@ -4,7 +4,7 @@ dependencies:
   module:
     - node
 id: tipo_contenuto_landing_page
-label: 'Tipo contenuto Landing page'
+label: 'Tipo contenuto: Pagina singola'
 type: 'canonical_entities:node'
 pattern: 'pagine/[node:title]'
 selection_criteria:

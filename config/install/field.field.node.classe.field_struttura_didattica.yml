@@ -1,0 +1,24 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_struttura_didattica
+    - node.type.classe
+id: node.classe.field_struttura_didattica
+field_name: field_struttura_didattica
+entity_type: node
+bundle: classe
+label: 'Nome della scuola'
+description: 'Indica la struttura organizzativa a cui appartiene la classe. Sarà possibile selezionare esclusivamente strutture organizzative di tipo "Scuola/Istituto", se ancora non hai inserito nessuna o non trovi quella che ti interessa <a href="/node/add/struttura_organizzativa" title="Aggiungi struttura organizzativa" target="_blank">aggiungila</a>'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: contenuti_ricerca_avanzata_campi
+      display_name: struttura_didattica
+      arguments: {  }
+field_type: entity_reference

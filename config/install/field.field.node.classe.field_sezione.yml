@@ -1,0 +1,18 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sezione
+    - node.type.classe
+id: node.classe.field_sezione
+field_name: field_sezione
+entity_type: node
+bundle: classe
+label: Sezione
+description: 'Inserisci il nome della sezione, questa informazione andrà a comporre il nome della classe.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
