@@ -6,12 +6,12 @@ dependencies:
 id: tipo_contenuto_classe
 label: 'Tipo di contenuto: Classe'
 type: 'canonical_entities:node'
-pattern: 'strutture/scuola/[node:field_struttura_didattica]/percorso-di-studi/[node:field_anno_scolastico]/[node:title]'
+pattern: 'strutture/scuola/[node:field_struttura_didattica]/[node:field_percorso_di_studio]/[node:field_anno_scolastico]/[node:field_annualita_classe][node:field_sezione]'
 selection_criteria:
-  9c630d47-3a1b-4e9d-9958-927d1412d7d2:
+  84be7dd5-2f49-46de-875b-e5e9f2619717:
     id: 'entity_bundle:node'
     negate: false
-    uuid: 9c630d47-3a1b-4e9d-9958-927d1412d7d2
+    uuid: 84be7dd5-2f49-46de-875b-e5e9f2619717
     context_mapping:
       node: node
     bundles:

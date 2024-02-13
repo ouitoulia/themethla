@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.classe.field_anno_scolastico
     - field.field.node.classe.field_annualita_classe
     - field.field.node.classe.field_extra_info
+    - field.field.node.classe.field_percorso_di_studio
     - field.field.node.classe.field_persona_responsabile
     - field.field.node.classe.field_persone
     - field.field.node.classe.field_rappresentanti_genitori
@@ -27,7 +28,7 @@ content:
     settings:
       link: false
     third_party_settings: {  }
-    weight: 3
+    weight: 4
     region: content
   field_annualita_classe:
     type: number_integer
@@ -45,7 +46,15 @@ content:
       view_mode: default
       link: ''
     third_party_settings: {  }
-    weight: 8
+    weight: 9
+    region: content
+  field_percorso_di_studio:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 3
     region: content
   field_persona_responsabile:
     type: entity_reference_entity_view
@@ -54,7 +63,7 @@ content:
       view_mode: teaser
       link: false
     third_party_settings: {  }
-    weight: 5
+    weight: 6
     region: content
   field_persone:
     type: entity_reference_entity_view
@@ -63,7 +72,7 @@ content:
       view_mode: teaser
       link: false
     third_party_settings: {  }
-    weight: 4
+    weight: 5
     region: content
   field_rappresentanti_genitori:
     type: string
@@ -71,7 +80,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 6
+    weight: 7
     region: content
   field_rappresentati_alunni:
     type: string
@@ -79,7 +88,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 7
+    weight: 8
     region: content
   field_sezione:
     type: string
@@ -100,7 +109,7 @@ content:
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 9
+    weight: 10
     region: content
 hidden:
   langcode: true
