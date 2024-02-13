@@ -55,8 +55,8 @@ dependencies:
   - bootstrap_italia:bootstrap_italia_views_carousel
   - bootstrap_italia_text_editor2:bootstrap_italia_text_editor2
 
-# Information added by GitHub Action packaging script on 2024-02-12
-version: '3.0.2'
+# Information added by GitHub Action packaging script on 2024-02-13
+version: '3.0.3'
 project: 'Themethla'
-datestamp: 1707774604
-message: ' fix field_grado_di_istruzione field label'
+datestamp: 1707841417
+message: ' add field_percorso_di_studio to classe'
