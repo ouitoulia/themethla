@@ -9,8 +9,8 @@ dependencies:
     - field.field.node.classe.field_percorso_di_studio
     - field.field.node.classe.field_persona_responsabile
     - field.field.node.classe.field_persone
+    - field.field.node.classe.field_rappresentanti_alunni
     - field.field.node.classe.field_rappresentanti_genitori
-    - field.field.node.classe.field_rappresentati_alunni
     - field.field.node.classe.field_sezione
     - field.field.node.classe.field_struttura_didattica
     - node.type.classe
@@ -50,8 +50,8 @@ hidden:
   field_orario_lezioni: true
   field_persona_responsabile: true
   field_persone: true
+  field_rappresentanti_alunni: true
   field_rappresentanti_genitori: true
-  field_rappresentati_alunni: true
   field_sezione: true
   field_struttura_didattica: true
   langcode: true

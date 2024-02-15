@@ -9,8 +9,8 @@ dependencies:
     - field.field.node.classe.field_percorso_di_studio
     - field.field.node.classe.field_persona_responsabile
     - field.field.node.classe.field_persone
+    - field.field.node.classe.field_rappresentanti_alunni
     - field.field.node.classe.field_rappresentanti_genitori
-    - field.field.node.classe.field_rappresentati_alunni
     - field.field.node.classe.field_sezione
     - field.field.node.classe.field_struttura_didattica
     - node.type.classe
@@ -60,7 +60,7 @@ third_party_settings:
         - field_persona_responsabile
         - field_persone
         - field_rappresentanti_genitori
-        - field_rappresentati_alunni
+        - field_rappresentanti_alunni
       label: Persone
       region: content
       parent_name: group_contenuto
@@ -155,17 +155,17 @@ content:
       size: 60
       placeholder: 'Scrivi il nome o il cognome, o una sua parte, per cercare una persona'
     third_party_settings: {  }
-  field_rappresentanti_genitori:
+  field_rappresentanti_alunni:
     type: string_textfield
-    weight: 9
+    weight: 11
     region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  field_rappresentati_alunni:
+  field_rappresentanti_genitori:
     type: string_textfield
-    weight: 10
+    weight: 9
     region: content
     settings:
       size: 60

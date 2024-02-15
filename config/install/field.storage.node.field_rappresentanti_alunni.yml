@@ -3,8 +3,8 @@ status: true
 dependencies:
   module:
     - node
-id: node.field_rappresentati_alunni
-field_name: field_rappresentati_alunni
+id: node.field_rappresentanti_alunni
+field_name: field_rappresentanti_alunni
 entity_type: node
 type: string
 settings:

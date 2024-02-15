@@ -2,13 +2,13 @@ langcode: it
 status: true
 dependencies:
   config:
-    - field.storage.node.field_rappresentati_alunni
+    - field.storage.node.field_rappresentanti_alunni
     - node.type.classe
-id: node.classe.field_rappresentati_alunni
-field_name: field_rappresentati_alunni
+id: node.classe.field_rappresentanti_alunni
+field_name: field_rappresentanti_alunni
 entity_type: node
 bundle: classe
-label: 'Rappresentati degli alunni'
+label: 'Rappresentanti degli alunni'
 description: 'Opzionalmente inserisci i rappresentati degli alunni.'
 required: false
 translatable: false
