@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.classe.field_anno_scolastico
     - field.field.node.classe.field_annualita_classe
     - field.field.node.classe.field_extra_info
+    - field.field.node.classe.field_orario_lezioni
     - field.field.node.classe.field_percorso_di_studio
     - field.field.node.classe.field_persona_responsabile
     - field.field.node.classe.field_persone
@@ -17,6 +18,8 @@ dependencies:
   module:
     - entity_reference_revisions
     - user
+_core:
+  default_config_hash: 4Um6ufCcRfvpyf07bkdVAcgyU-silqsxYV_waWtKK90
 id: node.classe.full
 targetEntityType: node
 bundle: classe
@@ -24,7 +27,7 @@ mode: full
 content:
   field_anno_scolastico:
     type: entity_reference_label
-    label: inline
+    label: hidden
     settings:
       link: false
     third_party_settings: {  }
@@ -46,11 +49,20 @@ content:
       view_mode: default
       link: ''
     third_party_settings: {  }
-    weight: 9
+    weight: 10
+    region: content
+  field_orario_lezioni:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: link
+      link: false
+    third_party_settings: {  }
+    weight: 5
     region: content
   field_percorso_di_studio:
     type: entity_reference_label
-    label: above
+    label: hidden
     settings:
       link: true
     third_party_settings: {  }
@@ -67,12 +79,12 @@ content:
     region: content
   field_persone:
     type: entity_reference_entity_view
-    label: above
+    label: hidden
     settings:
-      view_mode: teaser
+      view_mode: card
       link: false
     third_party_settings: {  }
-    weight: 5
+    weight: 7
     region: content
   field_rappresentanti_genitori:
     type: string
@@ -80,7 +92,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 7
+    weight: 8
     region: content
   field_rappresentati_alunni:
     type: string
@@ -88,7 +100,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 8
+    weight: 9
     region: content
   field_sezione:
     type: string
@@ -109,7 +121,7 @@ content:
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 10
+    weight: 11
     region: content
 hidden:
   langcode: true

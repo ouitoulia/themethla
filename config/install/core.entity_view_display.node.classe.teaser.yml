@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.classe.field_anno_scolastico
     - field.field.node.classe.field_annualita_classe
     - field.field.node.classe.field_extra_info
+    - field.field.node.classe.field_orario_lezioni
     - field.field.node.classe.field_percorso_di_studio
     - field.field.node.classe.field_persona_responsabile
     - field.field.node.classe.field_persone
@@ -16,6 +17,8 @@ dependencies:
     - node.type.classe
   module:
     - user
+_core:
+  default_config_hash: ha0ankn4RxsG6yZxpz2CWrHNhvWNYqnSDhrDt4iu9tw
 id: node.classe.teaser
 targetEntityType: node
 bundle: classe
@@ -45,6 +48,7 @@ content:
 hidden:
   field_annualita_classe: true
   field_extra_info: true
+  field_orario_lezioni: true
   field_persona_responsabile: true
   field_persone: true
   field_rappresentanti_genitori: true

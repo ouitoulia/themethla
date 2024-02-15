@@ -1,0 +1,28 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_orario_lezioni
+    - media.type.document
+    - node.type.classe
+id: node.classe.field_orario_lezioni
+field_name: field_orario_lezioni
+entity_type: node
+bundle: classe
+label: 'Orario completo delle lezioni'
+description: "File scaricabile con l'orario completo delle lezioni. Puoi inserire solo un file, si consiglia di caricare un file <code>pdf</code> ed evitare altri formati."
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      document: document
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
