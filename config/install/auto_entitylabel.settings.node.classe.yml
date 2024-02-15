@@ -1,0 +1,8 @@
+pattern: '[node:field_annualita_classe][node:field_sezione] #[node:field_anno_scolastico]'
+escape: false
+preserve_titles: false
+save: false
+chunk: 50
+dependencies:
+  config:
+    - node.type.classe
