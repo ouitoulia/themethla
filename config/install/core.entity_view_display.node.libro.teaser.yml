@@ -1,0 +1,53 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.libro.body
+    - field.field.node.libro.field_abstract
+    - field.field.node.libro.field_autori
+    - field.field.node.libro.field_copertina
+    - field.field.node.libro.field_editori
+    - field.field.node.libro.field_isbn
+    - field.field.node.libro.field_tipologia_libro
+    - image.style.bootstrap_italia_card_image_panoramic
+    - node.type.libro
+  module:
+    - media
+    - user
+id: node.libro.teaser
+targetEntityType: node
+bundle: libro
+mode: teaser
+content:
+  field_autori:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_copertina:
+    type: media_thumbnail
+    label: hidden
+    settings:
+      image_link: content
+      image_style: bootstrap_italia_card_image_panoramic
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  body: true
+  field_abstract: true
+  field_editori: true
+  field_isbn: true
+  field_tipologia_libro: true
+  langcode: true

@@ -1,0 +1,40 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.field.node.libro.body
+    - field.field.node.libro.field_abstract
+    - field.field.node.libro.field_autori
+    - field.field.node.libro.field_copertina
+    - field.field.node.libro.field_editori
+    - field.field.node.libro.field_isbn
+    - field.field.node.libro.field_tipologia_libro
+    - node.type.libro
+  module:
+    - user
+id: node.libro.default
+targetEntityType: node
+bundle: libro
+mode: default
+content:
+  field_copertina:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  body: true
+  field_abstract: true
+  field_autori: true
+  field_editori: true
+  field_isbn: true
+  field_tipologia_libro: true
+  langcode: true

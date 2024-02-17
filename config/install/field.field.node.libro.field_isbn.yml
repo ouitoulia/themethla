@@ -1,0 +1,18 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_isbn
+    - node.type.libro
+id: node.libro.field_isbn
+field_name: field_isbn
+entity_type: node
+bundle: libro
+label: ISBN
+description: 'Se disponibile inserisci il codice ISBN.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

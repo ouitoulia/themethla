@@ -1,0 +1,28 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tipologia_libro
+    - node.type.libro
+    - taxonomy.vocabulary.tipologia_libri
+id: node.libro.field_tipologia_libro
+field_name: field_tipologia_libro
+entity_type: node
+bundle: libro
+label: 'Tipologia libro'
+description: 'Seleziona la tipologia del libro. Viene usato il vocabolario <a href="/admin/structure/taxonomy/manage/tipologia_libri/overview" title="Visualizza la lista dei termini" target="_blank">Tipologia Libri</a>. Se non riesci ad inserire nuovi termini e/o a visualizzarli, chiedi al responsabile del sito la modifica dei relativi permessi.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tipologia_libri: tipologia_libri
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
