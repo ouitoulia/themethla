@@ -10,7 +10,7 @@ field_name: field_destinatari
 entity_type: node
 bundle: evento
 label: 'Destinatari evento'
-description: 'Seleziona i destinatari. Viene usato il vocabolario <a href="/admin/structure/taxonomy/manage/destinatari/overview" title="Visualizza la lista dei termini" target="_blank">Destinatari</a>. Nel caso in cui non riesci ad inserire nuovi termini e/o a visualizzarli chiedi al responsabile del sito la modifica dei relativi permessi.'
+description: 'Seleziona i destinatari. Viene usato il vocabolario <a href="/admin/structure/taxonomy/manage/destinatari/overview" title="Visualizza la lista dei termini" target="_blank">Destinatari</a>. Se non riesci ad inserire nuovi termini e/o a visualizzarli, chiedi al responsabile del sito la modifica dei relativi permessi.'
 required: true
 translatable: false
 default_value: {  }
