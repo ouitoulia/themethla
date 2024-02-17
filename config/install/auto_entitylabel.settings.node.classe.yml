@@ -1,3 +1,4 @@
+status: 1
 pattern: '[node:field_annualita_classe][node:field_sezione] #[node:field_anno_scolastico]'
 escape: false
 preserve_titles: false
