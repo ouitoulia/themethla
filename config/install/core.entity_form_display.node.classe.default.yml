@@ -5,6 +5,7 @@ dependencies:
     - field.field.node.classe.field_anno_scolastico
     - field.field.node.classe.field_annualita_classe
     - field.field.node.classe.field_extra_info
+    - field.field.node.classe.field_libri_di_testo
     - field.field.node.classe.field_orario_lezioni
     - field.field.node.classe.field_percorso_di_studio
     - field.field.node.classe.field_persona_responsabile
@@ -25,6 +26,7 @@ third_party_settings:
       children:
         - group_apertura
         - group_persone
+        - group_orario_e_libri
       label: Contenuto
       region: content
       parent_name: ''
@@ -73,6 +75,22 @@ third_party_settings:
         formatter: closed
         description: ''
         required_fields: true
+    group_orario_e_libri:
+      children:
+        - field_orario_lezioni
+        - field_libri_di_testo
+      label: 'Orario e libri di testo'
+      region: content
+      parent_name: group_contenuto
+      weight: 20
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: closed
+        description: ''
+        required_fields: true
 _core:
   default_config_hash: WXnBxcju8rreZpSY5ewfLWFtgMx3Imz964OfvvBg20M
 id: node.classe.default
@@ -82,7 +100,7 @@ mode: default
 content:
   created:
     type: datetime_timestamp
-    weight: 6
+    weight: 7
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -101,7 +119,7 @@ content:
     third_party_settings: {  }
   field_extra_info:
     type: paragraphs
-    weight: 3
+    weight: 4
     region: content
     settings:
       title: Paragraph
@@ -117,6 +135,16 @@ content:
         add_above: '0'
         collapse_edit_all: collapse_edit_all
         duplicate: duplicate
+    third_party_settings: {  }
+  field_libri_di_testo:
+    type: entity_reference_autocomplete
+    weight: 3
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: 'Cerca per titolo, autore o ISBN; scrivi una parte o il termine completo'
     third_party_settings: {  }
   field_orario_lezioni:
     type: media_library_widget
@@ -191,34 +219,34 @@ content:
     third_party_settings: {  }
   langcode:
     type: language_select
-    weight: 4
+    weight: 5
     region: content
     settings:
       include_locked: true
     third_party_settings: {  }
   path:
     type: path
-    weight: 9
+    weight: 10
     region: content
     settings: {  }
     third_party_settings: {  }
   promote:
     type: boolean_checkbox
-    weight: 7
+    weight: 8
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 10
+    weight: 11
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
-    weight: 8
+    weight: 9
     region: content
     settings:
       display_label: true
@@ -233,7 +261,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 5
+    weight: 6
     region: content
     settings:
       match_operator: CONTAINS
