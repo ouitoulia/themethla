@@ -56,7 +56,7 @@ dependencies:
   - bootstrap_italia_text_editor2:bootstrap_italia_text_editor2
 
 # Information added by GitHub Action packaging script on 2024-02-17
-version: '3.2.1'
+version: '3.2.2'
 project: 'Themethla'
-datestamp: 1708205143
-message: ' fix bug classe automatic entity label'
+datestamp: 1708206879
+message: ' add field_libri_di_testo to classe'
