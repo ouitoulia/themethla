@@ -10,7 +10,7 @@ field_name: field_tipologia_autenticazione
 entity_type: node
 bundle: servizio
 label: Autenticazione
-description: 'Nel caso in cui siano previste delle modalità di autenticazione, indica quali sono necessarie per accedere al Servizio. Viene usato il vocabolario <a href="/admin/structure/taxonomy/manage/tipologia_autenticazioni/overview" title="Visualizza la lista dei termini" target="_blank">Tipologia autenticazioni</a>. Nel caso in cui non riesci ad inserire nuovi termini e/o a visualizzarli chiedi al responsabile del sito la modifica dei relativi permessi.'
+description: 'Nel caso in cui siano previste delle modalità di autenticazione, indica quali sono necessarie per accedere al Servizio. Viene usato il vocabolario <a href="/admin/structure/taxonomy/manage/tipologia_autenticazioni/overview" title="Visualizza la lista dei termini" target="_blank">Tipologia autenticazioni</a>. Se non riesci ad inserire nuovi termini e/o a visualizzarli, chiedi al responsabile del sito la modifica dei relativi permessi.'
 required: false
 translatable: false
 default_value: {  }

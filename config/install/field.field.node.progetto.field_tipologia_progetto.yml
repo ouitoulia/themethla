@@ -10,7 +10,7 @@ field_name: field_tipologia_progetto
 entity_type: node
 bundle: progetto
 label: 'Tipologia del progetto'
-description: 'Indica il tipo di progetto che si sta descrivendo. Viene usato il vocabolario <a href="/admin/structure/taxonomy/manage/tipologia_progetti/overview" title="Visualizza la lista dei termini" target="_blank">Tipologia progetti</a>. Nel caso in cui non riesci ad inserire nuovi termini e/o a visualizzarli chiedi al responsabile del sito la modifica dei relativi permessi.'
+description: 'Indica il tipo di progetto che si sta descrivendo. Viene usato il vocabolario <a href="/admin/structure/taxonomy/manage/tipologia_progetti/overview" title="Visualizza la lista dei termini" target="_blank">Tipologia progetti</a>. Se non riesci ad inserire nuovi termini e/o a visualizzarli, chiedi al responsabile del sito la modifica dei relativi permessi.'
 required: true
 translatable: false
 default_value: {  }

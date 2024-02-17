@@ -10,7 +10,7 @@ field_name: field_competenze
 entity_type: node
 bundle: scheda_didattica
 label: Competenze
-description: 'Opzionalmente seleziona le competenze da associare al progetto. Viene usato il vocabolario <a href="/admin/structure/taxonomy/manage/competenze/overview" title="Visualizza la lista dei termini" target="_blank">Competenze</a>. Nel caso in cui non riesci ad inserire nuovi termini e/o a visualizzarli chiedi al responsabile del sito la modifica dei relativi permessi.'
+description: 'Opzionalmente seleziona le competenze da associare al progetto. Viene usato il vocabolario <a href="/admin/structure/taxonomy/manage/competenze/overview" title="Visualizza la lista dei termini" target="_blank">Competenze</a>. Se non riesci ad inserire nuovi termini e/o a visualizzarli, chiedi al responsabile del sito la modifica dei relativi permessi.'
 required: false
 translatable: false
 default_value: {  }

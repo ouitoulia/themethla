@@ -10,7 +10,7 @@ field_name: field_destinazione_uso
 entity_type: node
 bundle: luogo
 label: 'Altri usi'
-description: 'Indica se l''edificio è stato costruito per altri usi e poi adattato permanentemente per uso scolastico. Viene usato il vocabolario <a href="/admin/structure/taxonomy/manage/destinazione_uso/overview" title="Visualizza la lista dei termini" target="_blank">Destinazione d''uso</a>. Nel caso in cui non riesci ad inserire nuovi termini e/o a visualizzarli chiedi al responsabile del sito la modifica dei relativi permessi.'
+description: 'Indica se l''edificio è stato costruito per altri usi e poi adattato permanentemente per uso scolastico. Viene usato il vocabolario <a href="/admin/structure/taxonomy/manage/destinazione_uso/overview" title="Visualizza la lista dei termini" target="_blank">Destinazione d''uso</a>. Se non riesci ad inserire nuovi termini e/o a visualizzarli, chiedi al responsabile del sito la modifica dei relativi permessi.'
 required: false
 translatable: false
 default_value: {  }

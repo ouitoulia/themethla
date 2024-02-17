@@ -10,7 +10,7 @@ field_name: field_cosa_serve
 entity_type: node
 bundle: percorso_di_studio
 label: 'Cosa serve'
-description: 'Seleziona ciò che occorre per frequentare l''indirizzo di studio descritto. Possono rientrare in questo campo sia delle cose materiali (es: serve compilare il modulo x, serve presentare la domanda y), sia cose meno materiali (es: per frequentare con profitto questo indirizzo serve una grande passione per la scienza e per lo studio).  L''elenco viene gestito tramite il vocabolario <a href="/admin/structure/taxonomy/manage/cosa_serve/overview" title="Visualizza la lista dei termini" target="_blank">Cosa serve</a>. Nel caso in cui non riesci ad inserire nuovi termini e/o a visualizzarli chiedi al responsabile del sito la modifica dei relativi permessi.'
+description: 'Seleziona ciò che occorre per frequentare l''indirizzo di studio descritto. Possono rientrare in questo campo sia delle cose materiali (es: serve compilare il modulo x, serve presentare la domanda y), sia cose meno materiali (es: per frequentare con profitto questo indirizzo serve una grande passione per la scienza e per lo studio).  L''elenco viene gestito tramite il vocabolario <a href="/admin/structure/taxonomy/manage/cosa_serve/overview" title="Visualizza la lista dei termini" target="_blank">Cosa serve</a>. Se non riesci ad inserire nuovi termini e/o a visualizzarli, chiedi al responsabile del sito la modifica dei relativi permessi.'
 required: true
 translatable: false
 default_value: {  }

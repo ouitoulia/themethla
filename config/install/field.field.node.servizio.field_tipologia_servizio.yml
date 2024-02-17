@@ -10,7 +10,7 @@ field_name: field_tipologia_servizio
 entity_type: node
 bundle: servizio
 label: 'Tipologia del servizio'
-description: ' I servizi possono essere classificati come "Servizi per il personale scolastico" e "Servizi per famiglie e studenti", ecc. Viene usato il vocabolario <a href="/admin/structure/taxonomy/manage/tipologia_servizi/overview" title="Visualizza la lista dei termini" target="_blank">Tipologia servizi</a>. Nel caso in cui non riesci ad inserire nuovi termini e/o a visualizzarli chiedi al responsabile del sito la modifica dei relativi permessi.'
+description: ' I servizi possono essere classificati come "Servizi per il personale scolastico" e "Servizi per famiglie e studenti", ecc. Viene usato il vocabolario <a href="/admin/structure/taxonomy/manage/tipologia_servizi/overview" title="Visualizza la lista dei termini" target="_blank">Tipologia servizi</a>. Se non riesci ad inserire nuovi termini e/o a visualizzarli, chiedi al responsabile del sito la modifica dei relativi permessi.'
 required: true
 translatable: false
 default_value: {  }

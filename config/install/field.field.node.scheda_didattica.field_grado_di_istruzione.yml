@@ -9,7 +9,7 @@ field_name: field_grado_di_istruzione
 entity_type: node
 bundle: scheda_didattica
 label: Livello
-description: 'Indica il livello a cui si riferisce la scheda didattica. Viene usato il vocabolario <a href="/admin/structure/taxonomy/manage/percorsi_di_studio/overview" title="Visualizza la lista dei termini" target="_blank">Percorsi di studio</a>. Nel caso in cui non riesci ad inserire nuovi termini e/o a visualizzarli chiedi al responsabile del sito la modifica dei relativi permessi.'
+description: 'Indica il livello a cui si riferisce la scheda didattica. Viene usato il vocabolario <a href="/admin/structure/taxonomy/manage/percorsi_di_studio/overview" title="Visualizza la lista dei termini" target="_blank">Percorsi di studio</a>. Se non riesci ad inserire nuovi termini e/o a visualizzarli, chiedi al responsabile del sito la modifica dei relativi permessi.'
 required: true
 translatable: false
 default_value: {  }

@@ -10,7 +10,7 @@ field_name: field_tipologia_luogo
 entity_type: node
 bundle: luogo
 label: 'Tipologia luogo'
-description: 'Selezionare una tipologia che caratterizza il luogo. Viene usato il vocabolario <a href="/admin/structure/taxonomy/manage/tipologia_luoghi/overview" title="Visualizza la lista dei termini" target="_blank">Tipologia luoghi</a>. Nel caso in cui non riesci ad inserire nuovi termini e/o a visualizzarli chiedi al responsabile del sito la modifica dei relativi permessi.'
+description: 'Selezionare una tipologia che caratterizza il luogo. Viene usato il vocabolario <a href="/admin/structure/taxonomy/manage/tipologia_luoghi/overview" title="Visualizza la lista dei termini" target="_blank">Tipologia luoghi</a>. Se non riesci ad inserire nuovi termini e/o a visualizzarli, chiedi al responsabile del sito la modifica dei relativi permessi.'
 required: true
 translatable: false
 default_value: {  }
