@@ -55,8 +55,8 @@ dependencies:
   - bootstrap_italia:bootstrap_italia_views_carousel
   - bootstrap_italia_text_editor2:bootstrap_italia_text_editor2
 
-# Information added by GitHub Action packaging script on 2024-02-16
-version: '3.1.1'
+# Information added by GitHub Action packaging script on 2024-02-17
+version: '3.1.2'
 project: 'Themethla'
-datestamp: 1708065403
-message: ' up ci to checkout v4'
+datestamp: 1708167152
+message: ' fix description evento.field_destinatari'
