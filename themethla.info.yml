@@ -56,7 +56,7 @@ dependencies:
   - bootstrap_italia_text_editor2:bootstrap_italia_text_editor2
 
 # Information added by GitHub Action packaging script on 2024-02-18
-version: '3.2.3'
+version: '3.2.4'
 project: 'Themethla'
-datestamp: 1708248901
-message: ' add display card to libro'
+datestamp: 1708249050
+message: ' fix display field_libri_di_testo in classe ct'
