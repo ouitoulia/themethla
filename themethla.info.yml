@@ -56,7 +56,7 @@ dependencies:
   - bootstrap_italia_text_editor2:bootstrap_italia_text_editor2
 
 # Information added by GitHub Action packaging script on 2024-02-18
-version: '3.2.4'
+version: '3.2.5'
 project: 'Themethla'
-datestamp: 1708249050
-message: ' fix display field_libri_di_testo in classe ct'
+datestamp: 1708252078
+message: ' fix empty configuration field.field.node.classe.field_libri_di_testo'
