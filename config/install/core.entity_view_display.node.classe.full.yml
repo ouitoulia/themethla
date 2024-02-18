@@ -54,7 +54,7 @@ content:
     type: entity_reference_entity_view
     label: above
     settings:
-      view_mode: teaser
+      view_mode: card
       link: false
     third_party_settings: {  }
     weight: 5
