@@ -1,0 +1,48 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.card
+    - field.field.node.libro.body
+    - field.field.node.libro.field_abstract
+    - field.field.node.libro.field_autori
+    - field.field.node.libro.field_copertina
+    - field.field.node.libro.field_editori
+    - field.field.node.libro.field_isbn
+    - field.field.node.libro.field_tipologia_libro
+    - node.type.libro
+  module:
+    - user
+id: node.libro.card
+targetEntityType: node
+bundle: libro
+mode: card
+content:
+  field_autori:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_isbn:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  body: true
+  field_abstract: true
+  field_copertina: true
+  field_editori: true
+  field_tipologia_libro: true
+  langcode: true
