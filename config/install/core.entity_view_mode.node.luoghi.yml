@@ -1,0 +1,10 @@
+langcode: it
+status: true
+dependencies:
+  module:
+    - node
+id: node.luoghi
+label: Luoghi
+description: 'Visualizza i luoghi associati ad un determinato contenuto'
+targetEntityType: node
+cache: true

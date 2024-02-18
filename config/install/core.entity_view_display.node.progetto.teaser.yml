@@ -20,71 +20,35 @@ dependencies:
     - field.field.node.progetto.field_servizio
     - field.field.node.progetto.field_stato_progetto
     - field.field.node.progetto.field_tipologia_progetto
-    - image.style.bootstrap_italia_card_image_panoramic
     - node.type.progetto
   module:
-    - datetime
-    - media
-    - text
     - user
 id: node.progetto.teaser
 targetEntityType: node
 bundle: progetto
 mode: teaser
 content:
-  body:
-    type: text_summary_or_trimmed
-    label: hidden
-    settings:
-      trim_length: 600
-    third_party_settings: {  }
-    weight: 101
-    region: content
   field_abstract:
     type: basic_string
     label: hidden
     settings: {  }
-    third_party_settings: {  }
-    weight: 1
-    region: content
-  field_argomenti:
-    type: entity_reference_label
-    label: hidden
-    settings:
-      link: false
-    third_party_settings: {  }
-    weight: 0
-    region: content
-  field_copertina:
-    type: media_thumbnail
-    label: hidden
-    settings:
-      image_link: content
-      image_style: bootstrap_italia_card_image_panoramic
-      image_loading:
-        attribute: lazy
-    third_party_settings: {  }
-    weight: 2
-    region: content
-  field_data_inizio:
-    type: datetime_default
-    label: hidden
-    settings:
-      timezone_override: ''
-      format_type: bootstrap_italia_medium
     third_party_settings: {  }
     weight: 0
     region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 100
+    weight: 1
     region: content
 hidden:
+  body: true
   field_anno_scolastico: true
+  field_argomenti: true
   field_collaborazioni: true
   field_competenze: true
+  field_copertina: true
   field_data_fine: true
+  field_data_inizio: true
   field_extra_info: true
   field_luoghi: true
   field_obiettivi: true

@@ -9,7 +9,7 @@ field_name: field_persone
 entity_type: node
 bundle: struttura_organizzativa
 label: 'Le persone'
-description: 'Opzionalmente seleziona le persone che fanno parte della struttura.'
+description: 'Opzionalmente seleziona le persone che fanno parte della struttura. Inserisci in questo elenco anche la persona responsabile.'
 required: false
 translatable: false
 default_value: {  }
