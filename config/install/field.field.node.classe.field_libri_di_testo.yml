@@ -1,0 +1,24 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_libri_di_testo
+    - node.type.classe
+id: node.classe.field_libri_di_testo
+field_name: field_libri_di_testo
+entity_type: node
+bundle: classe
+label: 'Libri di testo e Materiali'
+description: "Lista dei libri di testo e materiali usati per l'insegnamento. I libri di testo presentano Titolo, Autore e codice ISBN."
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: contenuti_ricerca_avanzata_campi
+      display_name: libro_di_testo
+      arguments: {  }
+field_type: entity_reference
