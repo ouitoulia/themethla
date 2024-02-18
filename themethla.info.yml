@@ -55,8 +55,8 @@ dependencies:
   - bootstrap_italia:bootstrap_italia_views_carousel
   - bootstrap_italia_text_editor2:bootstrap_italia_text_editor2
 
-# Information added by GitHub Action packaging script on 2024-02-17
-version: '3.2.2'
+# Information added by GitHub Action packaging script on 2024-02-18
+version: '3.2.3'
 project: 'Themethla'
-datestamp: 1708206879
-message: ' add field_libri_di_testo to classe'
+datestamp: 1708248901
+message: ' add display card to libro'
