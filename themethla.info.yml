@@ -56,7 +56,7 @@ dependencies:
   - bootstrap_italia_text_editor2:bootstrap_italia_text_editor2
 
 # Information added by GitHub Action packaging script on 2024-02-19
-version: '3.3.3'
+version: '3.3.3 '
 project: 'Themethla'
 datestamp: 1708329767
 message: ' fix typo field.node.classe.field_persona_responsabile'
