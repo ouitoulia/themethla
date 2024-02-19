@@ -9,7 +9,7 @@ field_name: field_prezzo
 entity_type: node
 bundle: evento
 label: Prezzo
-description: 'Inserisci un elemento per ogni tipo di biglietto (intero, ridotto, gratuito), per ogni tipo inserisci il  prezzo seguito da brevissimo testo che illustra le eventuali condizioni. Esempio: "Ridotto 5€. (Minori e categorie protette)".'
+description: 'Inserisci un elemento per ogni tipo di biglietto (intero, ridotto, gratuito). Per ogni tipo inserisci il prezzo seguito da un breve testo che illustra le eventuali condizioni. Esempio: "Ridotto 5€. (Minori e categorie protette)".'
 required: false
 translatable: false
 default_value: {  }
