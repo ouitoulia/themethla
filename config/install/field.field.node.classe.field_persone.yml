@@ -9,7 +9,7 @@ field_name: field_persone
 entity_type: node
 bundle: classe
 label: Insegnanti
-description: 'Opzionalmente seleziona gli insegnanti.'
+description: 'Opzionalmente seleziona gli insegnanti. Nota: se il coordinatore fa parte degli insegnanti della classe inseriscilo anche in questo elenco.'
 required: false
 translatable: false
 default_value: {  }

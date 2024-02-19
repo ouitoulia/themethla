@@ -16,7 +16,7 @@ field_name: field_timeline
 entity_type: node
 bundle: evento
 label: "Programma dell'evento"
-description: "Inseriscci il programma dell'evento suddividendolo in fasi. Se l'evento si svolge in più giornate, le fasi saranno rappresentante dalle varie giornate. Se l'evento è rappresentato da una sola giornata, le fasi potrebbero essere rappresentate della suddivisione del tempo degli interventi (es: ore 18:00 saluti del Dirigente Scolastico (fase 1), ore 18:15 Coro della scuola (fase 2) etc.)."
+description: "Inserisci il programma dell'evento suddividendolo in fasi. Se l'evento si svolge in più giornate, le fasi saranno rappresentante dalle varie giornate. Se l'evento è rappresentato da una sola giornata, le fasi potrebbero essere rappresentate dalla suddivisione del tempo degli interventi (es: ore 18:00 saluti del Dirigente Scolastico (fase 1), ore 18:15 Coro della scuola (fase 2) etc.)."
 required: false
 translatable: false
 default_value: {  }
