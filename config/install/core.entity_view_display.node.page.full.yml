@@ -1,0 +1,53 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.page.field_abstract
+    - field.field.node.page.field_copertina
+    - field.field.node.page.field_extra_info
+    - image.style.focal_point_thumbnail_3x_1_1_300x300_
+    - node.type.page
+  module:
+    - entity_reference_revisions
+    - media
+    - user
+id: node.page.full
+targetEntityType: node
+bundle: page
+mode: full
+content:
+  field_abstract:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_copertina:
+    type: media_thumbnail
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: focal_point_thumbnail_3x_1_1_300x300_
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_extra_info:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 14
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true
