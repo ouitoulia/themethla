@@ -55,8 +55,8 @@ dependencies:
   - bootstrap_italia:bootstrap_italia_views_carousel
   - bootstrap_italia_text_editor2:bootstrap_italia_text_editor2
 
-# Information added by GitHub Action packaging script on 2024-02-18
-version: '3.3.0'
+# Information added by GitHub Action packaging script on 2024-02-19
+version: '3.3.1'
 project: 'Themethla'
-datestamp: 1708271388
-message: ' feat add persona correlated content'
+datestamp: 1708324367
+message: ' fix typo'
