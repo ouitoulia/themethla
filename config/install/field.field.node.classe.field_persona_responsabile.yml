@@ -9,7 +9,7 @@ field_name: field_persona_responsabile
 entity_type: node
 bundle: classe
 label: 'Coordinatore di classe'
-description: 'Opzionalmente seleziona il coordinatore di classe.'
+description: 'Opzionalmente seleziona il coordinatore di classe. Se fa parte degli insegnanti di questa classe, inserisci questa persona anche tra gli insegnanti.'
 required: false
 translatable: false
 default_value: {  }
