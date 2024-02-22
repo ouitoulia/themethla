@@ -55,8 +55,8 @@ dependencies:
   - bootstrap_italia:bootstrap_italia_views_carousel
   - bootstrap_italia_text_editor2:bootstrap_italia_text_editor2
 
-# Information added by GitHub Action packaging script on 2024-02-20
-version: '3.3.7'
+# Information added by GitHub Action packaging script on 2024-02-22
+version: '3.3.8'
 project: 'Themethla'
-datestamp: 1708447686
-message: ' feat add card display to servizio ct'
+datestamp: 1708608292
+message: ' update classe teaser display'
