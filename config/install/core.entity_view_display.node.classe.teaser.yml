@@ -25,34 +25,48 @@ mode: teaser
 content:
   field_anno_scolastico:
     type: entity_reference_label
-    label: inline
-    settings:
-      link: false
-    third_party_settings: {  }
-    weight: 1
-    region: content
-  field_percorso_di_studio:
-    type: entity_reference_label
-    label: inline
+    label: hidden
     settings:
       link: false
     third_party_settings: {  }
     weight: 2
     region: content
-  links:
+  field_annualita_classe:
+    type: number_unformatted
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     weight: 0
     region: content
+  field_orario_lezioni:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: link
+      link: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_sezione:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
 hidden:
-  field_annualita_classe: true
   field_extra_info: true
   field_libri_di_testo: true
-  field_orario_lezioni: true
+  field_percorso_di_studio: true
   field_persona_responsabile: true
   field_persone: true
   field_rappresentanti_alunni: true
   field_rappresentanti_genitori: true
-  field_sezione: true
   field_struttura_didattica: true
   langcode: true
