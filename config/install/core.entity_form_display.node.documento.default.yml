@@ -128,6 +128,7 @@ third_party_settings:
         - field_servizio
         - field_eventi
         - field_progetti
+        - field_percorso_di_studio
         - field_notizie
         - field_classi
       label: 'Contenuti Correlati'
@@ -250,7 +251,7 @@ content:
     third_party_settings: {  }
   field_classi:
     type: entity_reference_autocomplete
-    weight: 19
+    weight: 20
     region: content
     settings:
       match_operator: CONTAINS
@@ -345,7 +346,7 @@ content:
     third_party_settings: {  }
   field_notizie:
     type: entity_reference_autocomplete
-    weight: 18
+    weight: 19
     region: content
     settings:
       match_operator: CONTAINS
@@ -355,13 +356,13 @@ content:
     third_party_settings: {  }
   field_percorso_di_studio:
     type: entity_reference_autocomplete
-    weight: 4
+    weight: 18
     region: content
     settings:
       match_operator: CONTAINS
       match_limit: 10
       size: 60
-      placeholder: ''
+      placeholder: 'Scrivi il nome di un percorso di studio, o una sua parte, per cercarlo'
     third_party_settings: {  }
   field_persone:
     type: entity_reference_autocomplete
