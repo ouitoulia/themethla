@@ -23,6 +23,8 @@ dependencies:
     - taxonomy.vocabulary.tipologia_libri
     - taxonomy.vocabulary.tipologia_strutture
   content:
+    - 'taxonomy_term:tipologia_libri:47f1fd9f-d29e-40fa-98c7-16fe38ae9b96'
+    - 'taxonomy_term:tipologia_libri:a65769a8-a4a1-43dd-9d28-ca53ad556be5'
     - 'taxonomy_term:tipologia_libri:c4a2dfc4-5489-4d34-8d02-8d0990ba33db'
     - 'taxonomy_term:tipologia_strutture:6ba8da9d-9709-4c44-81c1-ab944b050a50'
   module:
@@ -1789,6 +1791,8 @@ display:
           operator: or
           value:
             - 951
+            - 952
+            - 953
           group: 1
           exposed: false
           expose:
