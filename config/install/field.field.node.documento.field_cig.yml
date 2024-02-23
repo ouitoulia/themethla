@@ -1,0 +1,18 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cig
+    - node.type.documento
+id: node.documento.field_cig
+field_name: field_cig
+entity_type: node
+bundle: documento
+label: CIG
+description: 'Opzionalmente inserisci il Codice Identificativo Gara se si applica al documento.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

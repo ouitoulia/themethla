@@ -1,0 +1,20 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_data_fine
+    - node.type.documento
+  module:
+    - datetime
+id: node.documento.field_data_fine
+field_name: field_data_fine
+entity_type: node
+bundle: documento
+label: 'Data di scadenza'
+description: "Usa questo campo nel caso in cui il documento prevede una scadenza, ad esempio la presentazione di un'istanza di partecipazione ad un bando."
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

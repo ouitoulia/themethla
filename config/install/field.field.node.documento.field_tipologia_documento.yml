@@ -1,0 +1,28 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tipologia_documento
+    - node.type.documento
+    - taxonomy.vocabulary.tipologia_documenti
+id: node.documento.field_tipologia_documento
+field_name: field_tipologia_documento
+entity_type: node
+bundle: documento
+label: 'Tipologia documento'
+description: 'Seleziona la tipologia di documento. Viene usato il vocabolario <a href="/admin/structure/taxonomy/manage/tipologia_documenti/overview" title="Visualizza la lista dei termini" target="_blank">Tipologia Documenti</a>. Se non riesci ad inserire nuovi termini e/o a visualizzarli, chiedi al responsabile del sito la modifica dei relativi permessi.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tipologia_documenti: tipologia_documenti
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

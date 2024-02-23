@@ -1,0 +1,493 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.field.node.documento.body
+    - field.field.node.documento.field_abstract
+    - field.field.node.documento.field_allegati
+    - field.field.node.documento.field_argomenti
+    - field.field.node.documento.field_cig
+    - field.field.node.documento.field_classi
+    - field.field.node.documento.field_codice_identificativo
+    - field.field.node.documento.field_copertina
+    - field.field.node.documento.field_data_fine
+    - field.field.node.documento.field_data_inizio
+    - field.field.node.documento.field_data_oblio
+    - field.field.node.documento.field_eventi
+    - field.field.node.documento.field_extra_info
+    - field.field.node.documento.field_frequenza
+    - field.field.node.documento.field_galleria_immagini
+    - field.field.node.documento.field_link
+    - field.field.node.documento.field_notizie
+    - field.field.node.documento.field_percorso_di_studio
+    - field.field.node.documento.field_persone
+    - field.field.node.documento.field_progetti
+    - field.field.node.documento.field_protocollo
+    - field.field.node.documento.field_servizio
+    - field.field.node.documento.field_struttura_responsabile
+    - field.field.node.documento.field_timeline
+    - field.field.node.documento.field_tipologia_documento
+    - field.field.node.documento.field_tipologia_licenza
+    - node.type.documento
+  module:
+    - datetime
+    - field_group
+    - file
+    - link
+    - media_library
+    - paragraphs
+    - path
+    - text
+third_party_settings:
+  field_group:
+    group_contenuto:
+      children:
+        - group_apertura
+        - group_immagini
+        - group_autori
+      label: Contenuto
+      region: content
+      parent_name: ''
+      weight: 1
+      format_type: tabs
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        direction: horizontal
+        width_breakpoint: 640
+    group_apertura:
+      children:
+        - field_abstract
+        - field_argomenti
+        - body
+        - field_tipologia_documento
+      label: Apertura
+      region: content
+      parent_name: group_contenuto
+      weight: 30
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: open
+        description: ''
+        required_fields: true
+    group_autori:
+      children:
+        - field_persone
+      label: Autori
+      region: content
+      parent_name: group_contenuto
+      weight: 33
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+    group_documento:
+      children:
+        - group_allegati
+        - group_archiviazione
+        - group_contenuti_correlati
+        - group_tempi_e_scadenze
+      label: Documento
+      region: content
+      parent_name: ''
+      weight: 2
+      format_type: tabs
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        direction: horizontal
+        width_breakpoint: 640
+    group_allegati:
+      children:
+        - field_allegati
+        - field_tipologia_licenza
+        - field_link
+      label: Allegati
+      region: content
+      parent_name: group_documento
+      weight: 24
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: open
+        description: ''
+        required_fields: true
+    group_contenuti_correlati:
+      children:
+        - field_servizio
+        - field_eventi
+        - field_progetti
+        - field_notizie
+        - field_classi
+      label: 'Contenuti Correlati'
+      region: content
+      parent_name: group_documento
+      weight: 26
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+    group_tempi_e_scadenze:
+      children:
+        - field_frequenza
+        - field_timeline
+      label: 'Tempi e scadenze'
+      region: content
+      parent_name: group_documento
+      weight: 27
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+    group_archiviazione:
+      children:
+        - field_protocollo
+        - field_data_inizio
+        - field_cig
+        - field_data_fine
+        - field_codice_identificativo
+        - field_data_oblio
+      label: Archiviazione
+      region: content
+      parent_name: group_documento
+      weight: 25
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+    group_immagini:
+      children:
+        - field_copertina
+        - field_galleria_immagini
+      label: Immagini
+      region: content
+      parent_name: group_contenuto
+      weight: 31
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+id: node.documento.default
+targetEntityType: node
+bundle: documento
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 4
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  created:
+    type: datetime_timestamp
+    weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_abstract:
+    type: string_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_allegati:
+    type: file_generic
+    weight: 19
+    region: content
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+  field_argomenti:
+    type: entity_reference_autocomplete
+    weight: 3
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: 'Scrivi il nome di un termine o una sua parte'
+    third_party_settings: {  }
+  field_cig:
+    type: string_textfield
+    weight: 15
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_classi:
+    type: entity_reference_autocomplete
+    weight: 19
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: 'Scrivi il titolo di una classe, o una sua parte, per cercarla'
+    third_party_settings: {  }
+  field_codice_identificativo:
+    type: string_textfield
+    weight: 17
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_copertina:
+    type: media_library_widget
+    weight: 5
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_data_fine:
+    type: datetime_default
+    weight: 16
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_data_inizio:
+    type: datetime_default
+    weight: 14
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_data_oblio:
+    type: datetime_default
+    weight: 18
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_eventi:
+    type: entity_reference_autocomplete
+    weight: 16
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: 'Scrivi il nome di un evento, o una sua parte, per cercarlo'
+    third_party_settings: {  }
+  field_extra_info:
+    type: paragraphs
+    weight: 4
+    region: content
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: closed
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: _none
+      features:
+        add_above: '0'
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
+    third_party_settings: {  }
+  field_frequenza:
+    type: string_textfield
+    weight: 20
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_galleria_immagini:
+    type: media_library_widget
+    weight: 6
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_link:
+    type: link_default
+    weight: 21
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_notizie:
+    type: entity_reference_autocomplete
+    weight: 18
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: 'Scrivi il titolo di una notizia, o una sua parte, per cercarlo'
+    third_party_settings: {  }
+  field_percorso_di_studio:
+    type: entity_reference_autocomplete
+    weight: 4
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_persone:
+    type: entity_reference_autocomplete
+    weight: 10
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: 'Scrivi il nome o il cognome, o una sua parte, per cercare una persona'
+    third_party_settings: {  }
+  field_progetti:
+    type: entity_reference_autocomplete
+    weight: 17
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: 'Scrivi il nome di un progetto, o una sua parte, per cercarlo'
+    third_party_settings: {  }
+  field_protocollo:
+    type: string_textfield
+    weight: 13
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_servizio:
+    type: entity_reference_autocomplete
+    weight: 15
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: 'Scrivi il nome di un servizio, o una sua parte, per cercarlo'
+    third_party_settings: {  }
+  field_struttura_responsabile:
+    type: options_buttons
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_timeline:
+    type: paragraphs
+    weight: 21
+    region: content
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: closed
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: _none
+      features:
+        add_above: '0'
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
+    third_party_settings: {  }
+  field_tipologia_documento:
+    type: options_buttons
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_tipologia_licenza:
+    type: options_select
+    weight: 20
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 5
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    weight: 8
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 11
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    weight: 9
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 6
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

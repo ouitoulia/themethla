@@ -1,0 +1,20 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_data_oblio
+    - node.type.documento
+  module:
+    - datetime
+id: node.documento.field_data_oblio
+field_name: field_data_oblio
+entity_type: node
+bundle: documento
+label: 'Oblio documento'
+description: "Se inserisci una data, in automatico alla data specificata, la pagina del documento non sarà più indicizzabile dai motori di ricerca e non verrà visualizzata negli elenchi dei documenti attivi. Nota che il documento rimarrà comunque visibile nella sezione archivio storico e da coloro che possiedono il link. Invece se desideri rimuovere il documento dalla pubblicazione usa l'apposita funzione."
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

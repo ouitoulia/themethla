@@ -1,0 +1,101 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_timeline
+    - node.type.documento
+    - paragraphs.paragraphs_type.accordion
+    - paragraphs.paragraphs_type.content
+    - paragraphs.paragraphs_type.node_reference
+    - paragraphs.paragraphs_type.point_list
+    - paragraphs.paragraphs_type.timeline
+  module:
+    - entity_reference_revisions
+id: node.documento.field_timeline
+field_name: field_timeline
+entity_type: node
+bundle: documento
+label: 'Tempi e scadenze'
+description: 'Se il documento descrive un processo a fasi, come ad esempio un bando di concorso, usa questo campo per descriverle.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      point_list: point_list
+      accordion: accordion
+      timeline: timeline
+      content: content
+      node_reference: node_reference
+    negate: 0
+    target_bundles_drag_drop:
+      accordion:
+        weight: -42
+        enabled: true
+      accordion_item:
+        weight: -38
+        enabled: false
+      attachments:
+        weight: -37
+        enabled: false
+      call_to_action:
+        weight: -35
+        enabled: false
+      callout:
+        weight: -36
+        enabled: false
+      carousel:
+        weight: -34
+        enabled: false
+      citation:
+        weight: -33
+        enabled: false
+      content:
+        weight: -40
+        enabled: true
+      gallery:
+        weight: -32
+        enabled: false
+      gallery_item:
+        weight: -31
+        enabled: false
+      hero:
+        weight: -30
+        enabled: false
+      map:
+        weight: -29
+        enabled: false
+      node_reference:
+        weight: -39
+        enabled: true
+      piano_di_studi:
+        weight: 36
+        enabled: false
+      piano_di_studi_item:
+        weight: 37
+        enabled: false
+      point_list:
+        weight: -43
+        enabled: true
+      point_list_item:
+        weight: -23
+        enabled: false
+      section:
+        weight: -28
+        enabled: false
+      settings:
+        weight: -27
+        enabled: false
+      slide:
+        weight: -26
+        enabled: false
+      timeline:
+        weight: -41
+        enabled: true
+      timeline_item:
+        weight: -25
+        enabled: false
+field_type: entity_reference_revisions

@@ -1,0 +1,32 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tipologia_licenza
+    - node.type.documento
+    - taxonomy.vocabulary.tipologia_licenze
+  content:
+    - 'taxonomy_term:tipologia_licenze:4cc148d5-7b64-4fdd-aa56-ce7f4521af71'
+id: node.documento.field_tipologia_licenza
+field_name: field_tipologia_licenza
+entity_type: node
+bundle: documento
+label: 'Licenza di distribuzione'
+description: 'Eventualmente seleziona una licenza di pubblicazione. Viene usato il vocabolario <a href="/admin/structure/taxonomy/manage/tipologia_licenze/overview" title="Visualizza la lista dei termini" target="_blank">Tipologia licenze</a>. Se non riesci ad inserire nuovi termini e/o a visualizzarli, chiedi al responsabile del sito la modifica dei relativi permessi.'
+required: true
+translatable: false
+default_value:
+  -
+    target_uuid: 4cc148d5-7b64-4fdd-aa56-ce7f4521af71
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tipologia_licenze: tipologia_licenze
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

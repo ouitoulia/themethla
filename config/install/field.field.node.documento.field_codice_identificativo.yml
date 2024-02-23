@@ -1,0 +1,18 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_codice_identificativo
+    - node.type.documento
+id: node.documento.field_codice_identificativo
+field_name: field_codice_identificativo
+entity_type: node
+bundle: documento
+label: 'Identificativo del documento'
+description: 'Usa questo campo nel caso in cui hai bisogno di inserire un codice identificativo univoco generato dal gestionale.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

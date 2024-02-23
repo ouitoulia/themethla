@@ -1,0 +1,28 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_percorso_di_studio
+    - node.type.documento
+    - node.type.percorso_di_studio
+id: node.documento.field_percorso_di_studio
+field_name: field_percorso_di_studio
+entity_type: node
+bundle: documento
+label: 'Percorso di studio'
+description: 'Opzionalmente seleziona il percorso di studio. In automatico il documento verrà visualizzato nella pagina del percorso di studio selezionato.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      percorso_di_studio: percorso_di_studio
+    sort:
+      field: title
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

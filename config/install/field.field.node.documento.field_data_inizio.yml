@@ -1,0 +1,20 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_data_inizio
+    - node.type.documento
+  module:
+    - datetime
+id: node.documento.field_data_inizio
+field_name: field_data_inizio
+entity_type: node
+bundle: documento
+label: 'Data di protocollo'
+description: "Inserisci la data in cui è stato protocollato il documento. Nota: questa informazione non influisce sull'ordinamento dei contenuti per data."
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

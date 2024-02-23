@@ -2,14 +2,18 @@ langcode: it
 status: true
 dependencies:
   module:
+    - file
     - node
-id: node.field_percorso_di_studio
-field_name: field_percorso_di_studio
+id: node.field_allegati
+field_name: field_allegati
 entity_type: node
-type: entity_reference
+type: file
 settings:
-  target_type: node
-module: core
+  target_type: file
+  display_field: false
+  display_default: false
+  uri_scheme: public
+module: file
 locked: false
 cardinality: -1
 translatable: true

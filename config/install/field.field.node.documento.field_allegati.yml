@@ -1,0 +1,26 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_allegati
+    - node.type.documento
+  module:
+    - file
+id: node.documento.field_allegati
+field_name: field_allegati
+entity_type: node
+bundle: documento
+label: Allegati
+description: 'Puoi allegare il documento in vari formati.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: documento/allegati
+  file_extensions: 'txt rtf pdf odf odg odp ods odt fodt fods fodp fodg key numbers pages 7z csv json ogg tar gz tar.gz wav'
+  max_filesize: ''
+  description_field: true
+field_type: file

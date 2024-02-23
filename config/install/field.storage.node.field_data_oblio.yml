@@ -2,15 +2,15 @@ langcode: it
 status: true
 dependencies:
   module:
-    - media
+    - datetime
     - node
-id: node.field_copertina
-field_name: field_copertina
+id: node.field_data_oblio
+field_name: field_data_oblio
 entity_type: node
-type: entity_reference
+type: datetime
 settings:
-  target_type: media
-module: core
+  datetime_type: datetime
+module: datetime
 locked: false
 cardinality: 1
 translatable: true
