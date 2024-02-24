@@ -1,0 +1,81 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.circolare.body
+    - field.field.node.circolare.field_abstract
+    - field.field.node.circolare.field_anno_scolastico
+    - field.field.node.circolare.field_argomenti
+    - field.field.node.circolare.field_data_oblio
+    - field.field.node.circolare.field_destinatari
+    - field.field.node.circolare.field_eventi
+    - field.field.node.circolare.field_numero_circolare
+    - field.field.node.circolare.field_persona_responsabile
+    - node.type.circolare
+  module:
+    - user
+id: node.circolare.full
+targetEntityType: node
+bundle: circolare
+mode: full
+content:
+  field_abstract:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_anno_scolastico:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_argomenti:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_destinatari:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_eventi:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_persona_responsabile:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  body: true
+  field_data_oblio: true
+  field_numero_circolare: true
+  langcode: true

@@ -91,8 +91,6 @@ third_party_settings:
         formatter: closed
         description: ''
         required_fields: true
-_core:
-  default_config_hash: WXnBxcju8rreZpSY5ewfLWFtgMx3Imz964OfvvBg20M
 id: node.classe.default
 targetEntityType: node
 bundle: classe

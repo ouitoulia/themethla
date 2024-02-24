@@ -32,8 +32,6 @@ dependencies:
     - node.type.servizio
   module:
     - user
-_core:
-  default_config_hash: YlPog5R2X46ZpJ85BhvLgdLzJyi0yP3QvzgWqlIHeDE
 id: node.servizio.card
 targetEntityType: node
 bundle: servizio

@@ -1,0 +1,28 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_eventi
+    - node.type.circolare
+    - node.type.evento
+id: node.circolare.field_eventi
+field_name: field_eventi
+entity_type: node
+bundle: circolare
+label: Eventi
+description: 'Opzionalmente seleziona gli eventi collegati a questa notizia. Se l''evento non esiste, scrivi il titolo e verrà creato automaticamente; dopo aver salvato questa circolare potrai compilare i campi dell''evento creato automaticamente (il nuovo evento lo trovi nell''<a href="/admin/content" title="Vai all''elenco dei contenuti in una nuova finestra" target="_blank">elenco dei contenuti</a>).'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      evento: evento
+    sort:
+      field: field_data_inizio
+      direction: DESC
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

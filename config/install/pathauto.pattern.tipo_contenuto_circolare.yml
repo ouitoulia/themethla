@@ -1,0 +1,21 @@
+langcode: it
+status: true
+dependencies:
+  module:
+    - node
+id: tipo_contenuto_circolare
+label: 'Tipo contenuto: Circolare'
+type: 'canonical_entities:node'
+pattern: 'novita/le-circolari/[node:title]'
+selection_criteria:
+  9b75783c-6ce4-474f-a8d7-3bec92b8d37b:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 9b75783c-6ce4-474f-a8d7-3bec92b8d37b
+    context_mapping:
+      node: node
+    bundles:
+      circolare: circolare
+selection_logic: and
+weight: -5
+relationships: {  }
