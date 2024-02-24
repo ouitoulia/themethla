@@ -10,7 +10,7 @@ id: node.documento.body
 field_name: body
 entity_type: node
 bundle: documento
-label: 'Descrizione estesa'
+label: Descrizione
 description: 'Descrizione estesa e completa dei contenuti del documento'
 required: true
 translatable: true

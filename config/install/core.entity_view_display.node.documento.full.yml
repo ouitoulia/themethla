@@ -1,0 +1,218 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.documento.body
+    - field.field.node.documento.field_abstract
+    - field.field.node.documento.field_allegati
+    - field.field.node.documento.field_argomenti
+    - field.field.node.documento.field_cig
+    - field.field.node.documento.field_classi
+    - field.field.node.documento.field_codice_identificativo
+    - field.field.node.documento.field_copertina
+    - field.field.node.documento.field_data_fine
+    - field.field.node.documento.field_data_inizio
+    - field.field.node.documento.field_data_oblio
+    - field.field.node.documento.field_eventi
+    - field.field.node.documento.field_extra_info
+    - field.field.node.documento.field_frequenza
+    - field.field.node.documento.field_galleria_immagini
+    - field.field.node.documento.field_link
+    - field.field.node.documento.field_notizie
+    - field.field.node.documento.field_percorso_di_studio
+    - field.field.node.documento.field_persone
+    - field.field.node.documento.field_progetti
+    - field.field.node.documento.field_protocollo
+    - field.field.node.documento.field_servizio
+    - field.field.node.documento.field_struttura_responsabile
+    - field.field.node.documento.field_timeline
+    - field.field.node.documento.field_tipologia_documento
+    - field.field.node.documento.field_tipologia_licenza
+    - node.type.documento
+  module:
+    - datetime
+    - entity_reference_revisions
+    - file
+    - link
+    - text
+    - user
+id: node.documento.full
+targetEntityType: node
+bundle: documento
+mode: full
+content:
+  body:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_abstract:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_allegati:
+    type: file_default
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_argomenti:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_cig:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 14
+    region: content
+  field_copertina:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_data_inizio:
+    type: datetime_default
+    label: inline
+    settings:
+      timezone_override: ''
+      format_type: bootstrap_italia_medium
+    third_party_settings: {  }
+    weight: 13
+    region: content
+  field_extra_info:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 11
+    region: content
+  field_frequenza:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 16
+    region: content
+  field_galleria_immagini:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: gallery_item
+      link: false
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_link:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 15
+    region: content
+  field_persone:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: card
+      link: false
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_protocollo:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 12
+    region: content
+  field_servizio:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_struttura_responsabile:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  field_timeline:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  field_tipologia_documento:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_tipologia_licenza:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 17
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 19
+    region: content
+  toc_js:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 18
+    region: content
+hidden:
+  field_classi: true
+  field_codice_identificativo: true
+  field_data_fine: true
+  field_data_oblio: true
+  field_eventi: true
+  field_notizie: true
+  field_percorso_di_studio: true
+  field_progetti: true
+  langcode: true

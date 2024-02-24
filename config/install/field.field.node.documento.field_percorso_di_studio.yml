@@ -9,7 +9,7 @@ id: node.documento.field_percorso_di_studio
 field_name: field_percorso_di_studio
 entity_type: node
 bundle: documento
-label: 'Percorso di studio'
+label: 'Percorso di studio correlati'
 description: 'Opzionalmente seleziona il percorso di studio. In automatico il documento verrà visualizzato nella pagina del percorso di studio selezionato.'
 required: false
 translatable: false

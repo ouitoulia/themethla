@@ -1,0 +1,78 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.field.node.documento.body
+    - field.field.node.documento.field_abstract
+    - field.field.node.documento.field_allegati
+    - field.field.node.documento.field_argomenti
+    - field.field.node.documento.field_cig
+    - field.field.node.documento.field_classi
+    - field.field.node.documento.field_codice_identificativo
+    - field.field.node.documento.field_copertina
+    - field.field.node.documento.field_data_fine
+    - field.field.node.documento.field_data_inizio
+    - field.field.node.documento.field_data_oblio
+    - field.field.node.documento.field_eventi
+    - field.field.node.documento.field_extra_info
+    - field.field.node.documento.field_frequenza
+    - field.field.node.documento.field_galleria_immagini
+    - field.field.node.documento.field_link
+    - field.field.node.documento.field_notizie
+    - field.field.node.documento.field_percorso_di_studio
+    - field.field.node.documento.field_persone
+    - field.field.node.documento.field_progetti
+    - field.field.node.documento.field_protocollo
+    - field.field.node.documento.field_servizio
+    - field.field.node.documento.field_struttura_responsabile
+    - field.field.node.documento.field_timeline
+    - field.field.node.documento.field_tipologia_documento
+    - field.field.node.documento.field_tipologia_licenza
+    - node.type.documento
+  module:
+    - user
+id: node.documento.default
+targetEntityType: node
+bundle: documento
+mode: default
+content:
+  field_abstract:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  body: true
+  field_allegati: true
+  field_argomenti: true
+  field_cig: true
+  field_classi: true
+  field_codice_identificativo: true
+  field_copertina: true
+  field_data_fine: true
+  field_data_inizio: true
+  field_data_oblio: true
+  field_eventi: true
+  field_extra_info: true
+  field_frequenza: true
+  field_galleria_immagini: true
+  field_link: true
+  field_notizie: true
+  field_percorso_di_studio: true
+  field_persone: true
+  field_progetti: true
+  field_protocollo: true
+  field_servizio: true
+  field_struttura_responsabile: true
+  field_timeline: true
+  field_tipologia_documento: true
+  field_tipologia_licenza: true
+  langcode: true
+  toc_js: true

@@ -8,7 +8,7 @@ id: node.documento.field_persone
 field_name: field_persone
 entity_type: node
 bundle: documento
-label: Autore/i
+label: Autori
 description: 'Opzionalmente seleziona le persone che hanno redatto il documento. Se lasci vuoto verrà usato il campo author del contenuto.'
 required: false
 translatable: false
