@@ -1,0 +1,21 @@
+langcode: it
+status: true
+dependencies:
+  module:
+    - node
+id: tipo_contenuto_documento
+label: 'Tipo contenuto: Documento'
+type: 'canonical_entities:node'
+pattern: 'scuola/le-carte-della-scuola/[node:field_tipologia_documento]/[node:title]'
+selection_criteria:
+  520c2331-a91c-4040-b7d5-178bf2437127:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 520c2331-a91c-4040-b7d5-178bf2437127
+    context_mapping:
+      node: node
+    bundles:
+      documento: documento
+selection_logic: and
+weight: -5
+relationships: {  }
