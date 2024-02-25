@@ -56,7 +56,7 @@ dependencies:
   - bootstrap_italia_text_editor2:bootstrap_italia_text_editor2
 
 # Information added by GitHub Action packaging script on 2024-02-25
-version: '3.5.3'
+version: '3.5.4'
 project: 'Themethla'
-datestamp: 1708853213
-message: ' fix data_oblio field in ct documento'
+datestamp: 1708865052
+message: ' fix documento teaser display'
