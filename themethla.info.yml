@@ -55,8 +55,8 @@ dependencies:
   - bootstrap_italia:bootstrap_italia_views_carousel
   - bootstrap_italia_text_editor2:bootstrap_italia_text_editor2
 
-# Information added by GitHub Action packaging script on 2024-02-24
-version: '3.5.2'
+# Information added by GitHub Action packaging script on 2024-02-25
+version: '3.5.3'
 project: 'Themethla'
-datestamp: 1708794511
-message: ' add documento display and field fix'
+datestamp: 1708853213
+message: ' fix data_oblio field in ct documento'
