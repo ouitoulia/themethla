@@ -42,12 +42,15 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 0
-    region: content
-  links:
-    settings: {  }
-    third_party_settings: {  }
     weight: 1
+    region: content
+  field_protocollo:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
     region: content
 hidden:
   body: true
@@ -69,11 +72,11 @@ hidden:
   field_percorso_di_studio: true
   field_persone: true
   field_progetti: true
-  field_protocollo: true
   field_servizio: true
   field_struttura_responsabile: true
   field_timeline: true
   field_tipologia_documento: true
   field_tipologia_licenza: true
   langcode: true
+  links: true
   toc_js: true
