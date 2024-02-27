@@ -31,7 +31,7 @@ third_party_settings:
 name: Circolare
 type: circolare
 description: 'Usa questo tipo do contenuto per pubblicare una nuova circolare.'
-help: ''
+help: 'Inserisci un titolo breve, ad esempio "Incontro Scuola-Famiglia". Nel campo "Oggetto della circolare" inserisci un testo un po'' più lungo, ad esempio "Incontro Scuola-Famiglia Primo Quadrimestre - Comunicazione valutazione - A.S. 2023/24".'
 new_revision: true
 preview_mode: 1
 display_submitted: false

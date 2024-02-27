@@ -7,7 +7,7 @@ id: node.circolare.title
 field_name: title
 entity_type: node
 bundle: circolare
-label: 'Titolo (ex Oggetto)'
+label: Titolo
 description: ''
 required: true
 translatable: true

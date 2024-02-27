@@ -8,7 +8,7 @@ id: node.circolare.field_abstract
 field_name: field_abstract
 entity_type: node
 bundle: circolare
-label: 'Descrizione breve'
+label: 'Oggetto della circolare'
 description: 'Descrizione sintetica della circolare. Si consiglia di non superare i 160 caratteri.'
 required: true
 translatable: false
