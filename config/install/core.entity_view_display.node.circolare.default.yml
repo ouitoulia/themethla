@@ -13,68 +13,45 @@ dependencies:
     - field.field.node.circolare.field_persona_responsabile
     - node.type.circolare
   module:
-    - datetime
-    - text
     - user
 id: node.circolare.default
 targetEntityType: node
 bundle: circolare
 mode: default
 content:
-  body:
-    type: text_default
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    weight: 101
-    region: content
   field_abstract:
     type: basic_string
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 0
+    weight: 2
     region: content
   field_anno_scolastico:
     type: entity_reference_label
-    label: inline
+    label: hidden
     settings:
       link: false
     third_party_settings: {  }
     weight: 1
     region: content
-  field_argomenti:
-    type: entity_reference_label
-    label: inline
-    settings:
-      link: true
-    third_party_settings: {  }
-    weight: 1
-    region: content
-  field_data_oblio:
-    type: datetime_default
-    label: above
-    settings:
-      timezone_override: ''
-      format_type: medium
-    third_party_settings: {  }
-    weight: 107
-    region: content
   field_numero_circolare:
     type: number_integer
-    label: above
+    label: hidden
     settings:
       thousand_separator: ''
       prefix_suffix: true
     third_party_settings: {  }
-    weight: 102
+    weight: 0
     region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 100
+    weight: 3
     region: content
 hidden:
+  body: true
+  field_argomenti: true
+  field_data_oblio: true
   field_destinatari: true
   field_eventi: true
   field_persona_responsabile: true
