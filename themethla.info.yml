@@ -55,8 +55,8 @@ dependencies:
   - bootstrap_italia:bootstrap_italia_views_carousel
   - bootstrap_italia_text_editor2:bootstrap_italia_text_editor2
 
-# Information added by GitHub Action packaging script on 2024-02-27
-version: '3.6.1'
+# Information added by GitHub Action packaging script on 2024-02-28
+version: '3.6.2'
 project: 'Themethla'
-datestamp: 1709069505
-message: ' fix typo in circolare'
+datestamp: 1709108412
+message: ' add field.field.node.scheda_didattica.field_libri_di_testo and review field'
