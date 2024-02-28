@@ -56,7 +56,7 @@ dependencies:
   - bootstrap_italia_text_editor2:bootstrap_italia_text_editor2
 
 # Information added by GitHub Action packaging script on 2024-02-28
-version: '3.6.6'
+version: '3.6.7'
 project: 'Themethla'
-datestamp: 1709133152
-message: ' remove from frontend codice_identificativo and ipa'
+datestamp: 1709156881
+message: ' fix servizio card display'
