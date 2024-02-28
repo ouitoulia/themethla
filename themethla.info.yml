@@ -56,7 +56,7 @@ dependencies:
   - bootstrap_italia_text_editor2:bootstrap_italia_text_editor2
 
 # Information added by GitHub Action packaging script on 2024-02-28
-version: '3.6.2'
+version: '3.6.3'
 project: 'Themethla'
-datestamp: 1709108412
-message: ' add field.field.node.scheda_didattica.field_libri_di_testo and review field'
+datestamp: 1709110083
+message: ' add field.materiali.didattici to libro'
