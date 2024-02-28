@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.libro.field_copertina
     - field.field.node.libro.field_editori
     - field.field.node.libro.field_isbn
+    - field.field.node.libro.field_materiali_didattici
     - field.field.node.libro.field_tipologia_libro
     - node.type.libro
   module:
@@ -36,5 +37,6 @@ hidden:
   field_autori: true
   field_editori: true
   field_isbn: true
+  field_materiali_didattici: true
   field_tipologia_libro: true
   langcode: true

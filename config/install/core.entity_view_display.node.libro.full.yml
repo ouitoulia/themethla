@@ -9,10 +9,12 @@ dependencies:
     - field.field.node.libro.field_copertina
     - field.field.node.libro.field_editori
     - field.field.node.libro.field_isbn
+    - field.field.node.libro.field_materiali_didattici
     - field.field.node.libro.field_tipologia_libro
     - image.style.focal_point_hvga_2_3_320x480_
     - node.type.libro
   module:
+    - file
     - media
     - text
     - user
@@ -70,6 +72,14 @@ content:
     third_party_settings: {  }
     weight: 5
     region: content
+  field_materiali_didattici:
+    type: file_default
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 7
+    region: content
   field_tipologia_libro:
     type: entity_reference_label
     label: inline
@@ -81,7 +91,7 @@ content:
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 7
+    weight: 8
     region: content
 hidden:
   langcode: true

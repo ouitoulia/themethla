@@ -1,0 +1,26 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_materiali_didattici
+    - node.type.libro
+  module:
+    - file
+id: node.libro.field_materiali_didattici
+field_name: field_materiali_didattici
+entity_type: node
+bundle: libro
+label: 'Materiali didattici'
+description: "Opzionalmente carica un file. Questo campo potrebbe essere utile nel caso in cui hai la necessità di condividere una dispensa, un libro scritto a scuola e simili. Tieni presente che per poter pubblicare opere protette da diritto d'autore devi possedere la licenza."
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: libro/materiali_didattici
+  file_extensions: 'txt rtf pdf odf odg odp ods odt fodt fods fodp fodg key numbers pages 7z csv json ogg tar gz tar.gz wav'
+  max_filesize: ''
+  description_field: true
+field_type: file

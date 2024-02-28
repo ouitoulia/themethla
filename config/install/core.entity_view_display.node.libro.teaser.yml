@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.libro.field_copertina
     - field.field.node.libro.field_editori
     - field.field.node.libro.field_isbn
+    - field.field.node.libro.field_materiali_didattici
     - field.field.node.libro.field_tipologia_libro
     - image.style.bootstrap_italia_card_image_panoramic
     - node.type.libro
@@ -49,5 +50,6 @@ hidden:
   field_abstract: true
   field_editori: true
   field_isbn: true
+  field_materiali_didattici: true
   field_tipologia_libro: true
   langcode: true
