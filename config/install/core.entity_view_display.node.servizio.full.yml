@@ -91,14 +91,6 @@ content:
     third_party_settings: {  }
     weight: 17
     region: content
-  field_codice_identificativo:
-    type: string
-    label: inline
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    weight: 23
-    region: content
   field_come_si_accede:
     type: text_default
     label: above
@@ -156,14 +148,6 @@ content:
       link: ''
     third_party_settings: {  }
     weight: 22
-    region: content
-  field_ipa:
-    type: string
-    label: inline
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    weight: 24
     region: content
   field_luoghi:
     type: entity_reference_entity_view
@@ -252,7 +236,7 @@ content:
     settings:
       link: false
     third_party_settings: {  }
-    weight: 25
+    weight: 23
     region: content
   field_tipologia_servizio:
     type: entity_reference_label
@@ -265,12 +249,14 @@ content:
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 27
+    weight: 25
     region: content
   toc_js:
     settings: {  }
     third_party_settings: {  }
-    weight: 26
+    weight: 24
     region: content
 hidden:
+  field_codice_identificativo: true
+  field_ipa: true
   langcode: true
