@@ -29,8 +29,10 @@ dependencies:
     - field.field.node.servizio.field_tipologia_autenticazione
     - field.field.node.servizio.field_tipologia_licenza
     - field.field.node.servizio.field_tipologia_servizio
+    - image.style.bootstrap_italia_card_image_panoramic
     - node.type.servizio
   module:
+    - media
     - user
 id: node.servizio.card
 targetEntityType: node
@@ -42,7 +44,18 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 1
+    weight: 2
+    region: content
+  field_copertina:
+    type: media_thumbnail
+    label: hidden
+    settings:
+      image_link: content
+      image_style: bootstrap_italia_card_image_panoramic
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
     region: content
   field_tipologia_servizio:
     type: entity_reference_label
@@ -50,7 +63,7 @@ content:
     settings:
       link: false
     third_party_settings: {  }
-    weight: 0
+    weight: 1
     region: content
 hidden:
   field_a_cosa_serve: true
@@ -60,7 +73,6 @@ hidden:
   field_casi_particolari: true
   field_codice_identificativo: true
   field_come_si_accede: true
-  field_copertina: true
   field_cosa_e: true
   field_cosa_serve: true
   field_email: true
