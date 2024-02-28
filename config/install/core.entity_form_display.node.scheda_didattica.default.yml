@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.scheda_didattica.field_durata
     - field.field.node.scheda_didattica.field_extra_info
     - field.field.node.scheda_didattica.field_grado_di_istruzione
+    - field.field.node.scheda_didattica.field_libri_di_testo
     - field.field.node.scheda_didattica.field_materie
     - field.field.node.scheda_didattica.field_obiettivi
     - field.field.node.scheda_didattica.field_persona_responsabile
@@ -80,6 +81,7 @@ third_party_settings:
     group_argomento:
       children:
         - field_extra_info
+        - field_libri_di_testo
       label: Argomento
       region: content
       parent_name: group_content
@@ -193,6 +195,16 @@ content:
     weight: 5
     region: content
     settings: {  }
+    third_party_settings: {  }
+  field_libri_di_testo:
+    type: entity_reference_autocomplete
+    weight: 10
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: 'Cerca per titolo, autore o ISBN; scrivi una parte o il termine completo'
     third_party_settings: {  }
   field_materie:
     type: entity_reference_autocomplete

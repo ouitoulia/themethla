@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.scheda_didattica.field_durata
     - field.field.node.scheda_didattica.field_extra_info
     - field.field.node.scheda_didattica.field_grado_di_istruzione
+    - field.field.node.scheda_didattica.field_libri_di_testo
     - field.field.node.scheda_didattica.field_materie
     - field.field.node.scheda_didattica.field_obiettivi
     - field.field.node.scheda_didattica.field_persona_responsabile
@@ -42,6 +43,7 @@ hidden:
   field_durata: true
   field_extra_info: true
   field_grado_di_istruzione: true
+  field_libri_di_testo: true
   field_materie: true
   field_obiettivi: true
   field_persona_responsabile: true

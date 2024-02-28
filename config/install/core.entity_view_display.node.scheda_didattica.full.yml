@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.scheda_didattica.field_durata
     - field.field.node.scheda_didattica.field_extra_info
     - field.field.node.scheda_didattica.field_grado_di_istruzione
+    - field.field.node.scheda_didattica.field_libri_di_testo
     - field.field.node.scheda_didattica.field_materie
     - field.field.node.scheda_didattica.field_obiettivi
     - field.field.node.scheda_didattica.field_persona_responsabile
@@ -30,7 +31,7 @@ content:
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 10
+    weight: 11
     region: content
   field_abstract:
     type: basic_string
@@ -90,6 +91,15 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
+  field_libri_di_testo:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: card
+      link: false
+    third_party_settings: {  }
+    weight: 10
+    region: content
   field_materie:
     type: entity_reference_label
     label: hidden
@@ -117,12 +127,12 @@ content:
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 11
+    weight: 12
     region: content
   toc_js:
     settings: {  }
     third_party_settings: {  }
-    weight: 12
+    weight: 13
     region: content
 hidden:
   langcode: true
