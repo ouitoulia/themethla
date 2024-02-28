@@ -1,0 +1,66 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.card
+    - field.field.node.scheda_didattica.body
+    - field.field.node.scheda_didattica.field_abstract
+    - field.field.node.scheda_didattica.field_argomenti
+    - field.field.node.scheda_didattica.field_competenze
+    - field.field.node.scheda_didattica.field_copertina
+    - field.field.node.scheda_didattica.field_durata
+    - field.field.node.scheda_didattica.field_extra_info
+    - field.field.node.scheda_didattica.field_grado_di_istruzione
+    - field.field.node.scheda_didattica.field_libri_di_testo
+    - field.field.node.scheda_didattica.field_materie
+    - field.field.node.scheda_didattica.field_obiettivi
+    - field.field.node.scheda_didattica.field_persona_responsabile
+    - image.style.bootstrap_italia_card_image_panoramic
+    - node.type.scheda_didattica
+  module:
+    - media
+    - user
+id: node.scheda_didattica.card
+targetEntityType: node
+bundle: scheda_didattica
+mode: card
+content:
+  field_abstract:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_copertina:
+    type: media_thumbnail
+    label: hidden
+    settings:
+      image_link: content
+      image_style: bootstrap_italia_card_image_panoramic
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_grado_di_istruzione:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  body: true
+  field_argomenti: true
+  field_competenze: true
+  field_durata: true
+  field_extra_info: true
+  field_libri_di_testo: true
+  field_materie: true
+  field_obiettivi: true
+  field_persona_responsabile: true
+  langcode: true
+  links: true
+  toc_js: true
