@@ -1,0 +1,20 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sede_legale
+    - node.type.luogo
+id: node.luogo.field_sede_legale
+field_name: field_sede_legale
+entity_type: node
+bundle: luogo
+label: 'Sede legale'
+description: 'Se spuntato imposta questo luogo come sede legale della scuola. Imposta un solo luogo come "Sede legale". Le informazioni presenti in questo contenuto verranno usate in diverse parti del sito web come: l''intestazione, il piè di pagina e in tutte le parti in cui è necessario riusarle.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: Acceso
+  off_label: Spento
+field_type: boolean

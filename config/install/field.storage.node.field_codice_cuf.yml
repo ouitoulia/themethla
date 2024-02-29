@@ -1,13 +1,11 @@
-uuid: 529239d8-f1ae-4fe0-b2fc-e03bb6666fa1
+uuid: 01e2cbc5-565b-46ef-9886-3d62721be2b1
 langcode: it
 status: true
 dependencies:
   module:
     - node
-_core:
-  default_config_hash: ChwDu-K4WkSJOLH_isEzVXcq3tkL5uIHde-xNNaJNg8
-id: node.field_ipa
-field_name: field_ipa
+id: node.field_codice_cuf
+field_name: field_codice_cuf
 entity_type: node
 type: string
 settings:

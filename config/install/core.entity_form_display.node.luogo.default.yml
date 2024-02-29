@@ -1,3 +1,4 @@
+uuid: 7b431950-50e0-4f2a-9ce3-73b4b7a6390b
 langcode: it
 status: true
 dependencies:
@@ -9,7 +10,10 @@ dependencies:
     - field.field.node.luogo.field_argomenti
     - field.field.node.luogo.field_attributi_luogo
     - field.field.node.luogo.field_codice_catastale_comune
+    - field.field.node.luogo.field_codice_cuf
+    - field.field.node.luogo.field_codice_fiscale
     - field.field.node.luogo.field_codice_identificativo
+    - field.field.node.luogo.field_codice_meccanografico
     - field.field.node.luogo.field_coordinate_geografiche
     - field.field.node.luogo.field_copertina
     - field.field.node.luogo.field_destinazione_uso
@@ -18,11 +22,14 @@ dependencies:
     - field.field.node.luogo.field_extra_info
     - field.field.node.luogo.field_galleria_immagini
     - field.field.node.luogo.field_indirizzo
+    - field.field.node.luogo.field_ipa
     - field.field.node.luogo.field_luoghi
     - field.field.node.luogo.field_numero_piani
     - field.field.node.luogo.field_orario_pubblico
+    - field.field.node.luogo.field_pec
     - field.field.node.luogo.field_posti
     - field.field.node.luogo.field_prenotabile
+    - field.field.node.luogo.field_sede_legale
     - field.field.node.luogo.field_struttura_esterna
     - field.field.node.luogo.field_superficie_area_libera
     - field.field.node.luogo.field_superficie_area_totale
@@ -49,7 +56,9 @@ third_party_settings:
       children:
         - group_descrizione
         - group_dove_si_trova
+        - group_contatti
         - group_ulteriori_informazioni
+        - group_sede_legale
       label: Luogo
       region: content
       parent_name: ''
@@ -74,7 +83,7 @@ third_party_settings:
       label: Descrizione
       region: content
       parent_name: group_luogo
-      weight: 20
+      weight: 21
       format_type: tab
       format_settings:
         classes: ''
@@ -89,13 +98,11 @@ third_party_settings:
         - field_indirizzo
         - field_coordinate_geografiche
         - field_orario_pubblico
-        - field_email
-        - field_telefono
         - field_attributi_luogo
       label: 'Dove si trova'
       region: content
       parent_name: group_luogo
-      weight: 21
+      weight: 22
       format_type: tab
       format_settings:
         classes: ''
@@ -123,7 +130,7 @@ third_party_settings:
       label: 'Ulteriori informazioni'
       region: content
       parent_name: group_luogo
-      weight: 22
+      weight: 24
       format_type: tab
       format_settings:
         classes: ''
@@ -132,6 +139,44 @@ third_party_settings:
         formatter: closed
         description: ''
         required_fields: true
+    group_sede_legale:
+      children:
+        - field_sede_legale
+        - field_codice_meccanografico
+        - field_codice_fiscale
+        - field_ipa
+        - field_codice_cuf
+      label: 'Sede legale'
+      region: content
+      parent_name: group_luogo
+      weight: 25
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: closed
+        description: 'Compila tutti i campi presenti in questa scheda se il luogo è la sede legale della Scuola. Queste informazioni vanno compilate in un solo luogo.'
+        required_fields: true
+    group_contatti:
+      children:
+        - field_email
+        - field_pec
+        - field_telefono
+      label: Contatti
+      region: content
+      parent_name: group_luogo
+      weight: 23
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+_core:
+  default_config_hash: WNDE_yZtRrsN9NmtgmrSd-izZNTlZWTUhQqtXfVUcUs
 id: node.luogo.default
 targetEntityType: node
 bundle: luogo
@@ -163,14 +208,14 @@ content:
     third_party_settings: {  }
   field_anno_adattamento:
     type: number
-    weight: 44
+    weight: 60
     region: content
     settings:
       placeholder: ''
     third_party_settings: {  }
   field_anno_costruzione:
     type: number
-    weight: 38
+    weight: 54
     region: content
     settings:
       placeholder: ''
@@ -187,7 +232,7 @@ content:
     third_party_settings: {  }
   field_attributi_luogo:
     type: entity_reference_autocomplete
-    weight: 32
+    weight: 33
     region: content
     settings:
       match_operator: CONTAINS
@@ -197,7 +242,23 @@ content:
     third_party_settings: {  }
   field_codice_catastale_comune:
     type: string_textfield
-    weight: 41
+    weight: 57
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_codice_cuf:
+    type: string_textfield
+    weight: 52
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_codice_fiscale:
+    type: string_textfield
+    weight: 50
     region: content
     settings:
       size: 60
@@ -205,7 +266,15 @@ content:
     third_party_settings: {  }
   field_codice_identificativo:
     type: string_textfield
-    weight: 40
+    weight: 56
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_codice_meccanografico:
+    type: string_textfield
+    weight: 49
     region: content
     settings:
       size: 60
@@ -323,7 +392,7 @@ content:
     third_party_settings: {  }
   field_destinazione_uso:
     type: entity_reference_autocomplete
-    weight: 43
+    weight: 59
     region: content
     settings:
       match_operator: CONTAINS
@@ -398,7 +467,7 @@ content:
             selector: ''
   field_extra_info:
     type: paragraphs
-    weight: 35
+    weight: 51
     region: content
     settings:
       title: Paragraph
@@ -467,6 +536,14 @@ content:
             effect: show
             effect_options: {  }
             selector: ''
+  field_ipa:
+    type: string_textfield
+    weight: 51
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
   field_luoghi:
     type: entity_reference_autocomplete
     weight: 26
@@ -479,7 +556,7 @@ content:
     third_party_settings: {  }
   field_numero_piani:
     type: number
-    weight: 39
+    weight: 55
     region: content
     settings:
       placeholder: ''
@@ -532,23 +609,38 @@ content:
             effect: show
             effect_options: {  }
             selector: ''
+  field_pec:
+    type: email_default
+    weight: 31
+    region: content
+    settings:
+      placeholder: ''
+      size: 60
+    third_party_settings: {  }
   field_posti:
     type: number
-    weight: 37
+    weight: 53
     region: content
     settings:
       placeholder: ''
     third_party_settings: {  }
   field_prenotabile:
     type: boolean_checkbox
-    weight: 36
+    weight: 52
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_sede_legale:
+    type: boolean_checkbox
+    weight: 48
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   field_struttura_esterna:
     type: entity_reference_autocomplete
-    weight: 33
+    weight: 50
     region: content
     settings:
       match_operator: CONTAINS
@@ -558,21 +650,21 @@ content:
     third_party_settings: {  }
   field_superficie_area_libera:
     type: number
-    weight: 46
+    weight: 62
     region: content
     settings:
       placeholder: ''
     third_party_settings: {  }
   field_superficie_area_totale:
     type: number
-    weight: 45
+    weight: 61
     region: content
     settings:
       placeholder: ''
     third_party_settings: {  }
   field_telefono:
     type: telephone_default
-    weight: 31
+    weight: 32
     region: content
     settings:
       placeholder: ''
@@ -627,7 +719,7 @@ content:
     third_party_settings: {  }
   field_uso_scolastico:
     type: boolean_checkbox
-    weight: 42
+    weight: 58
     region: content
     settings:
       display_label: true
@@ -641,7 +733,7 @@ content:
     third_party_settings: {  }
   field_volume:
     type: number
-    weight: 47
+    weight: 63
     region: content
     settings:
       placeholder: ''

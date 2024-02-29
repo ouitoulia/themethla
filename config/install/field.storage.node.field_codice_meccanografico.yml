@@ -1,13 +1,11 @@
-uuid: 529239d8-f1ae-4fe0-b2fc-e03bb6666fa1
+uuid: ceb694fa-5c33-4cf9-ba37-3366425117b0
 langcode: it
 status: true
 dependencies:
   module:
     - node
-_core:
-  default_config_hash: ChwDu-K4WkSJOLH_isEzVXcq3tkL5uIHde-xNNaJNg8
-id: node.field_ipa
-field_name: field_ipa
+id: node.field_codice_meccanografico
+field_name: field_codice_meccanografico
 entity_type: node
 type: string
 settings:

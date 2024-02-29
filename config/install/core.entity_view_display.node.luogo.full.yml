@@ -1,3 +1,4 @@
+uuid: fdd930fe-18de-434c-8f2f-7a50c8fe41dc
 langcode: it
 status: true
 dependencies:
@@ -10,7 +11,10 @@ dependencies:
     - field.field.node.luogo.field_argomenti
     - field.field.node.luogo.field_attributi_luogo
     - field.field.node.luogo.field_codice_catastale_comune
+    - field.field.node.luogo.field_codice_cuf
+    - field.field.node.luogo.field_codice_fiscale
     - field.field.node.luogo.field_codice_identificativo
+    - field.field.node.luogo.field_codice_meccanografico
     - field.field.node.luogo.field_coordinate_geografiche
     - field.field.node.luogo.field_copertina
     - field.field.node.luogo.field_destinazione_uso
@@ -19,11 +23,14 @@ dependencies:
     - field.field.node.luogo.field_extra_info
     - field.field.node.luogo.field_galleria_immagini
     - field.field.node.luogo.field_indirizzo
+    - field.field.node.luogo.field_ipa
     - field.field.node.luogo.field_luoghi
     - field.field.node.luogo.field_numero_piani
     - field.field.node.luogo.field_orario_pubblico
+    - field.field.node.luogo.field_pec
     - field.field.node.luogo.field_posti
     - field.field.node.luogo.field_prenotabile
+    - field.field.node.luogo.field_sede_legale
     - field.field.node.luogo.field_struttura_esterna
     - field.field.node.luogo.field_superficie_area_libera
     - field.field.node.luogo.field_superficie_area_totale
@@ -38,9 +45,12 @@ dependencies:
     - entity_reference_revisions
     - leaflet
     - office_hours
+    - spamspan
     - telephone
     - text
     - user
+_core:
+  default_config_hash: ScnlU2aABL9ElE_dTnGeNwlRks-lVSEEkrvXsVL5zOY
 id: node.luogo.full
 targetEntityType: node
 bundle: luogo
@@ -93,7 +103,7 @@ content:
       view_mode: teaser
       link: false
     third_party_settings: {  }
-    weight: 13
+    weight: 14
     region: content
   field_codice_catastale_comune:
     type: string
@@ -233,9 +243,17 @@ content:
     weight: 6
     region: content
   field_email:
-    type: basic_string
+    type: email_spamspan
     label: above
-    settings: {  }
+    settings:
+      spamspan_at: ' [una chiocciola] '
+      spamspan_dot: ' [un punto] '
+      spamspan_use_graphic: 0
+      spamspan_dot_enable: 0
+      spamspan_form_pattern: '<a href="%url?goto=%email">%displaytext</a>'
+      spamspan_form_default_url: contact
+      spamspan_form_default_displaytext: 'contact form'
+      spamspan_use_form: 0
     third_party_settings: {  }
     weight: 10
     region: content
@@ -246,7 +264,7 @@ content:
       view_mode: default
       link: ''
     third_party_settings: {  }
-    weight: 14
+    weight: 15
     region: content
   field_galleria_immagini:
     type: entity_reference_entity_view
@@ -255,7 +273,7 @@ content:
       view_mode: gallery_item
       link: false
     third_party_settings: {  }
-    weight: 15
+    weight: 16
     region: content
   field_indirizzo:
     type: address_plain
@@ -313,7 +331,22 @@ content:
       schema:
         enabled: true
     third_party_settings: {  }
-    weight: 12
+    weight: 13
+    region: content
+  field_pec:
+    type: email_spamspan
+    label: above
+    settings:
+      spamspan_at: ' [una chiocciola] '
+      spamspan_dot: ' [un punto] '
+      spamspan_use_graphic: 0
+      spamspan_dot_enable: 0
+      spamspan_form_pattern: '<a href="%url?goto=%email">%displaytext</a>'
+      spamspan_form_default_url: contact
+      spamspan_form_default_displaytext: 'contact form'
+      spamspan_use_form: 0
+    third_party_settings: {  }
+    weight: 11
     region: content
   field_posti:
     type: number_integer
@@ -341,7 +374,7 @@ content:
       view_mode: teaser
       link: false
     third_party_settings: {  }
-    weight: 16
+    weight: 17
     region: content
   field_superficie_area_libera:
     type: number_integer
@@ -367,7 +400,7 @@ content:
     settings:
       title: ''
     third_party_settings: {  }
-    weight: 11
+    weight: 12
     region: content
   field_tipologia_luogo:
     type: entity_reference_label
@@ -416,4 +449,9 @@ content:
     weight: 31
     region: content
 hidden:
+  field_codice_cuf: true
+  field_codice_fiscale: true
+  field_codice_meccanografico: true
+  field_ipa: true
+  field_sede_legale: true
   langcode: true

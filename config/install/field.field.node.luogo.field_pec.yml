@@ -1,0 +1,18 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pec
+    - node.type.luogo
+id: node.luogo.field_pec
+field_name: field_pec
+entity_type: node
+bundle: luogo
+label: PEC
+description: "Eventualmente inserisci l'indirizzo di posta elettronica certificata (in genere solo la sede ha questo indirizzo)."
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

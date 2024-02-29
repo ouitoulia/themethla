@@ -1,0 +1,18 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_codice_cuf
+    - node.type.luogo
+id: node.luogo.field_codice_cuf
+field_name: field_codice_cuf
+entity_type: node
+bundle: luogo
+label: 'Codice univoco fatturazione elettronica (CUF)'
+description: 'Eventualmente inserisci il Codice univoco fatturazione elettronica (solo la sede legale ha questo codice).'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

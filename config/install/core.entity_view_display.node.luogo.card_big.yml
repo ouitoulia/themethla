@@ -1,3 +1,4 @@
+uuid: b766d341-dd1d-403c-b66f-a65c894aa470
 langcode: it
 status: true
 dependencies:
@@ -10,7 +11,10 @@ dependencies:
     - field.field.node.luogo.field_argomenti
     - field.field.node.luogo.field_attributi_luogo
     - field.field.node.luogo.field_codice_catastale_comune
+    - field.field.node.luogo.field_codice_cuf
+    - field.field.node.luogo.field_codice_fiscale
     - field.field.node.luogo.field_codice_identificativo
+    - field.field.node.luogo.field_codice_meccanografico
     - field.field.node.luogo.field_coordinate_geografiche
     - field.field.node.luogo.field_copertina
     - field.field.node.luogo.field_destinazione_uso
@@ -19,11 +23,14 @@ dependencies:
     - field.field.node.luogo.field_extra_info
     - field.field.node.luogo.field_galleria_immagini
     - field.field.node.luogo.field_indirizzo
+    - field.field.node.luogo.field_ipa
     - field.field.node.luogo.field_luoghi
     - field.field.node.luogo.field_numero_piani
     - field.field.node.luogo.field_orario_pubblico
+    - field.field.node.luogo.field_pec
     - field.field.node.luogo.field_posti
     - field.field.node.luogo.field_prenotabile
+    - field.field.node.luogo.field_sede_legale
     - field.field.node.luogo.field_struttura_esterna
     - field.field.node.luogo.field_superficie_area_libera
     - field.field.node.luogo.field_superficie_area_totale
@@ -37,8 +44,11 @@ dependencies:
     - address
     - leaflet
     - office_hours
+    - spamspan
     - telephone
     - user
+_core:
+  default_config_hash: dhnzreXDAFwaBwAvOdTN3HUihoscgmcN5UvNfUq2FnE
 id: node.luogo.card_big
 targetEntityType: node
 bundle: luogo
@@ -140,11 +150,19 @@ content:
     weight: 0
     region: content
   field_email:
-    type: basic_string
+    type: email_spamspan
     label: above
-    settings: {  }
+    settings:
+      spamspan_at: ' [la chiocciola] '
+      spamspan_dot: ' [seguito dal punto] '
+      spamspan_use_graphic: 0
+      spamspan_dot_enable: 0
+      spamspan_form_pattern: '<a href="%url?goto=%email">%displaytext</a>'
+      spamspan_form_default_url: contact
+      spamspan_form_default_displaytext: 'contact form'
+      spamspan_use_form: 0
     third_party_settings: {  }
-    weight: 4
+    weight: 3
     region: content
   field_indirizzo:
     type: address_plain
@@ -186,13 +204,28 @@ content:
     third_party_settings: {  }
     weight: 2
     region: content
+  field_pec:
+    type: email_spamspan
+    label: above
+    settings:
+      spamspan_at: ' [chiocciola] '
+      spamspan_dot: ' [un punto] '
+      spamspan_use_graphic: 0
+      spamspan_dot_enable: 0
+      spamspan_form_pattern: '<a href="%url?goto=%email">%displaytext</a>'
+      spamspan_form_default_url: contact
+      spamspan_form_default_displaytext: 'contact form'
+      spamspan_use_form: 0
+    third_party_settings: {  }
+    weight: 4
+    region: content
   field_telefono:
     type: telephone_link
     label: above
     settings:
       title: ''
     third_party_settings: {  }
-    weight: 3
+    weight: 5
     region: content
 hidden:
   body: true
@@ -202,16 +235,21 @@ hidden:
   field_argomenti: true
   field_attributi_luogo: true
   field_codice_catastale_comune: true
+  field_codice_cuf: true
+  field_codice_fiscale: true
   field_codice_identificativo: true
+  field_codice_meccanografico: true
   field_copertina: true
   field_destinazione_uso: true
   field_elementi_di_interesse: true
   field_extra_info: true
   field_galleria_immagini: true
+  field_ipa: true
   field_luoghi: true
   field_numero_piani: true
   field_posti: true
   field_prenotabile: true
+  field_sede_legale: true
   field_struttura_esterna: true
   field_superficie_area_libera: true
   field_superficie_area_totale: true

@@ -1,3 +1,4 @@
+uuid: 16fd0ae3-edad-4179-bb8b-1391905ab551
 langcode: it
 status: true
 dependencies:
@@ -9,7 +10,10 @@ dependencies:
     - field.field.node.luogo.field_argomenti
     - field.field.node.luogo.field_attributi_luogo
     - field.field.node.luogo.field_codice_catastale_comune
+    - field.field.node.luogo.field_codice_cuf
+    - field.field.node.luogo.field_codice_fiscale
     - field.field.node.luogo.field_codice_identificativo
+    - field.field.node.luogo.field_codice_meccanografico
     - field.field.node.luogo.field_coordinate_geografiche
     - field.field.node.luogo.field_copertina
     - field.field.node.luogo.field_destinazione_uso
@@ -18,11 +22,14 @@ dependencies:
     - field.field.node.luogo.field_extra_info
     - field.field.node.luogo.field_galleria_immagini
     - field.field.node.luogo.field_indirizzo
+    - field.field.node.luogo.field_ipa
     - field.field.node.luogo.field_luoghi
     - field.field.node.luogo.field_numero_piani
     - field.field.node.luogo.field_orario_pubblico
+    - field.field.node.luogo.field_pec
     - field.field.node.luogo.field_posti
     - field.field.node.luogo.field_prenotabile
+    - field.field.node.luogo.field_sede_legale
     - field.field.node.luogo.field_struttura_esterna
     - field.field.node.luogo.field_superficie_area_libera
     - field.field.node.luogo.field_superficie_area_totale
@@ -34,6 +41,8 @@ dependencies:
     - node.type.luogo
   module:
     - user
+_core:
+  default_config_hash: YMbnClP4ugskfmP-N5DDKPgd_ReGs_aG3tY-zoGLxTY
 id: node.luogo.default
 targetEntityType: node
 bundle: luogo
@@ -58,7 +67,10 @@ hidden:
   field_argomenti: true
   field_attributi_luogo: true
   field_codice_catastale_comune: true
+  field_codice_cuf: true
+  field_codice_fiscale: true
   field_codice_identificativo: true
+  field_codice_meccanografico: true
   field_coordinate_geografiche: true
   field_copertina: true
   field_destinazione_uso: true
@@ -67,11 +79,14 @@ hidden:
   field_extra_info: true
   field_galleria_immagini: true
   field_indirizzo: true
+  field_ipa: true
   field_luoghi: true
   field_numero_piani: true
   field_orario_pubblico: true
+  field_pec: true
   field_posti: true
   field_prenotabile: true
+  field_sede_legale: true
   field_struttura_esterna: true
   field_superficie_area_libera: true
   field_superficie_area_totale: true

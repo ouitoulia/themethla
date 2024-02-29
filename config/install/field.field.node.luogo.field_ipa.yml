@@ -1,0 +1,18 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ipa
+    - node.type.luogo
+id: node.luogo.field_ipa
+field_name: field_ipa
+entity_type: node
+bundle: luogo
+label: 'Codice IPA'
+description: 'Opzionalmente inserisci il codice IPA (solo la sede legale ha un codice IPA).'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

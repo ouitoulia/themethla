@@ -1,0 +1,18 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_codice_meccanografico
+    - node.type.luogo
+id: node.luogo.field_codice_meccanografico
+field_name: field_codice_meccanografico
+entity_type: node
+bundle: luogo
+label: 'Codice meccanografico'
+description: 'Usa questo campo nel caso in cui il luogo ha un codice meccanografico.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
