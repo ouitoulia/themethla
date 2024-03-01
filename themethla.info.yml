@@ -55,8 +55,8 @@ dependencies:
   - bootstrap_italia:bootstrap_italia_views_carousel
   - bootstrap_italia_text_editor2:bootstrap_italia_text_editor2
 
-# Information added by GitHub Action packaging script on 2024-02-29
-version: '3.7.0'
+# Information added by GitHub Action packaging script on 2024-03-01
+version: '3.7.1'
 project: 'Themethla'
-datestamp: 1709242097
-message: ' add fields to ct luogo'
+datestamp: 1709289246
+message: ' remove wrong uuid'
