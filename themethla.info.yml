@@ -55,8 +55,8 @@ dependencies:
   - bootstrap_italia:bootstrap_italia_views_carousel
   - bootstrap_italia_text_editor2:bootstrap_italia_text_editor2
 
-# Information added by GitHub Action packaging script on 2024-03-01
-version: '3.7.1'
+# Information added by GitHub Action packaging script on 2024-03-02
+version: '3.8.8'
 project: 'Themethla'
-datestamp: 1709289246
-message: ' remove wrong uuid'
+datestamp: 1709377763
+message: ' move menu from theme'
