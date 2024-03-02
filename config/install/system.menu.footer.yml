@@ -1,0 +1,7 @@
+langcode: it
+status: true
+dependencies: {  }
+id: footer
+label: Footer
+description: 'Menu a piè di pagina'
+locked: true

@@ -1,0 +1,7 @@
+langcode: it
+status: true
+dependencies: {  }
+id: slim-top
+label: 'Slim top'
+description: 'Menu nell''intestazione. Si consiglia massimo due voci'
+locked: true

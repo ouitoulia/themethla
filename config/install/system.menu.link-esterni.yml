@@ -1,0 +1,7 @@
+langcode: it
+status: true
+dependencies: {  }
+id: link-esterni
+label: 'Link esterni'
+description: 'Questo menu gestisce i link esterni presenti nel footer'
+locked: true
