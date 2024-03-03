@@ -6,9 +6,11 @@ dependencies:
     - field.field.node.page.field_abstract
     - field.field.node.page.field_copertina
     - field.field.node.page.field_extra_info
+    - image.style.focal_point_thumbnail_3x_1_1_300x300_
     - node.type.page
   module:
     - entity_reference_revisions
+    - media
     - user
 id: node.page.full
 targetEntityType: node
@@ -23,11 +25,13 @@ content:
     weight: 1
     region: content
   field_copertina:
-    type: entity_reference_entity_view
+    type: media_thumbnail
     label: hidden
     settings:
-      view_mode: default
-      link: false
+      image_link: ''
+      image_style: focal_point_thumbnail_3x_1_1_300x300_
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
     weight: 0
     region: content
