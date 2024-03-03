@@ -56,7 +56,7 @@ dependencies:
   - bootstrap_italia_text_editor2:bootstrap_italia_text_editor2
 
 # Information added by GitHub Action packaging script on 2024-03-03
-version: '3.9.2'
+version: '3.9.3'
 project: 'Themethla'
-datestamp: 1709474989
+datestamp: 1709475122
 message: ' fix page display full'
