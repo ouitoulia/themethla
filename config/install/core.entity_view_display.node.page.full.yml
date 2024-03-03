@@ -6,11 +6,9 @@ dependencies:
     - field.field.node.page.field_abstract
     - field.field.node.page.field_copertina
     - field.field.node.page.field_extra_info
-    - image.style.focal_point_thumbnail_3x_1_1_300x300_
     - node.type.page
   module:
     - entity_reference_revisions
-    - media
     - user
 id: node.page.full
 targetEntityType: node
@@ -22,18 +20,16 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 0
+    weight: 1
     region: content
   field_copertina:
-    type: media_thumbnail
+    type: entity_reference_entity_view
     label: hidden
     settings:
-      image_link: ''
-      image_style: focal_point_thumbnail_3x_1_1_300x300_
-      image_loading:
-        attribute: lazy
+      view_mode: default
+      link: false
     third_party_settings: {  }
-    weight: 1
+    weight: 0
     region: content
   field_extra_info:
     type: entity_reference_revisions_entity_view
@@ -42,12 +38,12 @@ content:
       view_mode: default
       link: ''
     third_party_settings: {  }
-    weight: 14
+    weight: 2
     region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 100
+    weight: 3
     region: content
 hidden:
   langcode: true
