@@ -48,8 +48,6 @@ dependencies:
     - telephone
     - text
     - user
-_core:
-  default_config_hash: ScnlU2aABL9ElE_dTnGeNwlRks-lVSEEkrvXsVL5zOY
 id: node.luogo.full
 targetEntityType: node
 bundle: luogo
@@ -60,14 +58,14 @@ content:
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 5
+    weight: 6
     region: content
   field_abstract:
     type: basic_string
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 1
+    weight: 2
     region: content
   field_anno_adattamento:
     type: number_integer
@@ -76,7 +74,7 @@ content:
       thousand_separator: ''
       prefix_suffix: true
     third_party_settings: {  }
-    weight: 24
+    weight: 25
     region: content
   field_anno_costruzione:
     type: number_integer
@@ -85,7 +83,7 @@ content:
       thousand_separator: ''
       prefix_suffix: true
     third_party_settings: {  }
-    weight: 18
+    weight: 19
     region: content
   field_argomenti:
     type: entity_reference_label
@@ -93,7 +91,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 2
+    weight: 3
     region: content
   field_attributi_luogo:
     type: entity_reference_entity_view
@@ -102,7 +100,7 @@ content:
       view_mode: teaser
       link: false
     third_party_settings: {  }
-    weight: 14
+    weight: 15
     region: content
   field_codice_catastale_comune:
     type: string
@@ -110,7 +108,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 30
+    weight: 31
     region: content
   field_codice_identificativo:
     type: string
@@ -118,7 +116,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 29
+    weight: 30
     region: content
   field_coordinate_geografiche:
     type: leaflet_formatter_default
@@ -213,7 +211,7 @@ content:
         lazy_load: true
       weight: null
     third_party_settings: {  }
-    weight: 8
+    weight: 9
     region: content
   field_copertina:
     type: entity_reference_entity_view
@@ -222,7 +220,7 @@ content:
       view_mode: default
       link: false
     third_party_settings: {  }
-    weight: 3
+    weight: 4
     region: content
   field_destinazione_uso:
     type: entity_reference_label
@@ -230,7 +228,7 @@ content:
     settings:
       link: false
     third_party_settings: {  }
-    weight: 23
+    weight: 24
     region: content
   field_elementi_di_interesse:
     type: entity_reference_revisions_entity_view
@@ -239,7 +237,7 @@ content:
       view_mode: default
       link: ''
     third_party_settings: {  }
-    weight: 6
+    weight: 7
     region: content
   field_email:
     type: email_spamspan
@@ -254,7 +252,7 @@ content:
       spamspan_form_default_displaytext: 'contact form'
       spamspan_use_form: 0
     third_party_settings: {  }
-    weight: 10
+    weight: 11
     region: content
   field_extra_info:
     type: entity_reference_revisions_entity_view
@@ -263,7 +261,7 @@ content:
       view_mode: default
       link: ''
     third_party_settings: {  }
-    weight: 15
+    weight: 16
     region: content
   field_galleria_immagini:
     type: entity_reference_entity_view
@@ -272,14 +270,14 @@ content:
       view_mode: gallery_item
       link: false
     third_party_settings: {  }
-    weight: 16
+    weight: 17
     region: content
   field_indirizzo:
     type: address_plain
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 9
+    weight: 10
     region: content
   field_luoghi:
     type: entity_reference_entity_view
@@ -288,7 +286,7 @@ content:
       view_mode: card_big
       link: false
     third_party_settings: {  }
-    weight: 7
+    weight: 8
     region: content
   field_numero_piani:
     type: number_integer
@@ -297,7 +295,7 @@ content:
       thousand_separator: ''
       prefix_suffix: true
     third_party_settings: {  }
-    weight: 19
+    weight: 20
     region: content
   field_orario_pubblico:
     type: office_hours
@@ -330,7 +328,7 @@ content:
       schema:
         enabled: true
     third_party_settings: {  }
-    weight: 13
+    weight: 14
     region: content
   field_pec:
     type: email_spamspan
@@ -345,7 +343,7 @@ content:
       spamspan_form_default_displaytext: 'contact form'
       spamspan_use_form: 0
     third_party_settings: {  }
-    weight: 11
+    weight: 12
     region: content
   field_posti:
     type: number_integer
@@ -354,7 +352,7 @@ content:
       thousand_separator: ''
       prefix_suffix: true
     third_party_settings: {  }
-    weight: 20
+    weight: 21
     region: content
   field_prenotabile:
     type: boolean
@@ -364,7 +362,17 @@ content:
       format_custom_false: ''
       format_custom_true: ''
     third_party_settings: {  }
-    weight: 28
+    weight: 29
+    region: content
+  field_sede_legale:
+    type: boolean
+    label: hidden
+    settings:
+      format: true-false
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 1
     region: content
   field_struttura_esterna:
     type: entity_reference_entity_view
@@ -373,7 +381,7 @@ content:
       view_mode: teaser
       link: false
     third_party_settings: {  }
-    weight: 17
+    weight: 18
     region: content
   field_superficie_area_libera:
     type: number_integer
@@ -382,7 +390,7 @@ content:
       thousand_separator: ''
       prefix_suffix: true
     third_party_settings: {  }
-    weight: 25
+    weight: 26
     region: content
   field_superficie_area_totale:
     type: number_integer
@@ -391,7 +399,7 @@ content:
       thousand_separator: ''
       prefix_suffix: true
     third_party_settings: {  }
-    weight: 26
+    weight: 27
     region: content
   field_telefono:
     type: telephone_link
@@ -399,7 +407,7 @@ content:
     settings:
       title: ''
     third_party_settings: {  }
-    weight: 12
+    weight: 13
     region: content
   field_tipologia_luogo:
     type: entity_reference_label
@@ -407,7 +415,7 @@ content:
     settings:
       link: false
     third_party_settings: {  }
-    weight: 21
+    weight: 22
     region: content
   field_uso_scolastico:
     type: boolean
@@ -417,7 +425,7 @@ content:
       format_custom_false: ''
       format_custom_true: ''
     third_party_settings: {  }
-    weight: 22
+    weight: 23
     region: content
   field_video:
     type: entity_reference_entity_view
@@ -426,7 +434,7 @@ content:
       view_mode: default
       link: true
     third_party_settings: {  }
-    weight: 4
+    weight: 5
     region: content
   field_volume:
     type: number_integer
@@ -435,7 +443,7 @@ content:
       thousand_separator: ''
       prefix_suffix: true
     third_party_settings: {  }
-    weight: 27
+    weight: 28
     region: content
   links:
     settings: {  }
@@ -445,12 +453,11 @@ content:
   toc_js:
     settings: {  }
     third_party_settings: {  }
-    weight: 31
+    weight: 32
     region: content
 hidden:
   field_codice_cuf: true
   field_codice_fiscale: true
   field_codice_meccanografico: true
   field_ipa: true
-  field_sede_legale: true
   langcode: true
