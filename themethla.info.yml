@@ -56,7 +56,7 @@ dependencies:
   - bootstrap_italia_text_editor2:bootstrap_italia_text_editor2
 
 # Information added by GitHub Action packaging script on 2024-03-05
-version: '3.9.4 '
+version: '3.9.6 '
 project: 'Themethla'
 datestamp: 1709671474
 message: ' fix wrong taxonomy path'
