@@ -55,8 +55,8 @@ dependencies:
   - bootstrap_italia:bootstrap_italia_views_carousel
   - bootstrap_italia_text_editor2:bootstrap_italia_text_editor2
 
-# Information added by GitHub Action packaging script on 2024-03-06
-version: '3.9.8'
+# Information added by GitHub Action packaging script on 2024-03-09
+version: '3.10.0'
 project: 'Themethla'
-datestamp: 1709739517
-message: ' i luoghi views'
+datestamp: 1709999996
+message: ' add new display'
