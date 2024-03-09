@@ -1,0 +1,10 @@
+langcode: it
+status: true
+dependencies:
+  module:
+    - node
+id: node.card_scuola_big_image
+label: 'Card Scuola Big Image'
+description: 'Tipo di display usato per visualizzare i contenuti tramite il componente Card Scuola con variante Big Image.'
+targetEntityType: node
+cache: true

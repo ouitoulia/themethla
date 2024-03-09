@@ -1,0 +1,73 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.card_scuola_big_image
+    - field.field.node.percorso_di_studio.field_a_cosa_serve
+    - field.field.node.percorso_di_studio.field_abstract
+    - field.field.node.percorso_di_studio.field_casi_particolari
+    - field.field.node.percorso_di_studio.field_come_si_accede
+    - field.field.node.percorso_di_studio.field_copertina
+    - field.field.node.percorso_di_studio.field_cosa_e
+    - field.field.node.percorso_di_studio.field_cosa_serve
+    - field.field.node.percorso_di_studio.field_email
+    - field.field.node.percorso_di_studio.field_extra_info
+    - field.field.node.percorso_di_studio.field_grado_di_istruzione
+    - field.field.node.percorso_di_studio.field_indirizzo_di_studio
+    - field.field.node.percorso_di_studio.field_persona_responsabile
+    - field.field.node.percorso_di_studio.field_piano_di_studio
+    - field.field.node.percorso_di_studio.field_servizio
+    - field.field.node.percorso_di_studio.field_struttura_didattica
+    - field.field.node.percorso_di_studio.field_struttura_responsabile
+    - field.field.node.percorso_di_studio.field_telefono
+    - image.style.focal_point_thumbnail_3x_1_1_300x300_
+    - node.type.percorso_di_studio
+  module:
+    - media
+    - user
+id: node.percorso_di_studio.card_scuola_big_image
+targetEntityType: node
+bundle: percorso_di_studio
+mode: card_scuola_big_image
+content:
+  field_abstract:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_copertina:
+    type: media_thumbnail
+    label: hidden
+    settings:
+      image_link: content
+      image_style: focal_point_thumbnail_3x_1_1_300x300_
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  field_a_cosa_serve: true
+  field_casi_particolari: true
+  field_come_si_accede: true
+  field_cosa_e: true
+  field_cosa_serve: true
+  field_email: true
+  field_extra_info: true
+  field_grado_di_istruzione: true
+  field_indirizzo_di_studio: true
+  field_persona_responsabile: true
+  field_piano_di_studio: true
+  field_servizio: true
+  field_struttura_didattica: true
+  field_struttura_responsabile: true
+  field_telefono: true
+  langcode: true
+  toc_js: true
