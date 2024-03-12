@@ -56,7 +56,7 @@ dependencies:
   - bootstrap_italia_text_editor2:bootstrap_italia_text_editor2
 
 # Information added by GitHub Action packaging script on 2024-03-12
-version: '3.11.0'
+version: '3.12.0'
 project: 'Themethla'
-datestamp: 1710228029
-message: ' add new display to servizio ct'
+datestamp: 1710230163
+message: ' remove wrong configuration and move to lexika'
