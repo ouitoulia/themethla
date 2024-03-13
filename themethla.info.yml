@@ -55,8 +55,8 @@ dependencies:
   - bootstrap_italia:bootstrap_italia_views_carousel
   - bootstrap_italia_text_editor2:bootstrap_italia_text_editor2
 
-# Information added by GitHub Action packaging script on 2024-03-12
-version: '3.12.0'
+# Information added by GitHub Action packaging script on 2024-03-13
+version: '3.13.0'
 project: 'Themethla'
-datestamp: 1710230163
-message: ' remove wrong configuration and move to lexika'
+datestamp: 1710336838
+message: ' toc refactoring'
