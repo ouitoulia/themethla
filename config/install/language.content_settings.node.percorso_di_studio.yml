@@ -1,0 +1,10 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - node.type.percorso_di_studio
+id: node.percorso_di_studio
+target_entity_type_id: node
+target_bundle: percorso_di_studio
+default_langcode: site_default
+language_alterable: true

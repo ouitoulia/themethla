@@ -10,7 +10,7 @@ third_party_settings:
       - main
     parent: 'main:'
   toc_js:
-    toc_js_active: 1
+    toc_js_active: 0
     title: 'Indice della pagina'
     selectors: h2
     selectors_minimum: '0'
@@ -21,10 +21,10 @@ third_party_settings:
     back_to_top: 0
     back_to_top_label: 'Back to top'
     smooth_scrolling: 1
-    scroll_to_offset: '0'
+    scroll_to_offset: '112'
     highlight_on_scroll: 1
-    highlight_offset: '100'
-    sticky: 1
+    highlight_offset: '0'
+    sticky: 0
     sticky_offset: '104'
     sticky_stop: .sticky-toc-stop
     sticky_stop_padding: '0'
