@@ -1,0 +1,33 @@
+uuid: fa72fbdd-1fbd-49cd-97ec-a6bf48f2548c
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tipologia_notizia
+    - node.type.article
+    - taxonomy.vocabulary.tipologia_notizie
+  content:
+    - 'taxonomy_term:tipologia_notizie:ad85f787-664c-4028-a66f-7106398cb825'
+id: node.article.field_tipologia_notizia
+field_name: field_tipologia_notizia
+entity_type: node
+bundle: article
+label: 'Tipologia notizia'
+description: 'Seleziona la tipologia della notizia.'
+required: true
+translatable: false
+default_value:
+  -
+    target_uuid: ad85f787-664c-4028-a66f-7106398cb825
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tipologia_notizie: tipologia_notizie
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

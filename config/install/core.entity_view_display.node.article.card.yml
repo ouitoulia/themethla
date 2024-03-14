@@ -12,6 +12,7 @@ dependencies:
     - field.field.node.article.field_luoghi
     - field.field.node.article.field_persona_responsabile
     - field.field.node.article.field_persone
+    - field.field.node.article.field_tipologia_notizia
     - image.style.bootstrap_italia_card_image_panoramic
     - node.type.article
   module:
@@ -56,6 +57,7 @@ hidden:
   field_extra_info: true
   field_luoghi: true
   field_persone: true
+  field_tipologia_notizia: true
   langcode: true
   links: true
   toc_js: true

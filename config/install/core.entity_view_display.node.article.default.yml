@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.article.field_luoghi
     - field.field.node.article.field_persona_responsabile
     - field.field.node.article.field_persone
+    - field.field.node.article.field_tipologia_notizia
     - node.type.article
   module:
     - user
@@ -47,5 +48,6 @@ hidden:
   field_luoghi: true
   field_persona_responsabile: true
   field_persone: true
+  field_tipologia_notizia: true
   langcode: true
   toc_js: true

@@ -12,6 +12,7 @@ dependencies:
     - field.field.node.article.field_luoghi
     - field.field.node.article.field_persona_responsabile
     - field.field.node.article.field_persone
+    - field.field.node.article.field_tipologia_notizia
     - node.type.article
   module:
     - entity_reference_revisions
@@ -104,5 +105,6 @@ content:
     weight: 9
     region: content
 hidden:
+  field_tipologia_notizia: true
   langcode: true
   toc_js: true
