@@ -56,7 +56,7 @@ dependencies:
   - bootstrap_italia_text_editor2:bootstrap_italia_text_editor2
 
 # Information added by GitHub Action packaging script on 2024-03-14
-version: '3.14.0'
+version: '3.14.1'
 project: 'Themethla'
-datestamp: 1710417184
-message: ' add field_tipologia_notizia'
+datestamp: 1710434585
+message: ' fix pathauto ct notizia'
