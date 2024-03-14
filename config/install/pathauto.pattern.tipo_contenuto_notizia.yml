@@ -6,12 +6,12 @@ dependencies:
 id: tipo_contenuto_notizia
 label: 'Tipo contenuto: Notizia'
 type: 'canonical_entities:node'
-pattern: 'novita/le-notizie/[node:title]'
+pattern: 'novita/[node:field_tipologia_notizia]/[node:title]'
 selection_criteria:
-  4c9a0d39-81c7-4346-af0c-ca9025bf63cb:
+  3787225f-d3cf-4372-b0ab-8fb26a4f4a26:
     id: 'entity_bundle:node'
     negate: false
-    uuid: 4c9a0d39-81c7-4346-af0c-ca9025bf63cb
+    uuid: 3787225f-d3cf-4372-b0ab-8fb26a4f4a26
     context_mapping:
       node: node
     bundles:
