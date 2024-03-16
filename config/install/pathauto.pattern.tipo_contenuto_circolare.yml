@@ -6,12 +6,12 @@ dependencies:
 id: tipo_contenuto_circolare
 label: 'Tipo contenuto: Circolare'
 type: 'canonical_entities:node'
-pattern: 'novita/circolari/[node:title]'
+pattern: 'novita/le-circolari/[node:title]'
 selection_criteria:
-  7c888f78-7301-45af-8e5d-d17ea0a7234e:
+  d9388465-78e9-4e87-9cec-ba0b10377fb8:
     id: 'entity_bundle:node'
     negate: false
-    uuid: 7c888f78-7301-45af-8e5d-d17ea0a7234e
+    uuid: d9388465-78e9-4e87-9cec-ba0b10377fb8
     context_mapping:
       node: node
     bundles:
