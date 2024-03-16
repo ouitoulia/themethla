@@ -1,0 +1,59 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.card_scuola_big_image
+    - field.field.node.circolare.body
+    - field.field.node.circolare.field_abstract
+    - field.field.node.circolare.field_anno_scolastico
+    - field.field.node.circolare.field_argomenti
+    - field.field.node.circolare.field_data_oblio
+    - field.field.node.circolare.field_destinatari
+    - field.field.node.circolare.field_eventi
+    - field.field.node.circolare.field_numero_circolare
+    - field.field.node.circolare.field_persona_responsabile
+    - node.type.circolare
+  module:
+    - user
+id: node.circolare.card_scuola_big_image
+targetEntityType: node
+bundle: circolare
+mode: card_scuola_big_image
+content:
+  field_abstract:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_anno_scolastico:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_numero_circolare:
+    type: number_integer
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden:
+  body: true
+  field_argomenti: true
+  field_data_oblio: true
+  field_destinatari: true
+  field_eventi: true
+  field_persona_responsabile: true
+  langcode: true
