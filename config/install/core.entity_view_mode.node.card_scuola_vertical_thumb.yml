@@ -1,0 +1,10 @@
+langcode: it
+status: true
+dependencies:
+  module:
+    - node
+id: node.card_scuola_vertical_thumb
+label: 'Card Scuola Vertical Thumb'
+description: "È una variante di card teaser in cui c'è un'immagine e altri campi"
+targetEntityType: node
+cache: true
