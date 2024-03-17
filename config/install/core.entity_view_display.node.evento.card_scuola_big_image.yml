@@ -2,7 +2,7 @@ langcode: it
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.teaser
+    - core.entity_view_mode.node.card_scuola_big_image
     - field.field.node.evento.body
     - field.field.node.evento.field_abstract
     - field.field.node.evento.field_argomenti
@@ -26,21 +26,34 @@ dependencies:
     - field.field.node.evento.field_telefono
     - field.field.node.evento.field_timeline
     - field.field.node.evento.field_tipologia_evento
+    - image.style.focal_point_thumbnail_3x_1_1_300x300_
     - node.type.evento
   module:
     - datetime
+    - media
     - user
-id: node.evento.teaser
+id: node.evento.card_scuola_big_image
 targetEntityType: node
 bundle: evento
-mode: teaser
+mode: card_scuola_big_image
 content:
   field_abstract:
     type: basic_string
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 2
+    weight: 1
+    region: content
+  field_copertina:
+    type: media_thumbnail
+    label: hidden
+    settings:
+      image_link: content
+      image_style: focal_point_thumbnail_3x_1_1_300x300_
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
     region: content
   field_data_fine:
     type: datetime_default
@@ -49,7 +62,7 @@ content:
       timezone_override: ''
       format_type: bootstrap_italia_medium
     third_party_settings: {  }
-    weight: 1
+    weight: 3
     region: content
   field_data_inizio:
     type: datetime_default
@@ -58,18 +71,17 @@ content:
       timezone_override: ''
       format_type: bootstrap_italia_medium
     third_party_settings: {  }
-    weight: 0
+    weight: 2
     region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 3
+    weight: 4
     region: content
 hidden:
   body: true
   field_argomenti: true
   field_collaborazioni: true
-  field_copertina: true
   field_descrizione_destinatari: true
   field_destinatari: true
   field_email: true
