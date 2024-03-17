@@ -55,8 +55,8 @@ dependencies:
   - bootstrap_italia:bootstrap_italia_views_carousel
   - bootstrap_italia_text_editor2:bootstrap_italia_text_editor2
 
-# Information added by GitHub Action packaging script on 2024-03-16
-version: '3.16.1'
+# Information added by GitHub Action packaging script on 2024-03-17
+version: '3.17.0'
 project: 'Themethla'
-datestamp: 1710599902
-message: ' fix circolare path'
+datestamp: 1710669453
+message: ' add card-vertical-thumb'
