@@ -11,7 +11,7 @@ field_name: field_data_oblio
 entity_type: node
 bundle: circolare
 label: 'Oblio documento'
-description: 'Se inserisci una data, in automatico alla data specificata, la pagina del documento non sarà più indicizzabile dai motori di ricerca e non verrà visualizzata negli elenchi dei documenti attivi. Nota che il documento rimarrà comunque visibile nella sezione archivio storico e da coloro che possiedono il link. Se desideri rimuovere il documento dalla pubblicazione togli la spunta dal campo "Pubblicato".'
+description: 'Se inserisci una data, in automatico alla data specificata, la pagina del documento non sarà più indicizzabile dai motori di ricerca e non verrà visualizzata negli elenchi dei documenti attivi. Nota che il documento rimarrà comunque visibile nella sezione archivio storico e da coloro che possiedono il link. Se questa circolare viene annullata da una successiva circolare, imposta la data di oblio uguale alla data di pubblicazione della circolare che annulla questa. In casi estremi puoi rimuovere il documento dalla pubblicazione togliendo la spunta dal campo "Pubblicato", tieni presente che non è previsto scarto per le circolari (<a href="https://www.istruzione.it/responsabile-transizione-digitale/allegati/MI%20-%20RTD_Gestione%20documentale_Massimario%20di%20conservazione%20e%20scarto_versione%20finale.pdf" target="_blank" title="Massimario di conservazione e scarto per le istituzioni scolastiche">fonte MIM I.1.5</a>).'
 required: false
 translatable: false
 default_value: {  }
