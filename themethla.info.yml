@@ -56,7 +56,7 @@ dependencies:
   - bootstrap_italia_text_editor2:bootstrap_italia_text_editor2
 
 # Information added by GitHub Action packaging script on 2024-03-20
-version: '3.19.0'
+version: '3.19.1'
 project: 'Themethla'
-datestamp: 1710935703
-message: ' add accordion display to percorsi_di_studio'
+datestamp: 1710940556
+message: ' add anno_scolastico default value'
