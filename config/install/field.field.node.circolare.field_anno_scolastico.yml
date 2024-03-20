@@ -5,6 +5,8 @@ dependencies:
     - field.storage.node.field_anno_scolastico
     - node.type.circolare
     - taxonomy.vocabulary.anni_scolastici
+  content:
+    - 'taxonomy_term:anni_scolastici:7352f7ca-a033-494b-ae59-f0ab9dc0a035'
 id: node.circolare.field_anno_scolastico
 field_name: field_anno_scolastico
 entity_type: node
@@ -13,7 +15,9 @@ label: 'Anno scolastico'
 description: 'Indica l''anno scolastico di riferimento della circolare. Viene usato il vocabolario <a href="/admin/structure/taxonomy/manage/anni_scolastici/overview" title="Visualizza la lista dei termini" target="_blank">Anni scolastici</a>. Nel caso in cui non riesci ad inserire nuovi termini e/o a visualizzarli chiedi al responsabile del sito la modifica dei relativi permessi.'
 required: true
 translatable: false
-default_value: {  }
+default_value:
+  -
+    target_uuid: 7352f7ca-a033-494b-ae59-f0ab9dc0a035
 default_value_callback: ''
 settings:
   handler: 'default:taxonomy_term'
