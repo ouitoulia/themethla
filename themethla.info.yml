@@ -55,8 +55,8 @@ dependencies:
   - bootstrap_italia:bootstrap_italia_views_carousel
   - bootstrap_italia_text_editor2:bootstrap_italia_text_editor2
 
-# Information added by GitHub Action packaging script on 2024-03-18
-version: '3.18.1'
+# Information added by GitHub Action packaging script on 2024-03-20
+version: '3.19.0'
 project: 'Themethla'
-datestamp: 1710758655
-message: ' fix description field_data_oblio'
+datestamp: 1710935703
+message: ' add accordion display to percorsi_di_studio'
