@@ -55,8 +55,8 @@ dependencies:
   - bootstrap_italia:bootstrap_italia_views_carousel
   - bootstrap_italia_text_editor2:bootstrap_italia_text_editor2
 
-# Information added by GitHub Action packaging script on 2024-03-21
-version: '3.21.0'
+# Information added by GitHub Action packaging script on 2024-03-22
+version: '3.22.0'
 project: 'Themethla'
-datestamp: 1711057365
-message: ' add display to progetto'
+datestamp: 1711124885
+message: ' add display to scheda_didattica'
