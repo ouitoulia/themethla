@@ -1,0 +1,77 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.card_scuola_horizontal
+    - field.field.node.scheda_didattica.body
+    - field.field.node.scheda_didattica.field_abstract
+    - field.field.node.scheda_didattica.field_argomenti
+    - field.field.node.scheda_didattica.field_competenze
+    - field.field.node.scheda_didattica.field_copertina
+    - field.field.node.scheda_didattica.field_durata
+    - field.field.node.scheda_didattica.field_extra_info
+    - field.field.node.scheda_didattica.field_grado_di_istruzione
+    - field.field.node.scheda_didattica.field_libri_di_testo
+    - field.field.node.scheda_didattica.field_materie
+    - field.field.node.scheda_didattica.field_obiettivi
+    - field.field.node.scheda_didattica.field_persona_responsabile
+    - image.style.focal_point_vga_3_4_480x640_narrow
+    - node.type.scheda_didattica
+  module:
+    - duration_field
+    - media
+    - user
+id: node.scheda_didattica.card_scuola_horizontal
+targetEntityType: node
+bundle: scheda_didattica
+mode: card_scuola_horizontal
+content:
+  field_copertina:
+    type: media_thumbnail
+    label: hidden
+    settings:
+      image_link: content
+      image_style: focal_point_vga_3_4_480x640_narrow
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_durata:
+    type: duration_human_display
+    label: hidden
+    settings:
+      text_length: full
+      separator: space
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_materie:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_persona_responsabile:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden:
+  body: true
+  field_abstract: true
+  field_argomenti: true
+  field_competenze: true
+  field_extra_info: true
+  field_grado_di_istruzione: true
+  field_libri_di_testo: true
+  field_obiettivi: true
+  langcode: true
+  links: true
+  toc_js: true

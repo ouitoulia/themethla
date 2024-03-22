@@ -5,6 +5,6 @@ dependencies:
     - node
 id: node.card_scuola_vertical_thumb
 label: 'Card Scuola Vertical Thumb'
-description: "È una variante di card teaser in cui c'è un'immagine e altri campi"
+description: "È una variante di card teaser in cui c'è un'immagine a destra e altri campi"
 targetEntityType: node
 cache: true
