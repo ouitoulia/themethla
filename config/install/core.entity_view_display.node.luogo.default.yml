@@ -22,7 +22,10 @@ dependencies:
     - field.field.node.luogo.field_galleria_immagini
     - field.field.node.luogo.field_indirizzo
     - field.field.node.luogo.field_ipa
+    - field.field.node.luogo.field_link
     - field.field.node.luogo.field_luoghi
+    - field.field.node.luogo.field_numero_alunni
+    - field.field.node.luogo.field_numero_classi
     - field.field.node.luogo.field_numero_piani
     - field.field.node.luogo.field_orario_pubblico
     - field.field.node.luogo.field_pec
@@ -40,8 +43,6 @@ dependencies:
     - node.type.luogo
   module:
     - user
-_core:
-  default_config_hash: YMbnClP4ugskfmP-N5DDKPgd_ReGs_aG3tY-zoGLxTY
 id: node.luogo.default
 targetEntityType: node
 bundle: luogo
@@ -79,7 +80,10 @@ hidden:
   field_galleria_immagini: true
   field_indirizzo: true
   field_ipa: true
+  field_link: true
   field_luoghi: true
+  field_numero_alunni: true
+  field_numero_classi: true
   field_numero_piani: true
   field_orario_pubblico: true
   field_pec: true

@@ -23,7 +23,10 @@ dependencies:
     - field.field.node.luogo.field_galleria_immagini
     - field.field.node.luogo.field_indirizzo
     - field.field.node.luogo.field_ipa
+    - field.field.node.luogo.field_link
     - field.field.node.luogo.field_luoghi
+    - field.field.node.luogo.field_numero_alunni
+    - field.field.node.luogo.field_numero_classi
     - field.field.node.luogo.field_numero_piani
     - field.field.node.luogo.field_orario_pubblico
     - field.field.node.luogo.field_pec
@@ -43,6 +46,7 @@ dependencies:
     - address
     - entity_reference_revisions
     - leaflet
+    - link
     - office_hours
     - spamspan
     - telephone
@@ -279,6 +283,18 @@ content:
     third_party_settings: {  }
     weight: 10
     region: content
+  field_link:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 15
+    region: content
   field_luoghi:
     type: entity_reference_entity_view
     label: hidden
@@ -460,4 +476,6 @@ hidden:
   field_codice_fiscale: true
   field_codice_meccanografico: true
   field_ipa: true
+  field_numero_alunni: true
+  field_numero_classi: true
   langcode: true

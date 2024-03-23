@@ -22,7 +22,10 @@ dependencies:
     - field.field.node.luogo.field_galleria_immagini
     - field.field.node.luogo.field_indirizzo
     - field.field.node.luogo.field_ipa
+    - field.field.node.luogo.field_link
     - field.field.node.luogo.field_luoghi
+    - field.field.node.luogo.field_numero_alunni
+    - field.field.node.luogo.field_numero_classi
     - field.field.node.luogo.field_numero_piani
     - field.field.node.luogo.field_orario_pubblico
     - field.field.node.luogo.field_pec
@@ -43,6 +46,7 @@ dependencies:
     - conditional_fields
     - field_group
     - leaflet
+    - link
     - media_library
     - office_hours
     - paragraphs
@@ -112,6 +116,8 @@ third_party_settings:
         required_fields: true
     group_ulteriori_informazioni:
       children:
+        - field_numero_classi
+        - field_numero_alunni
         - field_struttura_esterna
         - field_extra_info
         - field_prenotabile
@@ -145,6 +151,7 @@ third_party_settings:
         - field_codice_fiscale
         - field_ipa
         - field_codice_cuf
+        - field_link
       label: 'Sede legale'
       region: content
       parent_name: group_luogo
@@ -174,8 +181,6 @@ third_party_settings:
         formatter: closed
         description: ''
         required_fields: true
-_core:
-  default_config_hash: WNDE_yZtRrsN9NmtgmrSd-izZNTlZWTUhQqtXfVUcUs
 id: node.luogo.default
 targetEntityType: node
 bundle: luogo
@@ -207,14 +212,14 @@ content:
     third_party_settings: {  }
   field_anno_adattamento:
     type: number
-    weight: 60
+    weight: 77
     region: content
     settings:
       placeholder: ''
     third_party_settings: {  }
   field_anno_costruzione:
     type: number
-    weight: 54
+    weight: 71
     region: content
     settings:
       placeholder: ''
@@ -241,7 +246,7 @@ content:
     third_party_settings: {  }
   field_codice_catastale_comune:
     type: string_textfield
-    weight: 57
+    weight: 74
     region: content
     settings:
       size: 60
@@ -265,7 +270,7 @@ content:
     third_party_settings: {  }
   field_codice_identificativo:
     type: string_textfield
-    weight: 56
+    weight: 73
     region: content
     settings:
       size: 60
@@ -391,7 +396,7 @@ content:
     third_party_settings: {  }
   field_destinazione_uso:
     type: entity_reference_autocomplete
-    weight: 59
+    weight: 76
     region: content
     settings:
       match_operator: CONTAINS
@@ -466,7 +471,7 @@ content:
             selector: ''
   field_extra_info:
     type: paragraphs
-    weight: 51
+    weight: 68
     region: content
     settings:
       title: Paragraph
@@ -543,6 +548,14 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  field_link:
+    type: link_default
+    weight: 53
+    region: content
+    settings:
+      placeholder_url: 'https://cercalatuascuola.istruzione.it/cercalatuascuola/istituti/<codice-meccanografico>/<nome-della-scuola>/'
+      placeholder_title: 'Scopri di più'
+    third_party_settings: {  }
   field_luoghi:
     type: entity_reference_autocomplete
     weight: 26
@@ -553,9 +566,23 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  field_numero_alunni:
+    type: number
+    weight: 66
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_numero_classi:
+    type: number
+    weight: 65
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
   field_numero_piani:
     type: number
-    weight: 55
+    weight: 72
     region: content
     settings:
       placeholder: ''
@@ -618,14 +645,14 @@ content:
     third_party_settings: {  }
   field_posti:
     type: number
-    weight: 53
+    weight: 70
     region: content
     settings:
       placeholder: ''
     third_party_settings: {  }
   field_prenotabile:
     type: boolean_checkbox
-    weight: 52
+    weight: 69
     region: content
     settings:
       display_label: true
@@ -639,7 +666,7 @@ content:
     third_party_settings: {  }
   field_struttura_esterna:
     type: entity_reference_autocomplete
-    weight: 50
+    weight: 67
     region: content
     settings:
       match_operator: CONTAINS
@@ -649,14 +676,14 @@ content:
     third_party_settings: {  }
   field_superficie_area_libera:
     type: number
-    weight: 62
+    weight: 79
     region: content
     settings:
       placeholder: ''
     third_party_settings: {  }
   field_superficie_area_totale:
     type: number
-    weight: 61
+    weight: 78
     region: content
     settings:
       placeholder: ''
@@ -707,18 +734,14 @@ content:
             effect_options: {  }
             selector: ''
   field_tipologia_luogo:
-    type: entity_reference_autocomplete
+    type: options_buttons
     weight: 4
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_uso_scolastico:
     type: boolean_checkbox
-    weight: 58
+    weight: 75
     region: content
     settings:
       display_label: true
@@ -732,7 +755,7 @@ content:
     third_party_settings: {  }
   field_volume:
     type: number
-    weight: 63
+    weight: 80
     region: content
     settings:
       placeholder: ''

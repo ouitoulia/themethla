@@ -1,0 +1,22 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_numero_alunni
+    - node.type.luogo
+id: node.luogo.field_numero_alunni
+field_name: field_numero_alunni
+entity_type: node
+bundle: luogo
+label: 'Numero alunni'
+description: 'Se stai inserendo un luogo di tipo "Edificio Scolastico" inserisci il numero di alunni che l''edificio ospita, questa informazione verrà riusata nella pagina "I numeri della scuola".'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 1
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

@@ -1,0 +1,22 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_link
+    - node.type.luogo
+  module:
+    - link
+id: node.luogo.field_link
+field_name: field_link
+entity_type: node
+bundle: luogo
+label: 'Collegamento Scuola in chiaro'
+description: 'Pagina dell''Istituto presente sulla piattaforma "Scuola in chiaro". Se non conosci il link <a href="https://cercalatuascuola.istruzione.it/cercalatuascuola/" title="Pagina di ricerca piattaforma Scuola in chiaro (apre in una nuova finestra)." target="_blank">vai alla pagina di ricerca</a>.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 16
+field_type: link

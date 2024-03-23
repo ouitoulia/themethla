@@ -23,7 +23,10 @@ dependencies:
     - field.field.node.luogo.field_galleria_immagini
     - field.field.node.luogo.field_indirizzo
     - field.field.node.luogo.field_ipa
+    - field.field.node.luogo.field_link
     - field.field.node.luogo.field_luoghi
+    - field.field.node.luogo.field_numero_alunni
+    - field.field.node.luogo.field_numero_classi
     - field.field.node.luogo.field_numero_piani
     - field.field.node.luogo.field_orario_pubblico
     - field.field.node.luogo.field_pec
@@ -46,8 +49,6 @@ dependencies:
     - spamspan
     - telephone
     - user
-_core:
-  default_config_hash: dhnzreXDAFwaBwAvOdTN3HUihoscgmcN5UvNfUq2FnE
 id: node.luogo.card_big
 targetEntityType: node
 bundle: luogo
@@ -244,7 +245,10 @@ hidden:
   field_extra_info: true
   field_galleria_immagini: true
   field_ipa: true
+  field_link: true
   field_luoghi: true
+  field_numero_alunni: true
+  field_numero_classi: true
   field_numero_piani: true
   field_posti: true
   field_prenotabile: true
