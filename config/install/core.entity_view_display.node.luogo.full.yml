@@ -46,7 +46,6 @@ dependencies:
     - address
     - entity_reference_revisions
     - leaflet
-    - link
     - office_hours
     - spamspan
     - telephone
@@ -283,18 +282,6 @@ content:
     third_party_settings: {  }
     weight: 10
     region: content
-  field_link:
-    type: link
-    label: above
-    settings:
-      trim_length: 80
-      url_only: false
-      url_plain: false
-      rel: ''
-      target: ''
-    third_party_settings: {  }
-    weight: 15
-    region: content
   field_luoghi:
     type: entity_reference_entity_view
     label: hidden
@@ -476,6 +463,7 @@ hidden:
   field_codice_fiscale: true
   field_codice_meccanografico: true
   field_ipa: true
+  field_link: true
   field_numero_alunni: true
   field_numero_classi: true
   langcode: true
