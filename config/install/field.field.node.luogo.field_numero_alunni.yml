@@ -9,7 +9,7 @@ field_name: field_numero_alunni
 entity_type: node
 bundle: luogo
 label: 'Numero alunni'
-description: 'Se stai inserendo un luogo di tipo "Edificio Scolastico" inserisci il numero di alunni che l''edificio ospita, questa informazione verrà riusata nella pagina "I numeri della scuola".'
+description: 'Se stai inserendo un luogo di tipo "Edificio Scolastico" inserisci il numero di alunni che l''edificio ospita, questa informazione verrà riusata nella pagina "I numeri della scuola". Se questo luogo è impostato come sede legale, inserisci il totale degli alunni.'
 required: false
 translatable: false
 default_value: {  }
