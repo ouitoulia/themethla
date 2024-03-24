@@ -5,6 +5,7 @@ dependencies:
     - field.field.node.struttura_organizzativa.body
     - field.field.node.struttura_organizzativa.field_abstract
     - field.field.node.struttura_organizzativa.field_argomenti
+    - field.field.node.struttura_organizzativa.field_codice_meccanografico
     - field.field.node.struttura_organizzativa.field_copertina
     - field.field.node.struttura_organizzativa.field_email
     - field.field.node.struttura_organizzativa.field_extra_info
@@ -27,12 +28,13 @@ content:
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 100
+    weight: 0
     region: content
 hidden:
   body: true
   field_abstract: true
   field_argomenti: true
+  field_codice_meccanografico: true
   field_copertina: true
   field_email: true
   field_extra_info: true

@@ -5,6 +5,7 @@ dependencies:
     - field.field.node.struttura_organizzativa.body
     - field.field.node.struttura_organizzativa.field_abstract
     - field.field.node.struttura_organizzativa.field_argomenti
+    - field.field.node.struttura_organizzativa.field_codice_meccanografico
     - field.field.node.struttura_organizzativa.field_copertina
     - field.field.node.struttura_organizzativa.field_email
     - field.field.node.struttura_organizzativa.field_extra_info
@@ -50,6 +51,7 @@ third_party_settings:
         - field_argomenti
         - body
         - field_extra_info
+        - field_codice_meccanografico
       label: Descrizione
       region: content
       parent_name: group_struttura_organizzativa
@@ -134,6 +136,14 @@ content:
     settings:
       match_operator: CONTAINS
       match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_codice_meccanografico:
+    type: string_textfield
+    weight: 9
+    region: content
+    settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }

@@ -9,7 +9,7 @@ field_name: field_codice_meccanografico
 entity_type: node
 bundle: luogo
 label: 'Codice meccanografico'
-description: 'Usa questo campo nel caso in cui il luogo ha un codice meccanografico.'
+description: 'Usa questo campo per inserire il codice meccanografico della sede legale, questa informazione verrà riusata in altre parti del sito (ad esempio nel piè di pagina.) Nel caso in cui devi inserire il codice meccanografico dei plessi, esso va inserito nell''apposito campo presente nel tipo di contenuto "Struttura organizzativa (Scuola / Istituto)" che gestisce lo specifico plesso.'
 required: false
 translatable: false
 default_value: {  }
