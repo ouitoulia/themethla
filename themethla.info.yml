@@ -55,8 +55,8 @@ dependencies:
   - bootstrap_italia:bootstrap_italia_views_carousel
   - bootstrap_italia_text_editor2:bootstrap_italia_text_editor2
 
-# Information added by GitHub Action packaging script on 2024-03-24
-version: '3.24.2'
+# Information added by GitHub Action packaging script on 2024-03-27
+version: '3.25.0'
 project: 'Themethla'
-datestamp: 1711298322
-message: ' fix codice_meccanografico field'
+datestamp: 1711538983
+message: ' add history carousel and add feature to ct page'
