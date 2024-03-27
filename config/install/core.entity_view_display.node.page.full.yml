@@ -6,11 +6,13 @@ dependencies:
     - field.field.node.page.field_abstract
     - field.field.node.page.field_copertina
     - field.field.node.page.field_extra_info
+    - field.field.node.page.field_tipologia_sezione
     - image.style.focal_point_thumbnail_3x_1_1_300x300_
     - node.type.page
   module:
     - entity_reference_revisions
     - media
+    - options
     - user
 id: node.page.full
 targetEntityType: node
@@ -22,7 +24,7 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 1
+    weight: 2
     region: content
   field_copertina:
     type: media_thumbnail
@@ -33,7 +35,7 @@ content:
       image_loading:
         attribute: lazy
     third_party_settings: {  }
-    weight: 0
+    weight: 1
     region: content
   field_extra_info:
     type: entity_reference_revisions_entity_view
@@ -42,12 +44,19 @@ content:
       view_mode: default
       link: ''
     third_party_settings: {  }
-    weight: 2
+    weight: 3
+    region: content
+  field_tipologia_sezione:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
     region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 3
+    weight: 4
     region: content
 hidden:
   langcode: true

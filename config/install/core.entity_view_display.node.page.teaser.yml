@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.page.field_abstract
     - field.field.node.page.field_copertina
     - field.field.node.page.field_extra_info
+    - field.field.node.page.field_tipologia_sezione
     - image.style.bootstrap_italia_card_image_panoramic
     - node.type.page
   module:
@@ -41,4 +42,5 @@ content:
     region: content
 hidden:
   field_extra_info: true
+  field_tipologia_sezione: true
   langcode: true

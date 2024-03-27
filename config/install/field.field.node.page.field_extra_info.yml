@@ -13,8 +13,10 @@ dependencies:
     - paragraphs.paragraphs_type.content
     - paragraphs.paragraphs_type.gallery
     - paragraphs.paragraphs_type.hero
+    - paragraphs.paragraphs_type.history_carousel
     - paragraphs.paragraphs_type.map
     - paragraphs.paragraphs_type.node_reference
+    - paragraphs.paragraphs_type.point_list
     - paragraphs.paragraphs_type.section
     - paragraphs.paragraphs_type.timeline
   module:
@@ -39,67 +41,87 @@ settings:
       call_to_action: call_to_action
       callout: callout
       carousel: carousel
+      history_carousel: history_carousel
       citation: citation
       gallery: gallery
       hero: hero
       map: map
       section: section
+      point_list: point_list
       timeline: timeline
       node_reference: node_reference
     negate: 0
     target_bundles_drag_drop:
       accordion:
-        weight: -35
+        weight: -47
         enabled: true
       accordion_item:
-        weight: -23
+        weight: -33
         enabled: false
       attachments:
-        weight: -36
+        weight: -48
         enabled: true
       call_to_action:
-        weight: -34
+        weight: -46
         enabled: true
       callout:
-        weight: -33
+        weight: -45
         enabled: true
       carousel:
-        weight: -32
+        weight: -44
         enabled: true
       citation:
-        weight: -31
+        weight: -42
         enabled: true
       content:
-        weight: -37
+        weight: -49
         enabled: true
       gallery:
-        weight: -30
+        weight: -41
         enabled: true
       gallery_item:
-        weight: -22
+        weight: -32
         enabled: false
       hero:
-        weight: -29
+        weight: -40
         enabled: true
+      history_carousel:
+        weight: -43
+        enabled: true
+      history_carousel_item:
+        weight: -29
+        enabled: false
       map:
-        weight: -28
+        weight: -39
         enabled: true
       node_reference:
-        weight: -25
+        weight: -35
         enabled: true
-      section:
+      piano_di_studi:
+        weight: -28
+        enabled: false
+      piano_di_studi_item:
         weight: -27
+        enabled: false
+      point_list:
+        weight: -37
+        enabled: true
+      point_list_item:
+        weight: -26
+        enabled: false
+      section:
+        weight: -38
         enabled: true
       settings:
-        weight: -24
+        weight: -34
         enabled: false
       slide:
-        weight: -21
+        weight: -31
         enabled: false
       timeline:
-        weight: -26
+        weight: -36
         enabled: true
       timeline_item:
-        weight: -20
+        weight: -30
         enabled: false
 field_type: entity_reference_revisions

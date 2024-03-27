@@ -1,0 +1,57 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.history_carousel_item.field_kicker
+    - field.field.paragraph.history_carousel_item.field_source
+    - field.field.paragraph.history_carousel_item.field_text
+    - field.field.paragraph.history_carousel_item.field_title
+    - field.field.paragraph.history_carousel_item.field_title_tag
+    - paragraphs.paragraphs_type.history_carousel_item
+  module:
+    - options
+    - text
+id: paragraph.history_carousel_item.default
+targetEntityType: paragraph
+bundle: history_carousel_item
+mode: default
+content:
+  field_kicker:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_source:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_text:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_title_tag:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

@@ -5,6 +5,7 @@ dependencies:
     - field.field.node.page.field_abstract
     - field.field.node.page.field_copertina
     - field.field.node.page.field_extra_info
+    - field.field.node.page.field_tipologia_sezione
     - node.type.page
   module:
     - user
@@ -23,9 +24,10 @@ content:
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 100
+    weight: 1
     region: content
 hidden:
   field_copertina: true
   field_extra_info: true
+  field_tipologia_sezione: true
   langcode: true

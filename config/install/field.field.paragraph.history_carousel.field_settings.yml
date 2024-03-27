@@ -1,0 +1,99 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_settings
+    - paragraphs.paragraphs_type.history_carousel
+    - paragraphs.paragraphs_type.settings
+  module:
+    - entity_reference_revisions
+id: paragraph.history_carousel.field_settings
+field_name: field_settings
+entity_type: paragraph
+bundle: history_carousel
+label: Impostazioni
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      settings: settings
+    negate: 0
+    target_bundles_drag_drop:
+      accordion:
+        weight: 10
+        enabled: false
+      accordion_item:
+        weight: 26
+        enabled: false
+      attachments:
+        weight: 27
+        enabled: false
+      call_to_action:
+        weight: 29
+        enabled: false
+      callout:
+        weight: 28
+        enabled: false
+      carousel:
+        weight: 11
+        enabled: false
+      citation:
+        weight: 31
+        enabled: false
+      content:
+        weight: 12
+        enabled: false
+      gallery:
+        weight: 13
+        enabled: false
+      gallery_item:
+        weight: 34
+        enabled: false
+      hero:
+        weight: 35
+        enabled: false
+      history_carousel:
+        weight: 36
+        enabled: false
+      history_carousel_item:
+        weight: 37
+        enabled: false
+      map:
+        weight: 14
+        enabled: false
+      node_reference:
+        weight: 39
+        enabled: false
+      piano_di_studi:
+        weight: 40
+        enabled: false
+      piano_di_studi_item:
+        weight: 41
+        enabled: false
+      point_list:
+        weight: 42
+        enabled: false
+      point_list_item:
+        weight: 43
+        enabled: false
+      section:
+        weight: 44
+        enabled: false
+      settings:
+        weight: 15
+        enabled: true
+      slide:
+        weight: 16
+        enabled: false
+      timeline:
+        weight: 47
+        enabled: false
+      timeline_item:
+        weight: 48
+        enabled: false
+field_type: entity_reference_revisions

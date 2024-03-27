@@ -1,0 +1,21 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text
+    - paragraphs.paragraphs_type.history_carousel_item
+  module:
+    - text
+id: paragraph.history_carousel_item.field_text
+field_name: field_text
+entity_type: paragraph
+bundle: history_carousel_item
+label: Testo
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

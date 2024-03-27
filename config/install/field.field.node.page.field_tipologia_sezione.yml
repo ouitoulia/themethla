@@ -1,0 +1,22 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tipologia_sezione
+    - node.type.page
+  module:
+    - options
+id: node.page.field_tipologia_sezione
+field_name: field_tipologia_sezione
+entity_type: node
+bundle: page
+label: 'Tipologia sezione'
+description: 'Scegli la sezione della pagina generica. Questa impostazione serve solo per dare un colore coerente con la sezione scelta.'
+required: false
+translatable: false
+default_value:
+  -
+    value: generica
+default_value_callback: ''
+settings: {  }
+field_type: list_string
