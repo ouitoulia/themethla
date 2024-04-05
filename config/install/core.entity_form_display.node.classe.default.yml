@@ -152,14 +152,10 @@ content:
       media_types: {  }
     third_party_settings: {  }
   field_percorso_di_studio:
-    type: entity_reference_autocomplete
+    type: options_buttons
     weight: 4
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_persona_responsabile:
     type: entity_reference_autocomplete
