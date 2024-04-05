@@ -3,8 +3,6 @@ status: true
 dependencies:
   module:
     - node
-_core:
-  default_config_hash: ChwDu-K4WkSJOLH_isEzVXcq3tkL5uIHde-xNNaJNg8
 id: node.field_ipa
 field_name: field_ipa
 entity_type: node
