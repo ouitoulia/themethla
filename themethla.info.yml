@@ -56,7 +56,7 @@ dependencies:
   - bootstrap_italia_text_editor2:bootstrap_italia_text_editor2
 
 # Information added by GitHub Action packaging script on 2024-04-05
-version: '3.27.2'
+version: '3.27.3'
 project: 'Themethla'
-datestamp: 1712330268
-message: ' fix https://github.com/ouitoulia/diagraphe/issues/8'
+datestamp: 1712330387
+message: ' fix uuid e _core'
