@@ -55,8 +55,8 @@ dependencies:
   - bootstrap_italia:bootstrap_italia_views_carousel
   - bootstrap_italia_text_editor2:bootstrap_italia_text_editor2
 
-# Information added by GitHub Action packaging script on 2024-04-04
-version: '3.26.0'
+# Information added by GitHub Action packaging script on 2024-04-05
+version: '3.27.0'
 project: 'Themethla'
-datestamp: 1712245499
-message: ' add documento card-big'
+datestamp: 1712300258
+message: ' add luogo card'
