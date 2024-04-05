@@ -59,9 +59,9 @@ third_party_settings:
     group_apertura:
       children:
         - field_abstract
+        - field_tipologia_documento
         - field_argomenti
         - body
-        - field_tipologia_documento
       label: Apertura
       region: content
       parent_name: group_contenuto
@@ -202,7 +202,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 4
+    weight: 5
     region: content
     settings:
       rows: 9
@@ -233,7 +233,7 @@ content:
     third_party_settings: {  }
   field_argomenti:
     type: entity_reference_autocomplete
-    weight: 3
+    weight: 4
     region: content
     settings:
       match_operator: CONTAINS
@@ -428,8 +428,8 @@ content:
         duplicate: duplicate
     third_party_settings: {  }
   field_tipologia_documento:
-    type: options_buttons
-    weight: 6
+    type: options_select
+    weight: 3
     region: content
     settings: {  }
     third_party_settings: {  }
