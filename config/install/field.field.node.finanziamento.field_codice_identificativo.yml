@@ -1,0 +1,18 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_codice_identificativo
+    - node.type.finanziamento
+id: node.finanziamento.field_codice_identificativo
+field_name: field_codice_identificativo
+entity_type: node
+bundle: finanziamento
+label: "Codice dell'intervento"
+description: "Usa questo campo per inserire il codice identificativo dell'intervento"
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.finanziamento.field_abstract
     - field.field.node.finanziamento.field_argomenti
     - field.field.node.finanziamento.field_codice_cup
+    - field.field.node.finanziamento.field_codice_identificativo
     - field.field.node.finanziamento.field_collaborazioni
     - field.field.node.finanziamento.field_copertina
     - field.field.node.finanziamento.field_data_fine
@@ -38,6 +39,7 @@ hidden:
   body: true
   field_argomenti: true
   field_codice_cup: true
+  field_codice_identificativo: true
   field_collaborazioni: true
   field_copertina: true
   field_data_fine: true

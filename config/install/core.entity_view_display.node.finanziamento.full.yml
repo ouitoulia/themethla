@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.finanziamento.field_abstract
     - field.field.node.finanziamento.field_argomenti
     - field.field.node.finanziamento.field_codice_cup
+    - field.field.node.finanziamento.field_codice_identificativo
     - field.field.node.finanziamento.field_collaborazioni
     - field.field.node.finanziamento.field_copertina
     - field.field.node.finanziamento.field_data_fine
@@ -63,6 +64,14 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     weight: 15
+    region: content
+  field_codice_identificativo:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 16
     region: content
   field_collaborazioni:
     type: entity_reference_entity_view
@@ -132,7 +141,7 @@ content:
       rel: nofollow
       target: _blank
     third_party_settings: {  }
-    weight: 16
+    weight: 17
     region: content
   field_persona_responsabile:
     type: entity_reference_entity_view
@@ -189,12 +198,12 @@ content:
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 18
+    weight: 19
     region: content
   toc_js:
     settings: {  }
     third_party_settings: {  }
-    weight: 17
+    weight: 18
     region: content
 hidden:
   langcode: true

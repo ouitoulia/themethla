@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.finanziamento.field_abstract
     - field.field.node.finanziamento.field_argomenti
     - field.field.node.finanziamento.field_codice_cup
+    - field.field.node.finanziamento.field_codice_identificativo
     - field.field.node.finanziamento.field_collaborazioni
     - field.field.node.finanziamento.field_copertina
     - field.field.node.finanziamento.field_data_fine
@@ -39,7 +40,7 @@ third_party_settings:
       label: Contenuto
       region: content
       parent_name: ''
-      weight: 1
+      weight: 4
       format_type: tabs
       format_settings:
         classes: ''
@@ -51,9 +52,10 @@ third_party_settings:
       children:
         - field_abstract
         - field_argomenti
-        - field_codice_cup
-        - field_importo_finanziamento
         - field_stato_progetto
+        - field_importo_finanziamento
+        - field_codice_cup
+        - field_codice_identificativo
         - field_copertina
       label: Apertura
       region: content
@@ -137,7 +139,7 @@ content:
     third_party_settings: {  }
   created:
     type: datetime_timestamp
-    weight: 11
+    weight: 7
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -161,7 +163,15 @@ content:
     third_party_settings: {  }
   field_codice_cup:
     type: string_textfield
-    weight: 5
+    weight: 7
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_codice_identificativo:
+    type: string_textfield
+    weight: 8
     region: content
     settings:
       size: 60
@@ -179,7 +189,7 @@ content:
     third_party_settings: {  }
   field_copertina:
     type: media_library_widget
-    weight: 8
+    weight: 9
     region: content
     settings:
       media_types: {  }
@@ -260,7 +270,7 @@ content:
     third_party_settings: {  }
   field_stato_progetto:
     type: options_buttons
-    weight: 7
+    weight: 5
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -291,34 +301,34 @@ content:
     third_party_settings: {  }
   langcode:
     type: language_select
-    weight: 2
+    weight: 5
     region: content
     settings:
       include_locked: true
     third_party_settings: {  }
   path:
     type: path
-    weight: 21
+    weight: 10
     region: content
     settings: {  }
     third_party_settings: {  }
   promote:
     type: boolean_checkbox
-    weight: 13
+    weight: 8
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 22
+    weight: 11
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
-    weight: 14
+    weight: 9
     region: content
     settings:
       display_label: true
@@ -333,7 +343,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 7
+    weight: 6
     region: content
     settings:
       match_operator: CONTAINS
