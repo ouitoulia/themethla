@@ -1,0 +1,18 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_codice_cup
+    - node.type.finanziamento
+id: node.finanziamento.field_codice_cup
+field_name: field_codice_cup
+entity_type: node
+bundle: finanziamento
+label: 'Codice CUP'
+description: 'Inserisci il Codice Unico di Progetto'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

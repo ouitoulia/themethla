@@ -1,0 +1,37 @@
+langcode: it
+status: true
+dependencies:
+  module:
+    - menu_ui
+    - toc_js
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+  toc_js:
+    toc_js_active: 1
+    title: 'Indice del progetto'
+    selectors: h2
+    selectors_minimum: '0'
+    container: .node
+    prefix: toc
+    list_type: ul
+    classes: ''
+    back_to_top: 0
+    back_to_top_label: 'Back to top'
+    smooth_scrolling: 1
+    scroll_to_offset: '112'
+    highlight_on_scroll: 1
+    highlight_offset: '0'
+    sticky: 0
+    sticky_offset: '0'
+    sticky_stop: ''
+    sticky_stop_padding: '0'
+name: Finanziamento
+type: finanziamento
+description: 'Usa questo tipo di contenuto per gestire i progetti di finanziamento PON, PNRR e simili. '
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

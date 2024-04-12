@@ -1,0 +1,20 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_data_fine
+    - node.type.finanziamento
+  module:
+    - datetime
+id: node.finanziamento.field_data_fine
+field_name: field_data_fine
+entity_type: node
+bundle: finanziamento
+label: 'Data di fine'
+description: 'Usa questo campo per inserire la data di fine del finanziamento.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

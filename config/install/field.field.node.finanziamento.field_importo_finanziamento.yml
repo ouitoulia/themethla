@@ -1,0 +1,22 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_importo_finanziamento
+    - node.type.finanziamento
+id: node.finanziamento.field_importo_finanziamento
+field_name: field_importo_finanziamento
+entity_type: node
+bundle: finanziamento
+label: 'Importo finanziato'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0.01
+  max: null
+  prefix: '€ '
+  suffix: ''
+field_type: decimal

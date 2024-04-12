@@ -1,0 +1,56 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.field.node.finanziamento.body
+    - field.field.node.finanziamento.field_abstract
+    - field.field.node.finanziamento.field_argomenti
+    - field.field.node.finanziamento.field_codice_cup
+    - field.field.node.finanziamento.field_collaborazioni
+    - field.field.node.finanziamento.field_copertina
+    - field.field.node.finanziamento.field_data_fine
+    - field.field.node.finanziamento.field_data_inizio
+    - field.field.node.finanziamento.field_extra_info
+    - field.field.node.finanziamento.field_importo_finanziamento
+    - field.field.node.finanziamento.field_link
+    - field.field.node.finanziamento.field_persona_responsabile
+    - field.field.node.finanziamento.field_persone
+    - field.field.node.finanziamento.field_persone_esterne
+    - field.field.node.finanziamento.field_stato_progetto
+    - field.field.node.finanziamento.field_struttura_responsabile
+    - field.field.node.finanziamento.field_timeline
+    - node.type.finanziamento
+  module:
+    - user
+id: node.finanziamento.default
+targetEntityType: node
+bundle: finanziamento
+mode: default
+content:
+  field_abstract:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  body: true
+  field_argomenti: true
+  field_codice_cup: true
+  field_collaborazioni: true
+  field_copertina: true
+  field_data_fine: true
+  field_data_inizio: true
+  field_extra_info: true
+  field_importo_finanziamento: true
+  field_link: true
+  field_persona_responsabile: true
+  field_persone: true
+  field_persone_esterne: true
+  field_stato_progetto: true
+  field_struttura_responsabile: true
+  field_timeline: true
+  langcode: true
+  links: true
+  toc_js: true

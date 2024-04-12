@@ -1,0 +1,200 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.finanziamento.body
+    - field.field.node.finanziamento.field_abstract
+    - field.field.node.finanziamento.field_argomenti
+    - field.field.node.finanziamento.field_codice_cup
+    - field.field.node.finanziamento.field_collaborazioni
+    - field.field.node.finanziamento.field_copertina
+    - field.field.node.finanziamento.field_data_fine
+    - field.field.node.finanziamento.field_data_inizio
+    - field.field.node.finanziamento.field_extra_info
+    - field.field.node.finanziamento.field_importo_finanziamento
+    - field.field.node.finanziamento.field_link
+    - field.field.node.finanziamento.field_persona_responsabile
+    - field.field.node.finanziamento.field_persone
+    - field.field.node.finanziamento.field_persone_esterne
+    - field.field.node.finanziamento.field_stato_progetto
+    - field.field.node.finanziamento.field_struttura_responsabile
+    - field.field.node.finanziamento.field_timeline
+    - image.style.focal_point_thumbnail_3x_1_1_300x300_
+    - node.type.finanziamento
+  module:
+    - datetime
+    - entity_reference_revisions
+    - link
+    - media
+    - text
+    - user
+id: node.finanziamento.full
+targetEntityType: node
+bundle: finanziamento
+mode: full
+content:
+  body:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_abstract:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_argomenti:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_codice_cup:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 15
+    region: content
+  field_collaborazioni:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings: {  }
+    weight: 12
+    region: content
+  field_copertina:
+    type: media_thumbnail
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: focal_point_thumbnail_3x_1_1_300x300_
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_data_fine:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: bootstrap_italia_medium
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_data_inizio:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: bootstrap_italia_medium
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_extra_info:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 13
+    region: content
+  field_importo_finanziamento:
+    type: number_decimal
+    label: inline
+    settings:
+      thousand_separator: "'"
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 14
+    region: content
+  field_link:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: nofollow
+      target: _blank
+    third_party_settings: {  }
+    weight: 16
+    region: content
+  field_persona_responsabile:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: card
+      link: false
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_persone:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: card
+      link: false
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  field_persone_esterne:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 11
+    region: content
+  field_stato_progetto:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_struttura_responsabile:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  field_timeline:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 18
+    region: content
+  toc_js:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 17
+    region: content
+hidden:
+  langcode: true
