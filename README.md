@@ -35,6 +35,15 @@ Le dipendenze verranno installate automaticamente.
 - [Servizio](docs/servizio/README.md)
 - [Struttura organizzativa](docs/struttura_organizzativa/README.md)
 
+## Issue
+Le issue vengono gestite nel repository principale del progetto:
+https://github.com/ouitoulia/diagraphe/issues
+
+## Contributori, dipendenze e altre informazioni
+Per contribuire al progetto effettua un Fork, aggiungi le tue modifiche e poi fai una Pull Request.
+
+- [Contributori](https://github.com/ouitoulia/themethla/graphs/contributors)
+- [Elenco delle dipendenze](https://github.com/ouitoulia/themethla/network/dependencies)
 
 ## License
 
