@@ -21,6 +21,7 @@ dependencies:
     - field.field.node.finanziamento.field_stato_progetto
     - field.field.node.finanziamento.field_struttura_responsabile
     - field.field.node.finanziamento.field_timeline
+    - field.field.node.finanziamento.field_tipologia_progetto
     - node.type.finanziamento
   module:
     - user
@@ -59,5 +60,6 @@ hidden:
   field_stato_progetto: true
   field_struttura_responsabile: true
   field_timeline: true
+  field_tipologia_progetto: true
   langcode: true
   toc_js: true

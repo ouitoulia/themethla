@@ -21,6 +21,7 @@ dependencies:
     - field.field.node.finanziamento.field_stato_progetto
     - field.field.node.finanziamento.field_struttura_responsabile
     - field.field.node.finanziamento.field_timeline
+    - field.field.node.finanziamento.field_tipologia_progetto
     - image.style.focal_point_thumbnail_3x_1_1_300x300_
     - node.type.finanziamento
   module:
@@ -40,14 +41,14 @@ content:
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 6
+    weight: 7
     region: content
   field_abstract:
     type: basic_string
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 1
+    weight: 2
     region: content
   field_argomenti:
     type: entity_reference_label
@@ -55,7 +56,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 2
+    weight: 3
     region: content
   field_codice_cup:
     type: string
@@ -63,7 +64,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 15
+    weight: 16
     region: content
   field_codice_identificativo:
     type: string
@@ -71,7 +72,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 16
+    weight: 17
     region: content
   field_collaborazioni:
     type: entity_reference_entity_view
@@ -80,7 +81,7 @@ content:
       view_mode: teaser
       link: false
     third_party_settings: {  }
-    weight: 12
+    weight: 13
     region: content
   field_copertina:
     type: media_thumbnail
@@ -91,7 +92,7 @@ content:
       image_loading:
         attribute: lazy
     third_party_settings: {  }
-    weight: 0
+    weight: 1
     region: content
   field_data_fine:
     type: datetime_default
@@ -100,7 +101,7 @@ content:
       timezone_override: ''
       format_type: bootstrap_italia_medium
     third_party_settings: {  }
-    weight: 5
+    weight: 6
     region: content
   field_data_inizio:
     type: datetime_default
@@ -109,7 +110,7 @@ content:
       timezone_override: ''
       format_type: bootstrap_italia_medium
     third_party_settings: {  }
-    weight: 4
+    weight: 5
     region: content
   field_extra_info:
     type: entity_reference_revisions_entity_view
@@ -118,7 +119,7 @@ content:
       view_mode: default
       link: ''
     third_party_settings: {  }
-    weight: 13
+    weight: 14
     region: content
   field_importo_finanziamento:
     type: number_decimal
@@ -129,7 +130,7 @@ content:
       scale: 2
       prefix_suffix: true
     third_party_settings: {  }
-    weight: 14
+    weight: 15
     region: content
   field_link:
     type: link
@@ -141,7 +142,7 @@ content:
       rel: nofollow
       target: _blank
     third_party_settings: {  }
-    weight: 17
+    weight: 18
     region: content
   field_persona_responsabile:
     type: entity_reference_entity_view
@@ -150,7 +151,7 @@ content:
       view_mode: card
       link: false
     third_party_settings: {  }
-    weight: 8
+    weight: 9
     region: content
   field_persone:
     type: entity_reference_entity_view
@@ -159,7 +160,7 @@ content:
       view_mode: card
       link: false
     third_party_settings: {  }
-    weight: 10
+    weight: 11
     region: content
   field_persone_esterne:
     type: string
@@ -167,7 +168,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 11
+    weight: 12
     region: content
   field_stato_progetto:
     type: entity_reference_label
@@ -175,7 +176,7 @@ content:
     settings:
       link: false
     third_party_settings: {  }
-    weight: 3
+    weight: 4
     region: content
   field_struttura_responsabile:
     type: entity_reference_entity_view
@@ -184,7 +185,7 @@ content:
       view_mode: teaser
       link: false
     third_party_settings: {  }
-    weight: 9
+    weight: 10
     region: content
   field_timeline:
     type: entity_reference_revisions_entity_view
@@ -193,17 +194,25 @@ content:
       view_mode: default
       link: ''
     third_party_settings: {  }
-    weight: 7
+    weight: 8
+    region: content
+  field_tipologia_progetto:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 0
     region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 19
+    weight: 20
     region: content
   toc_js:
     settings: {  }
     third_party_settings: {  }
-    weight: 18
+    weight: 19
     region: content
 hidden:
   langcode: true
