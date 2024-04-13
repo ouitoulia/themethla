@@ -55,8 +55,8 @@ dependencies:
   - bootstrap_italia:bootstrap_italia_views_carousel
   - bootstrap_italia_text_editor2:bootstrap_italia_text_editor2
 
-# Information added by GitHub Action packaging script on 2024-04-12
-version: '3.28.2'
+# Information added by GitHub Action packaging script on 2024-04-13
+version: '3.28.3'
 project: 'Themethla'
-datestamp: 1712938064
-message: ' feat add field_codice_identificativo ouitoulia/diagraphe#15'
+datestamp: 1713011824
+message: ' feat add field_tipologia_progetto ouitoulia/diagraphe#15'
