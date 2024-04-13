@@ -56,7 +56,7 @@ dependencies:
   - bootstrap_italia_text_editor2:bootstrap_italia_text_editor2
 
 # Information added by GitHub Action packaging script on 2024-04-13
-version: '3.28.3'
+version: '3.28.4'
 project: 'Themethla'
-datestamp: 1713011824
-message: ' feat add field_tipologia_progetto ouitoulia/diagraphe#15'
+datestamp: 1713022415
+message: ' feat add path and card display ouitoulia/diagraphe#15'
