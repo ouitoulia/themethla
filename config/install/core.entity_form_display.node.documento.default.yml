@@ -15,6 +15,7 @@ dependencies:
     - field.field.node.documento.field_data_oblio
     - field.field.node.documento.field_eventi
     - field.field.node.documento.field_extra_info
+    - field.field.node.documento.field_finanziamenti
     - field.field.node.documento.field_frequenza
     - field.field.node.documento.field_galleria_immagini
     - field.field.node.documento.field_link
@@ -125,12 +126,13 @@ third_party_settings:
         required_fields: true
     group_contenuti_correlati:
       children:
-        - field_servizio
-        - field_eventi
-        - field_progetti
-        - field_percorso_di_studio
-        - field_notizie
         - field_classi
+        - field_eventi
+        - field_finanziamenti
+        - field_notizie
+        - field_percorso_di_studio
+        - field_progetti
+        - field_servizio
       label: 'Contenuti Correlati'
       region: content
       parent_name: group_documento
@@ -251,7 +253,7 @@ content:
     third_party_settings: {  }
   field_classi:
     type: entity_reference_autocomplete
-    weight: 20
+    weight: 21
     region: content
     settings:
       match_operator: CONTAINS
@@ -294,7 +296,7 @@ content:
     third_party_settings: {  }
   field_eventi:
     type: entity_reference_autocomplete
-    weight: 16
+    weight: 22
     region: content
     settings:
       match_operator: CONTAINS
@@ -321,6 +323,16 @@ content:
         collapse_edit_all: collapse_edit_all
         duplicate: duplicate
     third_party_settings: {  }
+  field_finanziamenti:
+    type: entity_reference_autocomplete
+    weight: 23
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: "Scrivi il titolo di un finanziamento o il codice CUP o il codice dell'intervento per cercarlo"
+    third_party_settings: {  }
   field_frequenza:
     type: string_textfield
     weight: 20
@@ -346,7 +358,7 @@ content:
     third_party_settings: {  }
   field_notizie:
     type: entity_reference_autocomplete
-    weight: 19
+    weight: 24
     region: content
     settings:
       match_operator: CONTAINS
@@ -356,7 +368,7 @@ content:
     third_party_settings: {  }
   field_percorso_di_studio:
     type: entity_reference_autocomplete
-    weight: 18
+    weight: 25
     region: content
     settings:
       match_operator: CONTAINS
@@ -376,7 +388,7 @@ content:
     third_party_settings: {  }
   field_progetti:
     type: entity_reference_autocomplete
-    weight: 17
+    weight: 26
     region: content
     settings:
       match_operator: CONTAINS
@@ -394,7 +406,7 @@ content:
     third_party_settings: {  }
   field_servizio:
     type: entity_reference_autocomplete
-    weight: 15
+    weight: 27
     region: content
     settings:
       match_operator: CONTAINS

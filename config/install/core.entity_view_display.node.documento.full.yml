@@ -16,6 +16,7 @@ dependencies:
     - field.field.node.documento.field_data_oblio
     - field.field.node.documento.field_eventi
     - field.field.node.documento.field_extra_info
+    - field.field.node.documento.field_finanziamenti
     - field.field.node.documento.field_frequenza
     - field.field.node.documento.field_galleria_immagini
     - field.field.node.documento.field_link
@@ -212,6 +213,7 @@ hidden:
   field_data_fine: true
   field_data_oblio: true
   field_eventi: true
+  field_finanziamenti: true
   field_notizie: true
   field_percorso_di_studio: true
   field_progetti: true

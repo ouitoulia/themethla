@@ -1,0 +1,24 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_finanziamenti
+    - node.type.documento
+id: node.documento.field_finanziamenti
+field_name: field_finanziamenti
+entity_type: node
+bundle: documento
+label: 'Finanziamenti correlati'
+description: 'Seleziona il finanziamento correlato, puoi selezionare più finanziamenti (utile se stai pubblicando la nomina di un responsabile su più finanziamenti).'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: contenuti_ricerca_avanzata_campi
+      display_name: finanziamento
+      arguments: {  }
+field_type: entity_reference
