@@ -55,8 +55,8 @@ dependencies:
   - bootstrap_italia:bootstrap_italia_views_carousel
   - bootstrap_italia_text_editor2:bootstrap_italia_text_editor2
 
-# Information added by GitHub Action packaging script on 2024-04-13
-version: '3.28.4'
+# Information added by GitHub Action packaging script on 2024-04-15
+version: '3.29.0'
 project: 'Themethla'
-datestamp: 1713022415
-message: ' feat add path and card display ouitoulia/diagraphe#15'
+datestamp: 1713171723
+message: ' add field_finanziamenti to ct Documento ouitoulia/diagraphe#15'
