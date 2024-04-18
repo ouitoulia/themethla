@@ -12,6 +12,7 @@ dependencies:
     - field.field.node.progetto.field_data_fine
     - field.field.node.progetto.field_data_inizio
     - field.field.node.progetto.field_extra_info
+    - field.field.node.progetto.field_finanziamenti
     - field.field.node.progetto.field_luoghi
     - field.field.node.progetto.field_obiettivi
     - field.field.node.progetto.field_persona_responsabile
@@ -38,7 +39,7 @@ third_party_settings:
       label: Contenuto
       region: content
       parent_name: ''
-      weight: 1
+      weight: 2
       format_type: tabs
       format_settings:
         classes: ''
@@ -221,6 +222,16 @@ content:
         add_above: '0'
         collapse_edit_all: collapse_edit_all
         duplicate: duplicate
+    third_party_settings: {  }
+  field_finanziamenti:
+    type: entity_reference_autocomplete
+    weight: 1
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: "Scrivi il titolo di un finanziamento o il codice CUP o il codice dell'intervento per cercarlo"
     third_party_settings: {  }
   field_luoghi:
     type: entity_reference_autocomplete

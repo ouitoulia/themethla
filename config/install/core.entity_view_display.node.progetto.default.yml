@@ -12,6 +12,7 @@ dependencies:
     - field.field.node.progetto.field_data_fine
     - field.field.node.progetto.field_data_inizio
     - field.field.node.progetto.field_extra_info
+    - field.field.node.progetto.field_finanziamenti
     - field.field.node.progetto.field_luoghi
     - field.field.node.progetto.field_obiettivi
     - field.field.node.progetto.field_persona_responsabile
@@ -49,6 +50,7 @@ hidden:
   field_data_fine: true
   field_data_inizio: true
   field_extra_info: true
+  field_finanziamenti: true
   field_luoghi: true
   field_obiettivi: true
   field_persona_responsabile: true

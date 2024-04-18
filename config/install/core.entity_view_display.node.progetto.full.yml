@@ -13,6 +13,7 @@ dependencies:
     - field.field.node.progetto.field_data_fine
     - field.field.node.progetto.field_data_inizio
     - field.field.node.progetto.field_extra_info
+    - field.field.node.progetto.field_finanziamenti
     - field.field.node.progetto.field_luoghi
     - field.field.node.progetto.field_obiettivi
     - field.field.node.progetto.field_persona_responsabile
@@ -184,4 +185,5 @@ content:
     weight: 18
     region: content
 hidden:
+  field_finanziamenti: true
   langcode: true
