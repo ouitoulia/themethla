@@ -14,7 +14,7 @@ dependencies:
     - field.storage.node.field_nome
     - field.storage.node.field_ritratto
     - field.storage.node.field_struttura_didattica
-    - field.storage.node.field_tipologia_progetto
+    - field.storage.node.field_tipologia_finanziamento
     - image.style.focal_point_thumbnail_1x_1_1_40x40_
     - image.style.thumbnail
     - node.type.article
@@ -1558,10 +1558,10 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-        field_tipologia_progetto:
-          id: field_tipologia_progetto
-          table: node__field_tipologia_progetto
-          field: field_tipologia_progetto
+        field_tipologia_finanziamento:
+          id: field_tipologia_finanziamento
+          table: node__field_tipologia_finanziamento
+          field: field_tipologia_finanziamento
           relationship: none
           group_type: group
           admin_label: ''
@@ -1817,7 +1817,7 @@ display:
         options:
           default_field_elements: true
           inline:
-            field_tipologia_progetto: field_tipologia_progetto
+            field_tipologia_finanziamento: field_tipologia_finanziamento
             field_codice_cup: field_codice_cup
             field_codice_identificativo: field_codice_identificativo
           separator: ' - '
@@ -1838,7 +1838,7 @@ display:
       tags:
         - 'config:field.storage.node.field_codice_cup'
         - 'config:field.storage.node.field_codice_identificativo'
-        - 'config:field.storage.node.field_tipologia_progetto'
+        - 'config:field.storage.node.field_tipologia_finanziamento'
   libro_di_testo:
     id: libro_di_testo
     display_title: 'Libro di testo'
