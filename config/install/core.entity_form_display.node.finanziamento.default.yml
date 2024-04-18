@@ -20,7 +20,7 @@ dependencies:
     - field.field.node.finanziamento.field_stato_progetto
     - field.field.node.finanziamento.field_struttura_responsabile
     - field.field.node.finanziamento.field_timeline
-    - field.field.node.finanziamento.field_tipologia_progetto
+    - field.field.node.finanziamento.field_tipologia_finanziamento
     - node.type.finanziamento
   module:
     - datetime
@@ -300,7 +300,7 @@ content:
         collapse_edit_all: collapse_edit_all
         duplicate: duplicate
     third_party_settings: {  }
-  field_tipologia_progetto:
+  field_tipologia_finanziamento:
     type: options_select
     weight: 1
     region: content

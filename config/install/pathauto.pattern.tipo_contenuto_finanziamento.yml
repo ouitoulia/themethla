@@ -6,12 +6,12 @@ dependencies:
 id: tipo_contenuto_finanziamento
 label: 'Tipo contenuto: Finanziamento'
 type: 'canonical_entities:node'
-pattern: 'finanziamenti/[node:field_tipologia_progetto]/[node:title]'
+pattern: 'finanziamenti/[node:field_tipologia_finanziamento]/[node:title]'
 selection_criteria:
-  082b36c4-6b65-4ff8-8ee3-a113afadc703:
+  cce3aa0f-e7dc-46b3-b666-314b9c270ac6:
     id: 'entity_bundle:node'
     negate: false
-    uuid: 082b36c4-6b65-4ff8-8ee3-a113afadc703
+    uuid: cce3aa0f-e7dc-46b3-b666-314b9c270ac6
     context_mapping:
       node: node
     bundles:

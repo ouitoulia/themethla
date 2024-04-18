@@ -21,7 +21,7 @@ dependencies:
     - field.field.node.finanziamento.field_stato_progetto
     - field.field.node.finanziamento.field_struttura_responsabile
     - field.field.node.finanziamento.field_timeline
-    - field.field.node.finanziamento.field_tipologia_progetto
+    - field.field.node.finanziamento.field_tipologia_finanziamento
     - image.style.focal_point_thumbnail_3x_1_1_300x300_
     - node.type.finanziamento
   module:
@@ -48,7 +48,7 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 2
+    weight: 1
     region: content
   field_argomenti:
     type: entity_reference_label
@@ -92,7 +92,7 @@ content:
       image_loading:
         attribute: lazy
     third_party_settings: {  }
-    weight: 1
+    weight: 0
     region: content
   field_data_fine:
     type: datetime_default
@@ -196,13 +196,13 @@ content:
     third_party_settings: {  }
     weight: 8
     region: content
-  field_tipologia_progetto:
+  field_tipologia_finanziamento:
     type: entity_reference_label
     label: hidden
     settings:
       link: false
     third_party_settings: {  }
-    weight: 0
+    weight: 2
     region: content
   links:
     settings: {  }
