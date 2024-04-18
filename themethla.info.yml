@@ -56,7 +56,7 @@ dependencies:
   - bootstrap_italia_text_editor2:bootstrap_italia_text_editor2
 
 # Information added by GitHub Action packaging script on 2024-04-18
-version: '3.31.0'
+version: '3.31.1'
 project: 'Themethla'
-datestamp: 1713454815
-message: ' add reference to ct Finanziamenti in ct Progetto'
+datestamp: 1713455402
+message: ' fix field_tipologia_finanziamenti in entity reference views ouitoulia/diagraphe#15'
