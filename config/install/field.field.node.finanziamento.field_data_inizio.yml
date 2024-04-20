@@ -14,7 +14,10 @@ label: 'Data di inizio'
 description: "Inserisci la data di inizio del progetto di finanziamento. Nota: questa informazione non influisce sull'ordinamento dei contenuti per data."
 required: true
 translatable: false
-default_value: {  }
+default_value:
+  -
+    default_date_type: relative
+    default_date: today
 default_value_callback: ''
 settings: {  }
 field_type: datetime
