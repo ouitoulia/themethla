@@ -8,7 +8,7 @@ id: node.luogo.field_email
 field_name: field_email
 entity_type: node
 bundle: luogo
-label: 'Indirizzo email'
+label: Email
 description: "Inserisci uno o più indirizzi email se il luogo ha un indirizzo email dedicato. Ad esempio la sede in cui si trovano i servizi amministrativi ha l'indirizzo <em>aabb000000@istruzione.it</em>."
 required: false
 translatable: false
