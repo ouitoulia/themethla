@@ -55,8 +55,8 @@ dependencies:
   - bootstrap_italia:bootstrap_italia_views_carousel
   - bootstrap_italia_text_editor2:bootstrap_italia_text_editor2
 
-# Information added by GitHub Action packaging script on 2024-04-18
-version: '3.31.1'
+# Information added by GitHub Action packaging script on 2024-04-20
+version: '3.31.2'
 project: 'Themethla'
-datestamp: 1713455402
-message: ' fix field_tipologia_finanziamenti in entity reference views ouitoulia/diagraphe#15'
+datestamp: 1713605927
+message: ' fix data_inizio with default value in ct Finanziamento ouitoulia/diagraphe#15'
