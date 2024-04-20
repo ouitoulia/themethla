@@ -11,7 +11,7 @@ field_name: field_orario_pubblico
 entity_type: node
 bundle: luogo
 label: Orari
-description: 'Orario di apertura al pubblico del luogo.  '
+description: 'Orario di apertura al pubblico del luogo.'
 required: false
 translatable: false
 default_value: {  }
