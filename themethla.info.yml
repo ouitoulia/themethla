@@ -56,7 +56,7 @@ dependencies:
   - bootstrap_italia_text_editor2:bootstrap_italia_text_editor2
 
 # Information added by GitHub Action packaging script on 2024-04-20
-version: '3.31.3'
+version: '3.31.4'
 project: 'Themethla'
-datestamp: 1713628040
-message: ' fix label field.field.node.servizio.field_cosa_e.yml'
+datestamp: 1713643544
+message: ' fix label field compliance R.SC.1.2'
