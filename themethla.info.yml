@@ -56,7 +56,7 @@ dependencies:
   - bootstrap_italia_text_editor2:bootstrap_italia_text_editor2
 
 # Information added by GitHub Action packaging script on 2024-04-20
-version: '3.31.2'
+version: '3.31.3'
 project: 'Themethla'
-datestamp: 1713605927
-message: ' fix data_inizio with default value in ct Finanziamento ouitoulia/diagraphe#15'
+datestamp: 1713628040
+message: ' fix label field.field.node.servizio.field_cosa_e.yml'
