@@ -153,8 +153,8 @@ content:
     type: email_spamspan
     label: above
     settings:
-      spamspan_at: ' [la chiocciola] '
-      spamspan_dot: ' [seguito dal punto] '
+      spamspan_at: ' [chiocciola] '
+      spamspan_dot: ' [un punto] '
       spamspan_use_graphic: 0
       spamspan_dot_enable: 0
       spamspan_form_pattern: '<a href="%url?goto=%email">%displaytext</a>'
@@ -179,6 +179,7 @@ content:
       time_format: G
       compress: true
       grouped: true
+      show_empty: false
       show_closed: open
       closed_format: Closed
       all_day_format: 'All day open'
@@ -189,11 +190,12 @@ content:
         hours_hours: '-'
         more_hours: ', '
       current_status:
-        position: before
+        position: after
         open_text: 'Aperto ora!'
         closed_text: 'Attualmente chiuso'
       exceptions:
         title: 'Exception hours'
+        replace_exceptions: false
         restrict_exceptions_to_num_days: 7
         date_format: long
         all_day_format: 'All day open'
