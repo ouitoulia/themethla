@@ -56,7 +56,7 @@ dependencies:
   - bootstrap_italia_text_editor2:bootstrap_italia_text_editor2
 
 # Information added by GitHub Action packaging script on 2024-04-23
-version: '3.32.0'
+version: '3.33.0'
 project: 'Themethla'
-datestamp: 1713874873
-message: ' add field to ct Circolare'
+datestamp: 1713905513
+message: ' add field anno_scolastico to ct Documento'
