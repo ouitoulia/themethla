@@ -5,8 +5,10 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.circolare.body
     - field.field.node.circolare.field_abstract
+    - field.field.node.circolare.field_allegati
     - field.field.node.circolare.field_anno_scolastico
     - field.field.node.circolare.field_argomenti
+    - field.field.node.circolare.field_attivo
     - field.field.node.circolare.field_data_oblio
     - field.field.node.circolare.field_destinatari
     - field.field.node.circolare.field_eventi
@@ -46,7 +48,9 @@ content:
     region: content
 hidden:
   body: true
+  field_allegati: true
   field_argomenti: true
+  field_attivo: true
   field_data_oblio: true
   field_destinatari: true
   field_eventi: true

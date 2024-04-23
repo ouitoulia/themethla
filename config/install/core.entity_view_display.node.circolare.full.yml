@@ -5,8 +5,10 @@ dependencies:
     - core.entity_view_mode.node.full
     - field.field.node.circolare.body
     - field.field.node.circolare.field_abstract
+    - field.field.node.circolare.field_allegati
     - field.field.node.circolare.field_anno_scolastico
     - field.field.node.circolare.field_argomenti
+    - field.field.node.circolare.field_attivo
     - field.field.node.circolare.field_data_oblio
     - field.field.node.circolare.field_destinatari
     - field.field.node.circolare.field_eventi
@@ -14,6 +16,7 @@ dependencies:
     - field.field.node.circolare.field_persona_responsabile
     - node.type.circolare
   module:
+    - file
     - text
     - user
 id: node.circolare.full
@@ -35,6 +38,14 @@ content:
     third_party_settings: {  }
     weight: 2
     region: content
+  field_allegati:
+    type: file_default
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 7
+    region: content
   field_anno_scolastico:
     type: entity_reference_label
     label: hidden
@@ -48,6 +59,16 @@ content:
     label: above
     settings:
       link: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_attivo:
+    type: boolean
+    label: hidden
+    settings:
+      format: boolean
+      format_custom_false: ''
+      format_custom_true: ''
     third_party_settings: {  }
     weight: 4
     region: content

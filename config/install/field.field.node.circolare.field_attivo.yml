@@ -1,0 +1,22 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_attivo
+    - node.type.circolare
+id: node.circolare.field_attivo
+field_name: field_attivo
+entity_type: node
+bundle: circolare
+label: 'Visibilità della circolare sul sito'
+description: "Definisce se la circolare è pubblica o riservata. Nota che comunque tutte le circolari devono visibili in amministrazione trasparente sotto la voce \"Disposizioni Generali / Atti Generali / Atti amministrativi generali\".\r\n"
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Pubblica
+  off_label: 'Non Pubblica'
+field_type: boolean
