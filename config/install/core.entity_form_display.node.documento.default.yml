@@ -5,6 +5,7 @@ dependencies:
     - field.field.node.documento.body
     - field.field.node.documento.field_abstract
     - field.field.node.documento.field_allegati
+    - field.field.node.documento.field_anno_scolastico
     - field.field.node.documento.field_argomenti
     - field.field.node.documento.field_cig
     - field.field.node.documento.field_classi
@@ -169,6 +170,7 @@ third_party_settings:
         - field_data_fine
         - field_codice_identificativo
         - field_data_oblio
+        - field_anno_scolastico
       label: Archiviazione
       region: content
       parent_name: group_documento
@@ -232,6 +234,12 @@ content:
     region: content
     settings:
       progress_indicator: throbber
+    third_party_settings: {  }
+  field_anno_scolastico:
+    type: options_select
+    weight: 19
+    region: content
+    settings: {  }
     third_party_settings: {  }
   field_argomenti:
     type: entity_reference_autocomplete

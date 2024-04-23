@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.documento.body
     - field.field.node.documento.field_abstract
     - field.field.node.documento.field_allegati
+    - field.field.node.documento.field_anno_scolastico
     - field.field.node.documento.field_argomenti
     - field.field.node.documento.field_cig
     - field.field.node.documento.field_classi
@@ -208,6 +209,7 @@ content:
     weight: 18
     region: content
 hidden:
+  field_anno_scolastico: true
   field_classi: true
   field_codice_identificativo: true
   field_data_fine: true
