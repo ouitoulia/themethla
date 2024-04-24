@@ -12,11 +12,13 @@ dependencies:
     - field.field.node.circolare.field_data_oblio
     - field.field.node.circolare.field_destinatari
     - field.field.node.circolare.field_eventi
+    - field.field.node.circolare.field_link
     - field.field.node.circolare.field_numero_circolare
     - field.field.node.circolare.field_persona_responsabile
     - node.type.circolare
   module:
     - file
+    - link
     - text
     - user
 id: node.circolare.full
@@ -29,7 +31,7 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 6
+    weight: 7
     region: content
   field_abstract:
     type: basic_string
@@ -44,7 +46,7 @@ content:
     settings:
       use_description_as_link_text: true
     third_party_settings: {  }
-    weight: 7
+    weight: 8
     region: content
   field_anno_scolastico:
     type: entity_reference_label
@@ -70,7 +72,7 @@ content:
       format_custom_false: ''
       format_custom_true: ''
     third_party_settings: {  }
-    weight: 4
+    weight: 5
     region: content
   field_destinatari:
     type: entity_reference_label
@@ -78,7 +80,7 @@ content:
     settings:
       link: false
     third_party_settings: {  }
-    weight: 5
+    weight: 6
     region: content
   field_eventi:
     type: entity_reference_entity_view
@@ -87,7 +89,19 @@ content:
       view_mode: teaser
       link: false
     third_party_settings: {  }
-    weight: 7
+    weight: 10
+    region: content
+  field_link:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: nofollow
+      target: _blank
+    third_party_settings: {  }
+    weight: 9
     region: content
   field_numero_circolare:
     type: number_integer
@@ -110,7 +124,7 @@ content:
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 8
+    weight: 11
     region: content
 hidden:
   field_data_oblio: true
