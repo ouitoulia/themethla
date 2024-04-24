@@ -58,5 +58,5 @@ dependencies:
 # Information added by GitHub Action packaging script on 2024-04-24
 version: '3.34.0'
 project: 'Themethla'
-datestamp: 1713952952
-message: ' add field_link to ct Circolare'
+datestamp: 1713993216
+message: ' fix ouitoulia/diagraphe#24'
