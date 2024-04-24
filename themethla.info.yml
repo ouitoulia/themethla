@@ -55,8 +55,8 @@ dependencies:
   - bootstrap_italia:bootstrap_italia_views_carousel
   - bootstrap_italia_text_editor2:bootstrap_italia_text_editor2
 
-# Information added by GitHub Action packaging script on 2024-04-23
-version: '3.33.0'
+# Information added by GitHub Action packaging script on 2024-04-24
+version: '3.34.0'
 project: 'Themethla'
-datestamp: 1713905513
-message: ' add field anno_scolastico to ct Documento'
+datestamp: 1713952952
+message: ' add field_link to ct Circolare'
