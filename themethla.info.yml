@@ -55,8 +55,9 @@ dependencies:
   - bootstrap_italia:bootstrap_italia_views_carousel
   - bootstrap_italia_text_editor2:bootstrap_italia_text_editor2
 
-# Information added by GitHub Action packaging script on 2024-04-24
-version: '3.35.0'
+# Information added by GitHub Action packaging script on 2024-04-25
+version: '3.36.0
+office_hours'
 project: 'Themethla'
-datestamp: 1713993883
-message: ' fix version ouitoulia/diagraphe#24'
+datestamp: 1714055541
+message: ' fix duplicated status in filed_orari (office_hours) ct Luogo'
