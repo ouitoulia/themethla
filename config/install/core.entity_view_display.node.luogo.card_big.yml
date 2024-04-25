@@ -190,7 +190,7 @@ content:
         hours_hours: '-'
         more_hours: ', '
       current_status:
-        position: after
+        position: ''
         open_text: 'Aperto ora!'
         closed_text: 'Attualmente chiuso'
       exceptions:
