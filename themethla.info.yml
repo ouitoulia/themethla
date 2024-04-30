@@ -58,6 +58,6 @@ dependencies:
 # Information added by GitHub Action packaging script on 2024-04-25
 version: '3.36.0
 office_hours'
-project: 'Themethla'
+project: 'Themethla '
 datestamp: 1714055541
 message: ' fix duplicated status in filed_orari (office_hours) ct Luogo'
