@@ -13,10 +13,8 @@ dependencies:
     - field.field.node.article.field_persona_responsabile
     - field.field.node.article.field_persone
     - field.field.node.article.field_tipologia_notizia
-    - image.style.focal_point_hvga_2_3_320x480_
     - node.type.article
   module:
-    - media
     - user
 id: node.article.card_scuola_vertical_thumb
 targetEntityType: node
@@ -31,13 +29,11 @@ content:
     weight: 1
     region: content
   field_copertina:
-    type: media_thumbnail
+    type: entity_reference_entity_view
     label: hidden
     settings:
-      image_link: content
-      image_style: focal_point_hvga_2_3_320x480_
-      image_loading:
-        attribute: lazy
+      view_mode: thumbnail_vertical_2_3
+      link: false
     third_party_settings: {  }
     weight: 0
     region: content

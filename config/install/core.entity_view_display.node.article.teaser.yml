@@ -13,10 +13,8 @@ dependencies:
     - field.field.node.article.field_persona_responsabile
     - field.field.node.article.field_persone
     - field.field.node.article.field_tipologia_notizia
-    - image.style.bootstrap_italia_card_image_panoramic
     - node.type.article
   module:
-    - media
     - user
 id: node.article.teaser
 targetEntityType: node
@@ -39,13 +37,11 @@ content:
     weight: 0
     region: content
   field_copertina:
-    type: media_thumbnail
+    type: entity_reference_entity_view
     label: hidden
     settings:
-      image_link: content
-      image_style: bootstrap_italia_card_image_panoramic
-      image_loading:
-        attribute: lazy
+      view_mode: card_image_panoramic
+      link: false
     third_party_settings: {  }
     weight: 2
     region: content
