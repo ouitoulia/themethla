@@ -115,6 +115,15 @@ content:
     third_party_settings: {  }
     weight: 9
     region: content
+  field_finanziamenti:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings: {  }
+    weight: 17
+    region: content
   field_luoghi:
     type: entity_reference_entity_view
     label: above
@@ -177,13 +186,12 @@ content:
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 17
+    weight: 18
     region: content
   toc_js:
     settings: {  }
     third_party_settings: {  }
-    weight: 18
+    weight: 19
     region: content
 hidden:
-  field_finanziamenti: true
   langcode: true
