@@ -31,7 +31,7 @@ third_party_settings:
 name: 'Pagina singola'
 type: page
 description: 'Tipo di contenuto generico. Utilizza questo tipo se devi costruire pagine generiche e che non hanno una struttura dati già definita.'
-help: ''
+help: null
 new_revision: false
 preview_mode: 1
 display_submitted: false

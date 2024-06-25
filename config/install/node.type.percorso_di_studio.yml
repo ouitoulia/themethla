@@ -31,7 +31,7 @@ third_party_settings:
 name: 'Percorso di studio'
 type: percorso_di_studio
 description: 'Usa questo tipo di contenuto per inserire un nuovo percorso di studio.'
-help: ''
+help: null
 new_revision: false
 preview_mode: 1
 display_submitted: false

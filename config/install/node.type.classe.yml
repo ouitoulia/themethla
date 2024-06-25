@@ -31,7 +31,7 @@ third_party_settings:
 name: Classe
 type: classe
 description: 'Struttura delle informazioni relative a una classe della scuola. Presenta il calendario delle lezioni, le materie, i progetti, le risorse come i libri di testo e gli insegnanti.'
-help: ''
+help: null
 new_revision: false
 preview_mode: 1
 display_submitted: false

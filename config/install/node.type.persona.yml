@@ -31,7 +31,7 @@ third_party_settings:
 name: Persona
 type: persona
 description: 'Struttura delle informazioni relative alle persone di un''organizzazione, funzionale alla creazione di una scheda persona (tipo di contenuto "Persona")'
-help: ''
+help: null
 new_revision: false
 preview_mode: 1
 display_submitted: true

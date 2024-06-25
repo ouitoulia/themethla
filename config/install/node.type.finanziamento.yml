@@ -31,7 +31,7 @@ third_party_settings:
 name: Finanziamento
 type: finanziamento
 description: 'Usa questo tipo di contenuto per gestire i progetti di finanziamento PON, PNRR e simili. '
-help: ''
+help: null
 new_revision: false
 preview_mode: 1
 display_submitted: false

@@ -31,7 +31,7 @@ third_party_settings:
 name: 'Scheda didattica'
 type: scheda_didattica
 description: 'Approfondimento tematico a cura di uno o più insegnanti. La scheda è rivolta agli studenti.'
-help: ''
+help: null
 new_revision: false
 preview_mode: 1
 display_submitted: false

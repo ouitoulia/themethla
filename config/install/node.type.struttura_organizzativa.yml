@@ -31,7 +31,7 @@ third_party_settings:
 name: 'Struttura organizzativa'
 type: struttura_organizzativa
 description: "Tipo di contenuto relativo ad un'area organizzativa della scuola. Descrive la scuola/istituto, la presidenza, la segreteria, gli organi consiliari, ecc. Ogni struttura ha sede in uno o più luoghi. Non confondere le struttura organizzative (entità complesse e articolate, dotate di persone, di ruoli, di funzioni, di servizi correlati, etc.) con i semplici luoghi."
-help: ''
+help: null
 new_revision: false
 preview_mode: 1
 display_submitted: false

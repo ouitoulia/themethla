@@ -31,7 +31,7 @@ third_party_settings:
 name: Progetto
 type: progetto
 description: "La scheda serve a raccontare i risultati di un'attività svolta insieme agli studenti all'interno della scuola o nell'ambito di una uscita didattica, nell'ambito della didattica tradizionale o di attività ad essa complementari."
-help: ''
+help: null
 new_revision: false
 preview_mode: 1
 display_submitted: false

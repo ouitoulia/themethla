@@ -31,7 +31,7 @@ third_party_settings:
 name: Evento
 type: evento
 description: 'Usa questo tipo di contenuto per aggiungere un evento come: "Concerto di fine anno", "Convegno Χ", ecc.'
-help: ''
+help: null
 new_revision: false
 preview_mode: 1
 display_submitted: false

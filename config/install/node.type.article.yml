@@ -31,7 +31,7 @@ third_party_settings:
 name: Notizia
 type: article
 description: 'Struttura delle informazioni relative a una notizia della scuola. '
-help: ''
+help: null
 new_revision: false
 preview_mode: 1
 display_submitted: false
