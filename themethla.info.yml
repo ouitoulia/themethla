@@ -55,8 +55,8 @@ dependencies:
   - bootstrap_italia:bootstrap_italia_views_carousel
   - bootstrap_italia_text_editor2:bootstrap_italia_text_editor2
 
-# Information added by GitHub Action packaging script on 2024-06-25
-version: '4.0.1'
+# Information added by GitHub Action packaging script on 2024-06-27
+version: '4.0.2'
 project: 'Themethla'
-datestamp: 1719334519
-message: ' up deps'
+datestamp: 1719500677
+message: ' italia/design-scuole-pagine-statiche/pull/75'
