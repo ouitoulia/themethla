@@ -6,7 +6,7 @@ dependencies:
     - node.type.documento
     - taxonomy.vocabulary.anni_scolastici
   content:
-    - 'taxonomy_term:anni_scolastici:7352f7ca-a033-494b-ae59-f0ab9dc0a035'
+    - 'taxonomy_term:anni_scolastici:801cedda-e0cb-45e7-ac15-a697bd387242'
 id: node.documento.field_anno_scolastico
 field_name: field_anno_scolastico
 entity_type: node
@@ -17,7 +17,7 @@ required: false
 translatable: false
 default_value:
   -
-    target_uuid: 7352f7ca-a033-494b-ae59-f0ab9dc0a035
+    target_uuid: 801cedda-e0cb-45e7-ac15-a697bd387242
 default_value_callback: ''
 settings:
   handler: 'default:taxonomy_term'
