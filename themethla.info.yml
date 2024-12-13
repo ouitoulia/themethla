@@ -55,8 +55,8 @@ dependencies:
   - bootstrap_italia:bootstrap_italia_views_carousel
   - bootstrap_italia_text_editor2:bootstrap_italia_text_editor2
 
-# Information added by GitHub Action packaging script on 2024-12-07
-version: '4.3.0'
+# Information added by GitHub Action packaging script on 2024-12-13
+version: '4.4.0'
 project: 'Themethla'
-datestamp: 1733550705
-message: ' https://github.com/italia/design-scuole-pagine-statiche/pull/82'
+datestamp: 1734132702
+message: ' aggiunto opzionale menu navigazione secondaria'
