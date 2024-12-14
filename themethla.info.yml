@@ -55,8 +55,8 @@ dependencies:
   - bootstrap_italia:bootstrap_italia_views_carousel
   - bootstrap_italia_text_editor2:bootstrap_italia_text_editor2
 
-# Information added by GitHub Action packaging script on 2024-12-13
-version: '4.5.0'
+# Information added by GitHub Action packaging script on 2024-12-14
+version: '4.6.0'
 project: 'Themethla'
-datestamp: 1734133422
-message: ' update default anno_scolastico'
+datestamp: 1734135292
+message: ' fix compatibility'
