@@ -1,0 +1,11 @@
+langcode: it
+status: true
+dependencies:
+  content:
+    - 'file:file:0d5cb7c6-e20b-4b11-95ae-407310acde88'
+id: video
+label: Video
+icon_uuid: 0d5cb7c6-e20b-4b11-95ae-407310acde88
+icon_default: 'data:image/svg+xml;base64,PCEtLSBHZW5lcmF0ZWQgYnkgSWNvTW9vbi5pbyAtLT4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9Ijk2IiBoZWlnaHQ9Ijk2IiB2aWV3Qm94PSIwIDAgOTYgOTYiPgo8dGl0bGU+dmlkZW9jYW08L3RpdGxlPgo8cGF0aCBkPSJNNjguMDYzIDQybDE1LjkzOC0xNS45Mzh2NDMuODc1bC0xNS45MzgtMTUuOTM4djE0LjA2M3EwIDEuNjg4LTEuMjE5IDIuODEzdC0yLjkwNiAxLjEyNWgtNDhxLTEuNjg4IDAtMi44MTMtMS4xMjV0LTEuMTI1LTIuODEzdi00MC4xMjVxMC0xLjY4OCAxLjEyNS0yLjgxM3QyLjgxMy0xLjEyNWg0OHExLjY4OCAwIDIuOTA2IDEuMTI1dDEuMjE5IDIuODEzdjE0LjA2M3oiPjwvcGF0aD4KPC9zdmc+Cg=='
+description: 'This paragraph manage video content'
+behavior_plugins: {  }

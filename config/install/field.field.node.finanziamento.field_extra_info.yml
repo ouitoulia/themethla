@@ -16,8 +16,10 @@ dependencies:
     - paragraphs.paragraphs_type.history_carousel
     - paragraphs.paragraphs_type.map
     - paragraphs.paragraphs_type.node_reference
+    - paragraphs.paragraphs_type.point_list
     - paragraphs.paragraphs_type.section
     - paragraphs.paragraphs_type.timeline
+    - paragraphs.paragraphs_type.video
   module:
     - entity_reference_revisions
 id: node.finanziamento.field_extra_info
@@ -45,55 +47,57 @@ settings:
       hero: hero
       history_carousel: history_carousel
       map: map
+      node_reference: node_reference
+      point_list: point_list
       section: section
       timeline: timeline
-      node_reference: node_reference
+      video: video
     negate: 0
     target_bundles_drag_drop:
       accordion:
-        weight: -47
+        weight: -49
         enabled: true
       accordion_item:
         weight: -34
         enabled: false
       attachments:
-        weight: -48
+        weight: -50
         enabled: true
       call_to_action:
-        weight: -46
+        weight: -48
         enabled: true
       callout:
-        weight: -45
+        weight: -47
         enabled: true
       carousel:
-        weight: -44
+        weight: -46
         enabled: true
       citation:
-        weight: -43
+        weight: -45
         enabled: true
       content:
-        weight: -49
+        weight: -51
         enabled: true
       gallery:
-        weight: -42
+        weight: -44
         enabled: true
       gallery_item:
         weight: -33
         enabled: false
       hero:
-        weight: -41
+        weight: -43
         enabled: true
       history_carousel:
-        weight: -40
+        weight: -42
         enabled: true
       history_carousel_item:
         weight: -30
         enabled: false
       map:
-        weight: -39
+        weight: -41
         enabled: true
       node_reference:
-        weight: -36
+        weight: -40
         enabled: true
       piano_di_studi:
         weight: -29
@@ -102,10 +106,10 @@ settings:
         weight: -28
         enabled: false
       point_list:
-        weight: -27
-        enabled: false
+        weight: -39
+        enabled: true
       point_list_item:
-        weight: -26
+        weight: -27
         enabled: false
       section:
         weight: -38
@@ -122,4 +126,7 @@ settings:
       timeline_item:
         weight: -31
         enabled: false
+      video:
+        weight: -36
+        enabled: true
 field_type: entity_reference_revisions
