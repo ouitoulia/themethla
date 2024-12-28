@@ -56,7 +56,7 @@ dependencies:
   - bootstrap_italia_text_editor2:bootstrap_italia_text_editor2
 
 # Information added by GitHub Action packaging script on 2024-12-28
-version: '4.7.0'
+version: '4.8.0'
 project: 'Themethla'
-datestamp: 1735379289
-message: ' add video paragraph and review field_extra_info'
+datestamp: 1735398518
+message: ' modifica della lunghezza massima per permettere il salvataggio di un hash al posto del CF in chiaro'
