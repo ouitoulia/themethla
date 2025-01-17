@@ -1,0 +1,10 @@
+langcode: it
+status: true
+dependencies:
+  module:
+    - node
+id: node.point_list
+label: 'Point list'
+description: 'Display che visualizza il contenuto con il componente point list'
+targetEntityType: node
+cache: true

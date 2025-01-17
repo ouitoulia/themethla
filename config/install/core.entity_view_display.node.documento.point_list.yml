@@ -1,0 +1,108 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.point_list
+    - field.field.node.documento.body
+    - field.field.node.documento.field_abstract
+    - field.field.node.documento.field_allegati
+    - field.field.node.documento.field_anno_scolastico
+    - field.field.node.documento.field_argomenti
+    - field.field.node.documento.field_cig
+    - field.field.node.documento.field_classi
+    - field.field.node.documento.field_codice_identificativo
+    - field.field.node.documento.field_copertina
+    - field.field.node.documento.field_data_fine
+    - field.field.node.documento.field_data_inizio
+    - field.field.node.documento.field_data_oblio
+    - field.field.node.documento.field_eventi
+    - field.field.node.documento.field_extra_info
+    - field.field.node.documento.field_finanziamenti
+    - field.field.node.documento.field_frequenza
+    - field.field.node.documento.field_galleria_immagini
+    - field.field.node.documento.field_link
+    - field.field.node.documento.field_notizie
+    - field.field.node.documento.field_obbligo_di_pubblicazione
+    - field.field.node.documento.field_percorso_di_studio
+    - field.field.node.documento.field_persone
+    - field.field.node.documento.field_progetti
+    - field.field.node.documento.field_protocollo
+    - field.field.node.documento.field_servizio
+    - field.field.node.documento.field_struttura_responsabile
+    - field.field.node.documento.field_timeline
+    - field.field.node.documento.field_tipologia_documento
+    - field.field.node.documento.field_tipologia_licenza
+    - node.type.documento
+  module:
+    - datetime
+    - user
+id: node.documento.point_list
+targetEntityType: node
+bundle: documento
+mode: point_list
+content:
+  field_abstract:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_data_inizio:
+    type: datetime_default
+    label: inline
+    settings:
+      timezone_override: ''
+      format_type: bootstrap_italia_medium
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_protocollo:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_tipologia_documento:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+hidden:
+  body: true
+  field_allegati: true
+  field_anno_scolastico: true
+  field_argomenti: true
+  field_cig: true
+  field_classi: true
+  field_codice_identificativo: true
+  field_copertina: true
+  field_data_fine: true
+  field_data_oblio: true
+  field_eventi: true
+  field_extra_info: true
+  field_finanziamenti: true
+  field_frequenza: true
+  field_galleria_immagini: true
+  field_link: true
+  field_notizie: true
+  field_obbligo_di_pubblicazione: true
+  field_percorso_di_studio: true
+  field_persone: true
+  field_progetti: true
+  field_servizio: true
+  field_struttura_responsabile: true
+  field_timeline: true
+  field_tipologia_licenza: true
+  langcode: true
+  toc_js: true
