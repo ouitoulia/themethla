@@ -55,8 +55,8 @@ dependencies:
   - bootstrap_italia:bootstrap_italia_views_carousel
   - bootstrap_italia_text_editor2:bootstrap_italia_text_editor2
 
-# Information added by GitHub Action packaging script on 2024-12-28
-version: '4.8.0'
+# Information added by GitHub Action packaging script on 2025-01-17
+version: '4.9.0'
 project: 'Themethla'
-datestamp: 1735398518
-message: ' modifica della lunghezza massima per permettere il salvataggio di un hash al posto del CF in chiaro'
+datestamp: 1737124378
+message: ' aggiunto display calendar point list a ct documento'
