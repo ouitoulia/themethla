@@ -55,8 +55,8 @@ dependencies:
   - bootstrap_italia:bootstrap_italia_views_carousel
   - bootstrap_italia_text_editor2:bootstrap_italia_text_editor2
 
-# Information added by GitHub Action packaging script on 2025-01-18
-version: '4.9.1'
+# Information added by GitHub Action packaging script on 2025-01-27
+version: '4.10.0'
 project: 'Themethla'
-datestamp: 1737206688
-message: ' fix have unmet dependencies field.field.node.documento.field_obbligo_di_pubblicazione'
+datestamp: 1737995182
+message: ' fix form widget in taxonomy reference field'
