@@ -109,6 +109,14 @@ content:
     third_party_settings: {  }
     weight: 11
     region: content
+  field_finanziamenti:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 17
+    region: content
   field_frequenza:
     type: string
     label: inline
@@ -196,17 +204,17 @@ content:
     settings:
       link: false
     third_party_settings: {  }
-    weight: 17
+    weight: 18
     region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 19
+    weight: 20
     region: content
   toc_js:
     settings: {  }
     third_party_settings: {  }
-    weight: 18
+    weight: 19
     region: content
 hidden:
   field_anno_scolastico: true
@@ -215,7 +223,6 @@ hidden:
   field_data_fine: true
   field_data_oblio: true
   field_eventi: true
-  field_finanziamenti: true
   field_notizie: true
   field_percorso_di_studio: true
   field_progetti: true
