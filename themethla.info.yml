@@ -55,8 +55,8 @@ dependencies:
   - bootstrap_italia:bootstrap_italia_views_carousel
   - bootstrap_italia_text_editor2:bootstrap_italia_text_editor2
 
-# Information added by GitHub Action packaging script on 2025-01-27
-version: '4.10.0'
+# Information added by GitHub Action packaging script on 2025-01-29
+version: '4.11.0'
 project: 'Themethla'
-datestamp: 1737995182
-message: ' fix form widget in taxonomy reference field'
+datestamp: 1738130637
+message: ' la pagina documento se settato visualizza il finanziamento correlato'
