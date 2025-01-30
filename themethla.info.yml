@@ -56,7 +56,7 @@ dependencies:
   - bootstrap_italia_text_editor2:bootstrap_italia_text_editor2
 
 # Information added by GitHub Action packaging script on 2025-01-30
-version: '5.0.0'
+version: '5.0.1'
 project: 'Themethla'
-datestamp: 1738214840
-message: ' add cig validation'
+datestamp: 1738216121
+message: ' remove old docs'
