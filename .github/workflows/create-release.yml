@@ -16,13 +16,13 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          ref: 4.x
+          ref: 5.x
 
       - name: Fixup git permissions
         # https://github.com/actions/checkout/issues/766
         shell: bash
         run: |
-          git config --global --add safe.directory "$GITHUB_WORKSPACE"              
+          git config --global --add safe.directory "$GITHUB_WORKSPACE"
           git config user.name "${GITHUB_ACTOR}"
           git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
 
@@ -43,23 +43,23 @@ jobs:
             MESSAGE=$(echo "$COMMIT_MESSAGE" | sed -n -e 's/^release(.*):\(.*\)$/\1/p')
             if [ -n "$TAG" ] && [ -n "$MESSAGE" ]; then
               echo "Release tag found: $TAG"
-          
+
               if grep -q "^# Information added by GitHub Action" "${{ env.project_name }}.info.yml"; then
                 sed -i -e '/^# Information added by GitHub Action/,$d' "${{ env.project_name }}.info.yml"
               fi
-          
+
               echo -e "# Information added by GitHub Action packaging script on ${{ env.date }}" >> "${{ env.project_name }}.info.yml"
               echo "version: '$TAG'" >> "${{ env.project_name }}.info.yml"
               echo "project: '$(echo ${{ env.project_name }} | awk '{print toupper(substr($1,1,1)) tolower(substr($1,2))}')'" >> "${{ env.project_name }}.info.yml"
               echo "datestamp: ${{ env.datestamp }}" >> "${{ env.project_name }}.info.yml"
               echo "message: '$MESSAGE'" >> "${{ env.project_name }}.info.yml"
-          
+
               git add "${{ env.project_name }}.info.yml"
               git commit -m "Update version"
               git push origin
               git tag $TAG
               git push origin $TAG
-          
+
               echo "valid_tag=true" >> $GITHUB_ENV
               echo "release_tag=${TAG}" >> $GITHUB_ENV
             else

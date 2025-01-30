@@ -1,0 +1,4 @@
+services:
+  Drupal\themethla\Hook\ValidationHooks:
+    class: Drupal\themethla\Hook\ValidationHooks
+    autowire: true
