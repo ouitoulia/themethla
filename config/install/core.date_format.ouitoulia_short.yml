@@ -1,0 +1,7 @@
+langcode: it
+status: true
+dependencies: {  }
+id: ouitoulia_short
+label: 'Ouitoulía short'
+locked: false
+pattern: 'd M Y'
