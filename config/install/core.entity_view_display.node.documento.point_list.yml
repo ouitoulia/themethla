@@ -54,7 +54,7 @@ content:
       timezone_override: ''
       format_type: bootstrap_italia_medium
     third_party_settings: {  }
-    weight: 3
+    weight: 2
     region: content
   field_protocollo:
     type: string
@@ -70,7 +70,7 @@ content:
     settings:
       link: false
     third_party_settings: {  }
-    weight: 2
+    weight: 3
     region: content
   links:
     settings: {  }
