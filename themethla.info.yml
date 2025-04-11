@@ -55,8 +55,8 @@ dependencies:
   - bootstrap_italia:bootstrap_italia_views_carousel
   - bootstrap_italia_text_editor2:bootstrap_italia_text_editor2
 
-# Information added by GitHub Action packaging script on 2025-01-31
-version: '5.2.0'
+# Information added by GitHub Action packaging script on 2025-04-11
+version: '5.2.1'
 project: 'Themethla'
-datestamp: 1738339178
-message: ' fix field order'
+datestamp: 1744383027
+message: ' fix release'
