@@ -30,7 +30,7 @@ third_party_settings:
     sticky_stop_padding: '0'
 name: Documento
 type: documento
-description: 'Usa questo tipo do contenuto per aggiungere un nuovo documento.'
+description: 'Usa questo tipo di contenuto per aggiungere un nuovo documento.'
 help: null
 new_revision: true
 preview_mode: 1
