@@ -56,7 +56,7 @@ dependencies:
   - bootstrap_italia_text_editor2:bootstrap_italia_text_editor2
 
 # Information added by GitHub Action packaging script on 2025-01-31
-version: '5.1.1'
+version: '5.2.x'
 project: 'Themethla'
 datestamp: 1738339178
 message: ' fix field order'
