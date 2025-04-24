@@ -23,6 +23,7 @@ settings:
   handler_settings:
     target_bundles:
       content: content
+      node_reference: node_reference
     negate: 0
     target_bundles_drag_drop:
       accordion:
@@ -33,6 +34,9 @@ settings:
         enabled: false
       attachments:
         weight: -31
+        enabled: false
+      call_to_action:
+        weight: 30
         enabled: false
       callout:
         weight: -30
@@ -55,11 +59,29 @@ settings:
       hero:
         weight: -25
         enabled: false
+      history_carousel:
+        weight: 37
+        enabled: false
+      history_carousel_item:
+        weight: 38
+        enabled: false
       map:
         weight: -24
         enabled: false
       node_reference:
         weight: -34
+        enabled: true
+      piano_di_studi:
+        weight: 41
+        enabled: false
+      piano_di_studi_item:
+        weight: 42
+        enabled: false
+      point_list:
+        weight: 43
+        enabled: false
+      point_list_item:
+        weight: 44
         enabled: false
       section:
         weight: -23
@@ -75,5 +97,8 @@ settings:
         enabled: false
       timeline_item:
         weight: -19
+        enabled: false
+      video:
+        weight: 50
         enabled: false
 field_type: entity_reference_revisions

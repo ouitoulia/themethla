@@ -130,7 +130,7 @@ content:
       placeholder: ''
     third_party_settings: {  }
   field_argomenti:
-    type: entity_reference_autocomplete_tags
+    type: entity_reference_autocomplete
     weight: 6
     region: content
     settings:
