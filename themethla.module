@@ -4,7 +4,6 @@ use Drupal\Core\Entity\EntityTypeInterface;
 use Drupal\Core\Hook\Attribute\LegacyHook;
 use Drupal\themethla\Hook\ValidationHooks;
 
-
 /**
  * Implements hook_entity_bundle_field_info_alter().
  */
