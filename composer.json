@@ -18,7 +18,7 @@
   "minimum-stability": "dev",
   "prefer-stable": true,
   "require": {
-    "drupal/core-recommended": ">=10.5",
+    "drupal/core-recommended": ">=10.5 || ^11",
     "drupal/auto_entitylabel": "^3.4",
     "drupal/address": "^2",
     "drupal/conditional_fields": "^4.0@alpha",
