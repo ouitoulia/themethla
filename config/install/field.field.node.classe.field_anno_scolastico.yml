@@ -5,6 +5,8 @@ dependencies:
     - field.storage.node.field_anno_scolastico
     - node.type.classe
     - taxonomy.vocabulary.anni_scolastici
+  content:
+    - 'taxonomy_term:anni_scolastici:801cedda-e0cb-45e7-ac15-a697bd387242'
 id: node.classe.field_anno_scolastico
 field_name: field_anno_scolastico
 entity_type: node
