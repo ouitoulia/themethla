@@ -19,10 +19,8 @@ dependencies:
     - field.field.node.documento.field_finanziamenti
     - field.field.node.documento.field_frequenza
     - field.field.node.documento.field_galleria_immagini
-    - field.field.node.documento.field_importo
     - field.field.node.documento.field_link
     - field.field.node.documento.field_notizie
-    - field.field.node.documento.field_obbligo_di_pubblicazione
     - field.field.node.documento.field_percorso_di_studio
     - field.field.node.documento.field_persone
     - field.field.node.documento.field_progetti
@@ -47,6 +45,14 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
+  field_finanziamenti:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
   links:
     settings: {  }
     third_party_settings: {  }
@@ -66,13 +72,10 @@ hidden:
   field_data_oblio: true
   field_eventi: true
   field_extra_info: true
-  field_finanziamenti: true
   field_frequenza: true
   field_galleria_immagini: true
-  field_importo: true
   field_link: true
   field_notizie: true
-  field_obbligo_di_pubblicazione: true
   field_percorso_di_studio: true
   field_persone: true
   field_progetti: true
@@ -83,5 +86,4 @@ hidden:
   field_tipologia_documento: true
   field_tipologia_licenza: true
   langcode: true
-  search_api_excerpt: true
   toc_js: true

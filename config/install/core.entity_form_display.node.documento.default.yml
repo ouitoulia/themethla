@@ -19,10 +19,8 @@ dependencies:
     - field.field.node.documento.field_finanziamenti
     - field.field.node.documento.field_frequenza
     - field.field.node.documento.field_galleria_immagini
-    - field.field.node.documento.field_importo
     - field.field.node.documento.field_link
     - field.field.node.documento.field_notizie
-    - field.field.node.documento.field_obbligo_di_pubblicazione
     - field.field.node.documento.field_percorso_di_studio
     - field.field.node.documento.field_persone
     - field.field.node.documento.field_progetti
@@ -97,7 +95,6 @@ third_party_settings:
       children:
         - group_allegati
         - group_archiviazione
-        - group_amministrazione_trasparent
         - group_contenuti_correlati
         - group_tempi_e_scadenze
       label: Documento
@@ -140,7 +137,7 @@ third_party_settings:
       label: 'Contenuti Correlati'
       region: content
       parent_name: group_documento
-      weight: 27
+      weight: 26
       format_type: tab
       format_settings:
         classes: ''
@@ -156,7 +153,7 @@ third_party_settings:
       label: 'Tempi e scadenze'
       region: content
       parent_name: group_documento
-      weight: 28
+      weight: 27
       format_type: tab
       format_settings:
         classes: ''
@@ -202,23 +199,6 @@ third_party_settings:
         formatter: closed
         description: ''
         required_fields: true
-    group_amministrazione_trasparent:
-      children:
-        - field_importo
-        - field_obbligo_di_pubblicazione
-      label: 'Amministrazione trasparente'
-      region: content
-      parent_name: group_documento
-      weight: 26
-      format_type: tab
-      format_settings:
-        classes: ''
-        show_empty_fields: false
-        id: ''
-        label_as_html: false
-        formatter: closed
-        description: "Selezionando l'Obbligo di pubblicazione che il documento assolve, verrà automaticamente posizionato nella relativa categoria di amministrazione trasparente. Di seguito vengono visualizzati solo gli obblighi a cui la scuola è soggetta."
-        required_fields: false
 id: node.documento.default
 targetEntityType: node
 bundle: documento
@@ -376,13 +356,6 @@ content:
     settings:
       media_types: {  }
     third_party_settings: {  }
-  field_importo:
-    type: number
-    weight: 35
-    region: content
-    settings:
-      placeholder: ''
-    third_party_settings: {  }
   field_link:
     type: link_default
     weight: 21
@@ -400,12 +373,6 @@ content:
       match_limit: 10
       size: 60
       placeholder: 'Scrivi il titolo di una notizia, o una sua parte, per cercarlo'
-    third_party_settings: {  }
-  field_obbligo_di_pubblicazione:
-    type: options_buttons
-    weight: 36
-    region: content
-    settings: {  }
     third_party_settings: {  }
   field_percorso_di_studio:
     type: entity_reference_autocomplete

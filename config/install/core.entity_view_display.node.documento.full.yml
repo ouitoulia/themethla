@@ -20,10 +20,8 @@ dependencies:
     - field.field.node.documento.field_finanziamenti
     - field.field.node.documento.field_frequenza
     - field.field.node.documento.field_galleria_immagini
-    - field.field.node.documento.field_importo
     - field.field.node.documento.field_link
     - field.field.node.documento.field_notizie
-    - field.field.node.documento.field_obbligo_di_pubblicazione
     - field.field.node.documento.field_percorso_di_studio
     - field.field.node.documento.field_persone
     - field.field.node.documento.field_progetti
@@ -125,7 +123,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 19
+    weight: 16
     region: content
   field_galleria_immagini:
     type: entity_reference_entity_view
@@ -135,17 +133,6 @@ content:
       link: false
     third_party_settings: {  }
     weight: 5
-    region: content
-  field_importo:
-    type: number_decimal
-    label: inline
-    settings:
-      thousand_separator: ''
-      decimal_separator: .
-      scale: 2
-      prefix_suffix: true
-    third_party_settings: {  }
-    weight: 15
     region: content
   field_link:
     type: link
@@ -157,16 +144,7 @@ content:
       rel: nofollow
       target: _blank
     third_party_settings: {  }
-    weight: 16
-    region: content
-  field_obbligo_di_pubblicazione:
-    type: entity_reference_entity_view
-    label: above
-    settings:
-      view_mode: list
-      link: false
-    third_party_settings: {  }
-    weight: 18
+    weight: 15
     region: content
   field_persone:
     type: entity_reference_entity_view
@@ -226,17 +204,17 @@ content:
     settings:
       link: false
     third_party_settings: {  }
-    weight: 20
+    weight: 18
     region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 22
+    weight: 20
     region: content
   toc_js:
     settings: {  }
     third_party_settings: {  }
-    weight: 21
+    weight: 19
     region: content
 hidden:
   field_anno_scolastico: true
@@ -249,4 +227,3 @@ hidden:
   field_percorso_di_studio: true
   field_progetti: true
   langcode: true
-  search_api_excerpt: true
