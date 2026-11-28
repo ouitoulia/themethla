@@ -6,7 +6,7 @@ dependencies:
 id: tipo_contenuto_partner
 label: 'Tipo contenuto: Partner'
 type: 'canonical_entities:node'
-pattern: 'scuola/partner/[node:title]'
+pattern: '/scuola/partner/[node:title]'
 selection_criteria:
   0fb442a1-12a8-42f5-879e-5949f4f792b8:
     id: 'entity_bundle:node'

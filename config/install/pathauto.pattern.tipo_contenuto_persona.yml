@@ -6,7 +6,7 @@ dependencies:
 id: tipo_contenuto_persona
 label: 'Tipo contenuto: Persona'
 type: 'canonical_entities:node'
-pattern: 'scuola/le-persone/[node:field_ruolo_persona]/[node:title]'
+pattern: '/scuola/le-persone/[node:field_ruolo_persona]/[node:title]'
 selection_criteria:
   0dd626a9-4995-4502-b9c6-5b7c4266be5b:
     id: 'entity_bundle:node'

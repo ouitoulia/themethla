@@ -6,7 +6,7 @@ dependencies:
 id: tipo_contenuto_finanziamento
 label: 'Tipo contenuto: Finanziamento'
 type: 'canonical_entities:node'
-pattern: 'finanziamenti/[node:field_tipologia_finanziamento]/[node:title]'
+pattern: '/finanziamenti/[node:field_tipologia_finanziamento]/[node:title]'
 selection_criteria:
   cce3aa0f-e7dc-46b3-b666-314b9c270ac6:
     id: 'entity_bundle:node'

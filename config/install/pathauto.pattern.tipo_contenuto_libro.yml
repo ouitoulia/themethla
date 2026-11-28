@@ -6,7 +6,7 @@ dependencies:
 id: tipo_contenuto_libro
 label: 'Tipo contenuto: Libro'
 type: 'canonical_entities:node'
-pattern: 'biblioteca/[node:field_tipologia_libro]/[node:title]'
+pattern: '/biblioteca/[node:field_tipologia_libro]/[node:title]'
 selection_criteria:
   ad6bd854-f635-4aa7-a086-9e440d060e32:
     id: 'entity_bundle:node'

@@ -3,5 +3,5 @@ status: true
 dependencies: {  }
 id: footer
 label: 'Piè di pagina'
-description: 'Menu a piè di pagina'
+description: 'Site information links'
 locked: true

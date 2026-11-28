@@ -10,7 +10,7 @@ id: node.scheda_didattica.body
 field_name: body
 entity_type: node
 bundle: scheda_didattica
-label: 'Attività'
+label: Attività
 description: "Questo campo è più sintetico dei precedenti, ed è pensato per dare delle istruzioni pratiche/operative per svolgere l'attività proposta."
 required: false
 translatable: false

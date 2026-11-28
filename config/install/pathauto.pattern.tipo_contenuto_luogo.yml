@@ -6,7 +6,7 @@ dependencies:
 id: tipo_contenuto_luogo
 label: 'Tipo contenuto: Luogo'
 type: 'canonical_entities:node'
-pattern: 'scuola/i-luoghi/[node:field_tipologia_luogo]/[node:title]'
+pattern: '/scuola/i-luoghi/[node:field_tipologia_luogo]/[node:title]'
 selection_criteria:
   29f1d0ac-b50e-466a-98d0-44c9cca7e798:
     id: 'entity_bundle:node'

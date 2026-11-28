@@ -3,5 +3,5 @@ status: true
 dependencies: {  }
 id: main
 label: 'Navigazione principale'
-description: 'Menu principale del sito'
+description: 'Site section links'
 locked: true

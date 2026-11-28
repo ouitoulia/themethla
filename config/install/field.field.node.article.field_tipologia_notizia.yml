@@ -5,8 +5,6 @@ dependencies:
     - field.storage.node.field_tipologia_notizia
     - node.type.article
     - taxonomy.vocabulary.tipologia_notizie
-  content:
-    - 'taxonomy_term:tipologia_notizie:ad85f787-664c-4028-a66f-7106398cb825'
 id: node.article.field_tipologia_notizia
 field_name: field_tipologia_notizia
 entity_type: node

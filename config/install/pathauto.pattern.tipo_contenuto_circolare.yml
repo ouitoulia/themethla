@@ -6,7 +6,7 @@ dependencies:
 id: tipo_contenuto_circolare
 label: 'Tipo contenuto: Circolare'
 type: 'canonical_entities:node'
-pattern: 'novita/le-circolari/[node:title]'
+pattern: '/novita/le-circolari/[node:title]'
 selection_criteria:
   d9388465-78e9-4e87-9cec-ba0b10377fb8:
     id: 'entity_bundle:node'

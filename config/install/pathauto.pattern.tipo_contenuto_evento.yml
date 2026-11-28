@@ -6,7 +6,7 @@ dependencies:
 id: tipo_contenuto_evento
 label: 'Tipo di contenuto: Evento'
 type: 'canonical_entities:node'
-pattern: 'novita/eventi/[node:field_tipologia_evento]/[node:title]'
+pattern: '/novita/eventi/[node:field_tipologia_evento]/[node:title]'
 selection_criteria:
   a49c2c40-87bd-40e1-a9cf-886391157962:
     id: 'entity_bundle:node'

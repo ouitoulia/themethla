@@ -6,7 +6,7 @@ dependencies:
 id: tipo_contenuto_documento
 label: 'Tipo contenuto: Documento'
 type: 'canonical_entities:node'
-pattern: 'scuola/le-carte-della-scuola/[node:field_tipologia_documento]/[node:title]'
+pattern: '/scuola/le-carte-della-scuola/[node:field_tipologia_documento]/[node:title]'
 selection_criteria:
   520c2331-a91c-4040-b7d5-178bf2437127:
     id: 'entity_bundle:node'

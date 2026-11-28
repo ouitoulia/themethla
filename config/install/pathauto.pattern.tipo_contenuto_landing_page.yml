@@ -6,7 +6,7 @@ dependencies:
 id: tipo_contenuto_landing_page
 label: 'Tipo contenuto: Pagina singola'
 type: 'canonical_entities:node'
-pattern: 'pagine/[node:title]'
+pattern: '/pagine/[node:title]'
 selection_criteria:
   eaf4336d-06af-4c22-b708-3a21ae91ace4:
     id: 'entity_bundle:node'

@@ -6,7 +6,7 @@ dependencies:
 id: tipo_contenuto_notizia
 label: 'Tipo contenuto: Notizia'
 type: 'canonical_entities:node'
-pattern: 'novita/[node:field_tipologia_notizia]/[node:title]'
+pattern: '/novita/[node:field_tipologia_notizia]/[node:title]'
 selection_criteria:
   3787225f-d3cf-4372-b0ab-8fb26a4f4a26:
     id: 'entity_bundle:node'
