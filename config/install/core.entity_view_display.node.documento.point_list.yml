@@ -20,8 +20,10 @@ dependencies:
     - field.field.node.documento.field_finanziamenti
     - field.field.node.documento.field_frequenza
     - field.field.node.documento.field_galleria_immagini
+    - field.field.node.documento.field_importo
     - field.field.node.documento.field_link
     - field.field.node.documento.field_notizie
+    - field.field.node.documento.field_obbligo_di_pubblicazione
     - field.field.node.documento.field_percorso_di_studio
     - field.field.node.documento.field_persone
     - field.field.node.documento.field_progetti
@@ -54,7 +56,7 @@ content:
       timezone_override: ''
       format_type: bootstrap_italia_medium
     third_party_settings: {  }
-    weight: 2
+    weight: 3
     region: content
   field_protocollo:
     type: string
@@ -70,7 +72,7 @@ content:
     settings:
       link: false
     third_party_settings: {  }
-    weight: 3
+    weight: 2
     region: content
   links:
     settings: {  }
@@ -93,8 +95,10 @@ hidden:
   field_finanziamenti: true
   field_frequenza: true
   field_galleria_immagini: true
+  field_importo: true
   field_link: true
   field_notizie: true
+  field_obbligo_di_pubblicazione: true
   field_percorso_di_studio: true
   field_persone: true
   field_progetti: true
@@ -103,4 +107,5 @@ hidden:
   field_timeline: true
   field_tipologia_licenza: true
   langcode: true
+  search_api_excerpt: true
   toc_js: true
