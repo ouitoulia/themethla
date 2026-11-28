@@ -5,8 +5,6 @@ dependencies:
     - field.storage.node.field_tipologia_licenza
     - node.type.documento
     - taxonomy.vocabulary.tipologia_licenze
-  content:
-    - 'taxonomy_term:tipologia_licenze:4cc148d5-7b64-4fdd-aa56-ce7f4521af71'
 id: node.documento.field_tipologia_licenza
 field_name: field_tipologia_licenza
 entity_type: node
